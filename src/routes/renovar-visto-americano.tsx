@@ -1,4 +1,5 @@
 import { createLPRoute } from "@/components/site/LPPage";
+import passport from "@/assets/passport.jpg";
 
 export const Route = createLPRoute({
   slug: "renovar-visto-americano",
@@ -18,7 +19,7 @@ export const Route = createLPRoute({
   heroHighlight: "sem complicação",
   heroSubtitle:
     "Seu visto venceu ou está prestes a vencer? Cuidamos da renovação completa, incluindo casos elegíveis ao dropbox (sem entrevista) e aqueles que exigem novo agendamento.",
-  heroImage: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=80",
+  heroImage: passport,
   heroImageAlt: "Avião e passaporte para renovação de visto americano",
 
   problemTitle: "Renovar o visto americano pode ter pegadinhas",

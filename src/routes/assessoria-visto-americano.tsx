@@ -1,4 +1,5 @@
 import { createLPRoute } from "@/components/site/LPPage";
+import jaqueline from "/images/optimized/IMG_5787-avatar.jpg";
 
 export const Route = createLPRoute({
   slug: "assessoria-visto-americano",
@@ -18,7 +19,7 @@ export const Route = createLPRoute({
   heroHighlight: "ansiedade em aprovação",
   heroSubtitle:
     "Você não precisa enfrentar o processo sozinho. Nossa equipe cuida da estratégia, do DS-160 e da preparação para entrevista — do início ao carimbo no passaporte.",
-  heroImage: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1920&q=80",
+  heroImage: jaqueline,
   heroImageAlt: "Consultoria de visto americano com especialista",
 
   problemTitle: "Sozinho, o processo de visto americano é cheio de armadilhas",

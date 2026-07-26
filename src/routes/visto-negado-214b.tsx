@@ -1,4 +1,5 @@
 import { createLPRoute } from "@/components/site/LPPage";
+import imgConsulado from "/images/optimized/IMG_2270.JPG.jpg";
 
 export const Route = createLPRoute({
   slug: "visto-negado-214b",
@@ -18,7 +19,7 @@ export const Route = createLPRoute({
   heroHighlight: "com mais força",
   heroSubtitle:
     "A seção 214(b) é a negativa mais comum. Ela indica que o consulado não ficou convencido de que você vai retornar ao Brasil. A boa notícia: isso pode ser revertido.",
-  heroImage: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&q=80",
+  heroImage: imgConsulado,
   heroImageAlt: "Documentos de visto americano sobre a mesa",
 
   problemTitle: "O que leva a uma negativa por 214(b)?",

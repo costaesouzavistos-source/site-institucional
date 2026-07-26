@@ -1,4 +1,5 @@
 import { createLPRoute } from "@/components/site/LPPage";
+import passport from "@/assets/passport.jpg";
 
 export const Route = createLPRoute({
   slug: "como-tirar-visto-americano",
@@ -18,7 +19,7 @@ export const Route = createLPRoute({
   heroHighlight: "passo a passo",
   heroSubtitle:
     "Entenda todo o processo, dos documentos à entrevista consular. Com a orientação certa, você evita erros comuns e aumenta suas chances de aprovação.",
-  heroImage: "https://images.unsplash.com/photo-1488646953010-048d4eaa749a?w=1920&q=80",
+  heroImage: passport,
   heroImageAlt: "Planejamento de viagem para os Estados Unidos",
 
   problemTitle: "O processo de visto americano parece complexo porque realmente exige atenção",
