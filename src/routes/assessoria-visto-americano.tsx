@@ -3,9 +3,9 @@ import jaqueline from "/images/optimized/IMG_5787-avatar.jpg";
 
 export const Route = createLPRoute({
   slug: "assessoria-visto-americano",
-  title: "Assessoria para Visto Americano | Costa & Souza",
+  title: "Assessoria para Visto Americano em 2026 | Costa & Souza",
   description:
-    "Assessoria especializada para visto americano. +3.300 aprovações. Atendimento remoto em todo o Brasil. Fale com um especialista.",
+    "Assessoria completa para visto americano em 2026: diagnóstico, DS-160, documentos e preparação para entrevista. +16.300 aprovações. Fale com um especialista.",
   keywords:
     "assessoria visto americano, consultoria visto americano, especialista visto americano, ajuda para visto americano, Anápolis, Goiás",
   ogImage: "https://costaesouza.com.br/og-image.jpg",
@@ -21,6 +21,34 @@ export const Route = createLPRoute({
     "Você não precisa enfrentar o processo sozinho. Nossa equipe cuida da estratégia, do DS-160 e da preparação para entrevista — do início ao carimbo no passaporte.",
   heroImage: jaqueline,
   heroImageAlt: "Consultoria de visto americano com especialista",
+
+  lastUpdated: "julho de 2026",
+  summary:
+    "Assessoria de visto americano é o acompanhamento humano de todo o processo: do diagnóstico do tipo de visto certo até a preparação para a entrevista consular. Não substitui a decisão do consulado, mas reduz erros que custam tempo e dinheiro — e ajudam ou prejudicam a percepção do seu caso.",
+
+  quickTable: {
+    title: "O que está incluso na assessoria",
+    rows: [
+      { label: "Diagnóstico do tipo de visto", value: "B1/B2, F1, J1, renovação ou reversão de negativa" },
+      { label: "Revisão de documentos", value: "Renda, vínculos e documentação específica do seu caso" },
+      { label: "Formulário DS-160", value: "Revisão cruzada com os demais documentos" },
+      { label: "Preparação para entrevista", value: "Simulação com feedback individual" },
+      { label: "Atendimento", value: "100% remoto, por WhatsApp e videochamada" },
+    ],
+  },
+
+  inlineCtaAfterTable: {
+    text: "Quer saber qual assessoria faz sentido para o seu caso?",
+    buttonText: "Fazer diagnóstico gratuito",
+  },
+
+  mistakesTitle: "Erros que a assessoria existe para evitar",
+  commonMistakes: [
+    "Preencher o DS-160 sem revisar a consistência com os demais documentos.",
+    "Comprovar renda ou vínculos de forma genérica, sem estratégia para o seu perfil.",
+    "Ir para a entrevista sem simulação prévia das perguntas mais difíceis.",
+    "Não considerar todas as taxas aplicáveis ao planejar o orçamento.",
+  ],
 
   problemTitle: "Sozinho, o processo de visto americano é cheio de armadilhas",
   problemPoints: [
@@ -41,14 +69,26 @@ export const Route = createLPRoute({
 
   trustTitle: "Por que famílias de todo o Brasil confiam na Costa & Souza",
   trustStats: [
-    { value: "+3.300", label: "vistos aprovados" },
-    { value: "97%", label: "taxa de aprovação" },
-    { value: "+12", label: "anos de experiência" },
+    { value: "+16.300", label: "vistos aprovados" },
+    { value: "98%", label: "taxa de aprovação" },
+    { value: "+10", label: "anos de experiência" },
     { value: "100%", label: "atendimento remoto" },
   ],
 
   ctaTitle: "Comece sua assessoria hoje",
   ctaSubtitle: "Fale com um especialista e receba um plano de ação para o seu caso.",
+
+  reviewedBy: {
+    name: "Jaqueline Costa",
+    role: "Especialista em Vistos Americanos, Costa & Souza",
+    credential: "+10 anos de experiência",
+    photo: "/images/optimized/IMG_5787-avatar.jpg",
+  },
+
+  relatedLinks: [
+    { label: "Como funciona o processo do visto americano", href: "/como-tirar-visto-americano" },
+    { label: "Quanto custa o visto americano", href: "/quanto-custa-visto-americano" },
+  ],
 
   faqs: [
     {
@@ -62,6 +102,10 @@ export const Route = createLPRoute({
     {
       q: "Atendem em todo o Brasil?",
       a: "Sim. O processo é 100% remoto, por WhatsApp e videochamada, para clientes de qualquer estado.",
+    },
+    {
+      q: "Quanto custa a assessoria de visto americano?",
+      a: "O investimento na assessoria varia conforme o perfil do solicitante, o tipo de visto e o suporte necessário. Antes de informar qualquer valor, fazemos uma análise inicial para entender seu caso e indicar a solução mais adequada.",
     },
   ],
 });

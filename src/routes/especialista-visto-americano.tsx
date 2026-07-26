@@ -5,7 +5,7 @@ export const Route = createLPRoute({
   slug: "especialista-visto-americano",
   title: "Especialista em Visto Americano | Costa & Souza",
   description:
-    "Fale com um especialista em visto americano. Atendimento personalizado, remoto e focado em aprovação. +3.300 casos aprovados.",
+    "Fale com um especialista em visto americano. Atendimento personalizado, remoto e focado em aprovação. +16.300 casos aprovados.",
   keywords:
     "especialista visto americano, consultor visto americano, assessor visto americano, visto americano aprovação, Brasil",
   ogImage: "https://costaesouza.com.br/og-image.jpg",
@@ -21,6 +21,24 @@ export const Route = createLPRoute({
     "Nossos especialistas analisam seu perfil, montam a estratégia e preparam você para a entrevista consular. Atendimento humano, direto e sem enrolação.",
   heroImage: jaqueline,
   heroImageAlt: "Especialista em visto americano atendendo cliente",
+
+  lastUpdated: "julho de 2026",
+  summary:
+    "A Costa & Souza é formada por Lucas Philipe e Jaqueline Costa, especialistas em vistos americanos com mais de 10 anos de atuação. O trabalho é dividido entre estratégia de caso (perfil, DS-160, preparação para entrevista) e atendimento humano (organização documental, suporte emocional para a entrevista). Nenhum dos dois substitui a decisão do consulado — o papel é preparar o seu caso da forma mais sólida possível.",
+
+  quickTable: {
+    title: "Quem atende o seu caso",
+    rows: [
+      { label: "Lucas Philipe", value: "Estratégia de caso, DS-160 e preparação para entrevista" },
+      { label: "Jaqueline Costa", value: "Atendimento humano, organização documental e casos de família" },
+      { label: "Atuação", value: "+10 anos, atendimento 100% remoto em todo o Brasil" },
+    ],
+  },
+
+  inlineCtaAfterTable: {
+    text: "Quer saber qual especialista é mais indicado para o seu caso?",
+    buttonText: "Fazer diagnóstico gratuito",
+  },
 
   problemTitle: "Falta de orientação especializada custa caro no visto americano",
   problemPoints: [
@@ -41,14 +59,26 @@ export const Route = createLPRoute({
 
   trustTitle: "Especialistas que já ajudaram milhares de brasileiros",
   trustStats: [
-    { value: "+3.300", label: "casos atendidos" },
-    { value: "97%", label: "taxa de aprovação" },
-    { value: "+12", label: "anos de atuação" },
+    { value: "+16.300", label: "casos atendidos" },
+    { value: "98%", label: "taxa de aprovação" },
+    { value: "+10", label: "anos de atuação" },
     { value: "4.9", label: "nota no Google" },
   ],
 
   ctaTitle: "Fale com um especialista agora",
   ctaSubtitle: "Escolha o atendente e inicie sua avaliação personalizada.",
+
+  reviewedBy: {
+    name: "Lucas Philipe",
+    role: "Especialista em Vistos Americanos, Costa & Souza",
+    credential: "+10 anos de experiência",
+    photo: "/images/optimized/foto-lucas.jpeg",
+  },
+
+  relatedLinks: [
+    { label: "Como funciona a assessoria de visto americano", href: "/assessoria-visto-americano" },
+    { label: "Como funciona o processo do visto americano", href: "/como-tirar-visto-americano" },
+  ],
 
   faqs: [
     {
@@ -62,6 +92,10 @@ export const Route = createLPRoute({
     {
       q: "O especialista me acompanha até a entrevista?",
       a: "Sim. O acompanhamento é contínuo, desde o primeiro formulário até o dia da entrevista consular.",
+    },
+    {
+      q: "O especialista garante a aprovação do visto?",
+      a: "Não. A decisão final é sempre do oficial consular. O especialista prepara o seu caso da forma mais sólida possível, mas não pode garantir o resultado.",
     },
   ],
 });

@@ -41,6 +41,34 @@ export interface LPConfig {
   ctaSubtitle: string;
 
   faqs: { q: string; a: string }[];
+
+  lastUpdated?: string;
+  summary?: string;
+
+  quickTable?: { title: string; rows: { label: string; value: string }[] };
+
+  steps?: { title: string; description: string }[];
+
+  costTitle?: string;
+  costItems?: { label: string; value: string; note?: string }[];
+  costNote?: string;
+
+  timelineTitle?: string;
+  timelineItems?: { label: string; value: string }[];
+  timelineNote?: string;
+
+  documentsTitle?: string;
+  documents?: string[];
+
+  mistakesTitle?: string;
+  commonMistakes?: string[];
+
+  inlineCtaAfterTable?: { text: string; buttonText?: string };
+  inlineCtaAfterCost?: { text: string; buttonText?: string };
+
+  reviewedBy?: { name: string; role: string; credential?: string; photo?: string };
+
+  relatedLinks?: { label: string; href: string }[];
 }
 
 function buildLocalBusinessSchema(cfg: LPConfig) {
@@ -64,7 +92,39 @@ function buildLocalBusinessSchema(cfg: LPConfig) {
   };
 }
 
+function buildFaqSchema(config: LPConfig) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: config.faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+}
+
+function buildHowToSchema(config: LPConfig) {
+  if (!config.steps || config.steps.length === 0) return null;
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: config.title,
+    step: config.steps.map((s) => ({
+      "@type": "HowToStep",
+      name: s.title,
+      text: s.description,
+    })),
+  };
+}
+
 export function createLPRoute(config: LPConfig) {
+  const schemas = [
+    buildLocalBusinessSchema(config),
+    buildFaqSchema(config),
+    buildHowToSchema(config),
+  ].filter(Boolean);
+
   return createFileRoute(`/${config.slug}`)({
     head: () => ({
       meta: [
@@ -87,12 +147,10 @@ export function createLPRoute(config: LPConfig) {
         { rel: "shortcut icon", href: "/favicon.ico" },
         { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
       ],
-      scripts: [
-        {
-          type: "application/ld+json",
-          children: JSON.stringify(buildLocalBusinessSchema(config)),
-        },
-      ],
+      scripts: schemas.map((schema) => ({
+        type: "application/ld+json",
+        children: JSON.stringify(schema),
+      })),
     }),
     component: () => <LPPage config={config} />,
   });
@@ -106,8 +164,19 @@ function LPPage({ config }: { config: LPConfig }) {
         <main>
           <LPHero config={config} />
           <LPTrust config={config} />
+          <LPSummary config={config} />
+          <LPQuickTable config={config} />
+          {config.inlineCtaAfterTable && <LPInlineCTA {...config.inlineCtaAfterTable} />}
+          <LPSteps config={config} />
+          <LPCost config={config} />
+          {config.inlineCtaAfterCost && <LPInlineCTA {...config.inlineCtaAfterCost} />}
+          <LPTimeline config={config} />
+          <LPDocuments config={config} />
+          <LPMistakes config={config} />
           <LPProblem config={config} />
           <LPSolution config={config} />
+          <LPRelatedLinks config={config} />
+          <LPReviewedBy config={config} />
           <LPFAQ config={config} />
           <ContactCTA />
         </main>
@@ -204,6 +273,251 @@ function LPTrust({ config }: { config: LPConfig }) {
             </motion.div>
           ))}
         </div>
+      </div>
+    </section>
+  );
+}
+
+function LPSummary({ config }: { config: LPConfig }) {
+  if (!config.summary) return null;
+  return (
+    <section className="bg-cream py-16 lg:py-20">
+      <div className="mx-auto max-w-3xl px-6 lg:px-10">
+        <p className="text-lg leading-relaxed text-muted-foreground">{config.summary}</p>
+        {config.lastUpdated && (
+          <p className="mt-4 text-xs uppercase tracking-wider text-gold">
+            Atualizado em {config.lastUpdated}
+          </p>
+        )}
+      </div>
+    </section>
+  );
+}
+
+function LPQuickTable({ config }: { config: LPConfig }) {
+  if (!config.quickTable) return null;
+  return (
+    <section className="bg-cream pb-16 lg:pb-20">
+      <div className="mx-auto max-w-3xl px-6 lg:px-10">
+        <div className="overflow-hidden rounded-2xl border border-border">
+          <table className="w-full text-left text-sm">
+            <caption className="bg-navy-deep px-5 py-3 text-left font-serif text-base text-cream">
+              {config.quickTable.title}
+            </caption>
+            <tbody className="divide-y divide-border">
+              {config.quickTable.rows.map((row, i) => (
+                <tr key={i} className="odd:bg-cream even:bg-navy-deep/[0.03]">
+                  <th scope="row" className="w-1/2 px-5 py-3 font-medium text-navy-deep">
+                    {row.label}
+                  </th>
+                  <td className="px-5 py-3 text-muted-foreground">{row.value}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function LPSteps({ config }: { config: LPConfig }) {
+  if (!config.steps || config.steps.length === 0) return null;
+  return (
+    <section className="bg-cream py-16 lg:py-20">
+      <div className="mx-auto max-w-3xl px-6 lg:px-10">
+        <h2 className="font-serif text-3xl leading-tight text-navy-deep text-balance sm:text-4xl">
+          Passo a passo
+        </h2>
+        <ol className="mt-8 space-y-6">
+          {config.steps.map((step, i) => (
+            <li key={i} className="flex gap-4">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-navy-deep font-serif text-gold">
+                {i + 1}
+              </span>
+              <div>
+                <p className="font-serif text-lg text-navy-deep">{step.title}</p>
+                <p className="mt-1 leading-relaxed text-muted-foreground">{step.description}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  );
+}
+
+function LPCost({ config }: { config: LPConfig }) {
+  if (!config.costItems || config.costItems.length === 0) return null;
+  return (
+    <section className="bg-cream pb-16 lg:pb-20">
+      <div className="mx-auto max-w-3xl px-6 lg:px-10">
+        <h2 className="font-serif text-3xl leading-tight text-navy-deep text-balance sm:text-4xl">
+          {config.costTitle ?? "Quanto custa"}
+        </h2>
+        <div className="mt-8 overflow-hidden rounded-2xl border border-border">
+          <table className="w-full text-left text-sm">
+            <tbody className="divide-y divide-border">
+              {config.costItems.map((item, i) => (
+                <tr key={i} className="odd:bg-cream even:bg-navy-deep/[0.03]">
+                  <th scope="row" className="w-1/2 px-5 py-3 font-medium text-navy-deep">
+                    {item.label}
+                    {item.note && (
+                      <span className="mt-0.5 block text-xs font-normal text-muted-foreground">
+                        {item.note}
+                      </span>
+                    )}
+                  </th>
+                  <td className="px-5 py-3 text-gold">{item.value}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        {config.costNote && (
+          <p className="mt-4 text-sm text-muted-foreground">{config.costNote}</p>
+        )}
+      </div>
+    </section>
+  );
+}
+
+function LPTimeline({ config }: { config: LPConfig }) {
+  if (!config.timelineItems || config.timelineItems.length === 0) return null;
+  return (
+    <section className="bg-cream pb-16 lg:pb-20">
+      <div className="mx-auto max-w-3xl px-6 lg:px-10">
+        <h2 className="font-serif text-3xl leading-tight text-navy-deep text-balance sm:text-4xl">
+          {config.timelineTitle ?? "Quanto demora"}
+        </h2>
+        <div className="mt-8 overflow-hidden rounded-2xl border border-border">
+          <table className="w-full text-left text-sm">
+            <tbody className="divide-y divide-border">
+              {config.timelineItems.map((item, i) => (
+                <tr key={i} className="odd:bg-cream even:bg-navy-deep/[0.03]">
+                  <th scope="row" className="w-1/2 px-5 py-3 font-medium text-navy-deep">
+                    {item.label}
+                  </th>
+                  <td className="px-5 py-3 text-muted-foreground">{item.value}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        {config.timelineNote && (
+          <p className="mt-4 text-sm text-muted-foreground">{config.timelineNote}</p>
+        )}
+      </div>
+    </section>
+  );
+}
+
+function LPDocuments({ config }: { config: LPConfig }) {
+  if (!config.documents || config.documents.length === 0) return null;
+  return (
+    <section className="bg-cream pb-16 lg:pb-20">
+      <div className="mx-auto max-w-3xl px-6 lg:px-10">
+        <h2 className="font-serif text-3xl leading-tight text-navy-deep text-balance sm:text-4xl">
+          {config.documentsTitle ?? "Documentos necessários"}
+        </h2>
+        <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+          {config.documents.map((doc, i) => (
+            <li key={i} className="flex items-start gap-3 text-muted-foreground">
+              <CheckCircle className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+              {doc}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
+function LPMistakes({ config }: { config: LPConfig }) {
+  if (!config.commonMistakes || config.commonMistakes.length === 0) return null;
+  return (
+    <section className="bg-cream pb-16 lg:pb-20">
+      <div className="mx-auto max-w-3xl px-6 lg:px-10">
+        <h2 className="font-serif text-3xl leading-tight text-navy-deep text-balance sm:text-4xl">
+          {config.mistakesTitle ?? "Erros comuns"}
+        </h2>
+        <ul className="mt-8 space-y-4">
+          {config.commonMistakes.map((mistake, i) => (
+            <li key={i} className="flex items-start gap-3 text-muted-foreground">
+              <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-red-400" />
+              {mistake}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
+function LPInlineCTA({ text, buttonText }: { text: string; buttonText?: string }) {
+  const { open: openWhatsAppModal } = useWhatsAppModal();
+  return (
+    <section className="bg-cream pb-16 lg:pb-20">
+      <div className="mx-auto max-w-3xl px-6 lg:px-10">
+        <div className="flex flex-col items-center justify-between gap-4 rounded-2xl border border-gold/20 bg-navy-deep/[0.03] px-6 py-5 sm:flex-row">
+          <p className="text-sm font-medium text-navy-deep">{text}</p>
+          <button
+            onClick={openWhatsAppModal}
+            className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition-all hover:bg-gold-soft"
+          >
+            <MessageCircle className="h-4 w-4" />
+            {buttonText ?? "Falar com um especialista"}
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function LPReviewedBy({ config }: { config: LPConfig }) {
+  if (!config.reviewedBy) return null;
+  const { name, role, credential, photo } = config.reviewedBy;
+  return (
+    <section className="bg-cream pb-16 lg:pb-20">
+      <div className="mx-auto max-w-3xl px-6 lg:px-10">
+        <div className="flex items-center gap-4 rounded-2xl border border-border p-5">
+          {photo && (
+            <img
+              src={photo}
+              alt={name}
+              className="h-14 w-14 shrink-0 rounded-full object-cover"
+            />
+          )}
+          <div>
+            <p className="text-xs uppercase tracking-wider text-gold">Conteúdo revisado por</p>
+            <p className="font-serif text-lg text-navy-deep">{name}</p>
+            <p className="text-sm text-muted-foreground">
+              {role}
+              {credential ? ` — ${credential}` : ""}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function LPRelatedLinks({ config }: { config: LPConfig }) {
+  if (!config.relatedLinks || config.relatedLinks.length === 0) return null;
+  return (
+    <section className="bg-cream pb-16 lg:pb-20">
+      <div className="mx-auto max-w-3xl px-6 lg:px-10">
+        <p className="text-sm text-muted-foreground">
+          Veja também:{" "}
+          {config.relatedLinks.map((l, i) => (
+            <span key={l.href}>
+              <a href={l.href} className="text-gold underline hover:text-gold-soft">
+                {l.label}
+              </a>
+              {i < config.relatedLinks!.length - 1 ? " · " : ""}
+            </span>
+          ))}
+        </p>
       </div>
     </section>
   );

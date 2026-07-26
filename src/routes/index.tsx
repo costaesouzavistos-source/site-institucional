@@ -51,7 +51,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Especialistas em visto americano (B1/B2, F1, J1). +3.300 vistos aprovados. Sede em Anápolis-GO, atendimento remoto em todo o Brasil.",
+          "Especialistas em visto americano (B1/B2, F1, J1). +16.300 vistos aprovados. Sede em Anápolis-GO, atendimento remoto em todo o Brasil.",
       },
       {
         name: "keywords",
@@ -65,7 +65,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Seu visto aprovado. A viagem dos sonhos começa aqui. +3.300 aprovações. Atendimento em todo o Brasil.",
+          "Seu visto aprovado. A viagem dos sonhos começa aqui. +16.300 aprovações. Atendimento em todo o Brasil.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: siteUrl },

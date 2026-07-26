@@ -9,8 +9,8 @@ const specialists = [
     photo: "/images/optimized/foto-lucas.jpeg",
     imageZoom: "scale-[1.4]",
     imagePosition: "object-center",
-    // PLACEHOLDER: ajustar anos de experiência e formação conforme dados reais.
-    experience: "+12 anos",
+    // PLACEHOLDER: ajustar formação conforme dados reais.
+    experience: "+10 anos",
     education: "Formação em Direito e Relações Internacionais",
     bio: "Acompanha famílias e empresários em todo o processo de visto americano, do diagnóstico inicial à aprovação. Focado em estratégia, preparação para entrevista e análise de negativas.",
   },
@@ -88,7 +88,7 @@ export function AboutTeam() {
                     </div>
                     <div className="flex items-start gap-2">
                       <Award className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-                      <span>+3.300 vistos acompanhados e aprovados</span>
+                      <span>+16.300 vistos acompanhados e aprovados</span>
                     </div>
                   </div>
 

@@ -13,7 +13,9 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AssessoriaVistoAmericanoRouteImport } from './routes/assessoria-visto-americano'
 import { Route as ComoTirarVistoAmericanoRouteImport } from './routes/como-tirar-visto-americano'
 import { Route as DocumentosVistoAmericanoRouteImport } from './routes/documentos-visto-americano'
+import { Route as Ds160RouteImport } from './routes/ds-160'
 import { Route as EspecialistaVistoAmericanoRouteImport } from './routes/especialista-visto-americano'
+import { Route as QuantoCustaVistoAmericanoRouteImport } from './routes/quanto-custa-visto-americano'
 import { Route as RenovarVistoAmericanoRouteImport } from './routes/renovar-visto-americano'
 import { Route as VistoAmericanoCriancasRouteImport } from './routes/visto-americano-criancas'
 import { Route as VistoAmericanoFamiliaRouteImport } from './routes/visto-americano-familia'
@@ -43,10 +45,21 @@ const DocumentosVistoAmericanoRoute =
     path: '/documentos-visto-americano',
     getParentRoute: () => rootRouteImport,
   } as any)
+const Ds160Route = Ds160RouteImport.update({
+  id: '/ds-160',
+  path: '/ds-160',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EspecialistaVistoAmericanoRoute =
   EspecialistaVistoAmericanoRouteImport.update({
     id: '/especialista-visto-americano',
     path: '/especialista-visto-americano',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const QuantoCustaVistoAmericanoRoute =
+  QuantoCustaVistoAmericanoRouteImport.update({
+    id: '/quanto-custa-visto-americano',
+    path: '/quanto-custa-visto-americano',
     getParentRoute: () => rootRouteImport,
   } as any)
 const RenovarVistoAmericanoRoute = RenovarVistoAmericanoRouteImport.update({
@@ -85,7 +98,9 @@ export interface FileRoutesByFullPath {
   '/assessoria-visto-americano': typeof AssessoriaVistoAmericanoRoute
   '/como-tirar-visto-americano': typeof ComoTirarVistoAmericanoRoute
   '/documentos-visto-americano': typeof DocumentosVistoAmericanoRoute
+  '/ds-160': typeof Ds160Route
   '/especialista-visto-americano': typeof EspecialistaVistoAmericanoRoute
+  '/quanto-custa-visto-americano': typeof QuantoCustaVistoAmericanoRoute
   '/renovar-visto-americano': typeof RenovarVistoAmericanoRoute
   '/visto-americano-criancas': typeof VistoAmericanoCriancasRoute
   '/visto-americano-familia': typeof VistoAmericanoFamiliaRoute
@@ -98,7 +113,9 @@ export interface FileRoutesByTo {
   '/assessoria-visto-americano': typeof AssessoriaVistoAmericanoRoute
   '/como-tirar-visto-americano': typeof ComoTirarVistoAmericanoRoute
   '/documentos-visto-americano': typeof DocumentosVistoAmericanoRoute
+  '/ds-160': typeof Ds160Route
   '/especialista-visto-americano': typeof EspecialistaVistoAmericanoRoute
+  '/quanto-custa-visto-americano': typeof QuantoCustaVistoAmericanoRoute
   '/renovar-visto-americano': typeof RenovarVistoAmericanoRoute
   '/visto-americano-criancas': typeof VistoAmericanoCriancasRoute
   '/visto-americano-familia': typeof VistoAmericanoFamiliaRoute
@@ -112,7 +129,9 @@ export interface FileRoutesById {
   '/assessoria-visto-americano': typeof AssessoriaVistoAmericanoRoute
   '/como-tirar-visto-americano': typeof ComoTirarVistoAmericanoRoute
   '/documentos-visto-americano': typeof DocumentosVistoAmericanoRoute
+  '/ds-160': typeof Ds160Route
   '/especialista-visto-americano': typeof EspecialistaVistoAmericanoRoute
+  '/quanto-custa-visto-americano': typeof QuantoCustaVistoAmericanoRoute
   '/renovar-visto-americano': typeof RenovarVistoAmericanoRoute
   '/visto-americano-criancas': typeof VistoAmericanoCriancasRoute
   '/visto-americano-familia': typeof VistoAmericanoFamiliaRoute
@@ -127,7 +146,9 @@ export interface FileRouteTypes {
     | '/assessoria-visto-americano'
     | '/como-tirar-visto-americano'
     | '/documentos-visto-americano'
+    | '/ds-160'
     | '/especialista-visto-americano'
+    | '/quanto-custa-visto-americano'
     | '/renovar-visto-americano'
     | '/visto-americano-criancas'
     | '/visto-americano-familia'
@@ -140,7 +161,9 @@ export interface FileRouteTypes {
     | '/assessoria-visto-americano'
     | '/como-tirar-visto-americano'
     | '/documentos-visto-americano'
+    | '/ds-160'
     | '/especialista-visto-americano'
+    | '/quanto-custa-visto-americano'
     | '/renovar-visto-americano'
     | '/visto-americano-criancas'
     | '/visto-americano-familia'
@@ -153,7 +176,9 @@ export interface FileRouteTypes {
     | '/assessoria-visto-americano'
     | '/como-tirar-visto-americano'
     | '/documentos-visto-americano'
+    | '/ds-160'
     | '/especialista-visto-americano'
+    | '/quanto-custa-visto-americano'
     | '/renovar-visto-americano'
     | '/visto-americano-criancas'
     | '/visto-americano-familia'
@@ -167,7 +192,9 @@ export interface RootRouteChildren {
   AssessoriaVistoAmericanoRoute: typeof AssessoriaVistoAmericanoRoute
   ComoTirarVistoAmericanoRoute: typeof ComoTirarVistoAmericanoRoute
   DocumentosVistoAmericanoRoute: typeof DocumentosVistoAmericanoRoute
+  Ds160Route: typeof Ds160Route
   EspecialistaVistoAmericanoRoute: typeof EspecialistaVistoAmericanoRoute
+  QuantoCustaVistoAmericanoRoute: typeof QuantoCustaVistoAmericanoRoute
   RenovarVistoAmericanoRoute: typeof RenovarVistoAmericanoRoute
   VistoAmericanoCriancasRoute: typeof VistoAmericanoCriancasRoute
   VistoAmericanoFamiliaRoute: typeof VistoAmericanoFamiliaRoute
@@ -206,11 +233,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DocumentosVistoAmericanoRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ds-160': {
+      id: '/ds-160'
+      path: '/ds-160'
+      fullPath: '/ds-160'
+      preLoaderRoute: typeof Ds160RouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/especialista-visto-americano': {
       id: '/especialista-visto-americano'
       path: '/especialista-visto-americano'
       fullPath: '/especialista-visto-americano'
       preLoaderRoute: typeof EspecialistaVistoAmericanoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/quanto-custa-visto-americano': {
+      id: '/quanto-custa-visto-americano'
+      path: '/quanto-custa-visto-americano'
+      fullPath: '/quanto-custa-visto-americano'
+      preLoaderRoute: typeof QuantoCustaVistoAmericanoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/renovar-visto-americano': {
@@ -263,7 +304,9 @@ const rootRouteChildren: RootRouteChildren = {
   AssessoriaVistoAmericanoRoute: AssessoriaVistoAmericanoRoute,
   ComoTirarVistoAmericanoRoute: ComoTirarVistoAmericanoRoute,
   DocumentosVistoAmericanoRoute: DocumentosVistoAmericanoRoute,
+  Ds160Route: Ds160Route,
   EspecialistaVistoAmericanoRoute: EspecialistaVistoAmericanoRoute,
+  QuantoCustaVistoAmericanoRoute: QuantoCustaVistoAmericanoRoute,
   RenovarVistoAmericanoRoute: RenovarVistoAmericanoRoute,
   VistoAmericanoCriancasRoute: VistoAmericanoCriancasRoute,
   VistoAmericanoFamiliaRoute: VistoAmericanoFamiliaRoute,

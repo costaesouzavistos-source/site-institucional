@@ -50,7 +50,7 @@ export function Hero({
   ),
   subtitle = (
     <>
-      Mais de <strong className="text-gold-soft">3.300 vistos aprovados</strong> para famílias
+      Mais de <strong className="text-gold-soft">16.300 vistos aprovados</strong> para famílias
       brasileiras. Assessoria especializada de Anápolis para todo o Brasil, 100% remota, do primeiro
       formulário ao carimbo no passaporte.
     </>
