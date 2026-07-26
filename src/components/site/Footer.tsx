@@ -120,6 +120,16 @@ export function Footer() {
                 Atendimento em Anápolis
               </a>
             </li>
+            <li>
+              <a href="/visto-americano-turismo-negocios" className="hover:text-gold">
+                Visto de turismo e negócios (B1/B2)
+              </a>
+            </li>
+            <li>
+              <a href="/visto-americano-estudante" className="hover:text-gold">
+                Visto de estudante (F1)
+              </a>
+            </li>
           </ul>
         </div>
 

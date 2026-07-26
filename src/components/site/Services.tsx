@@ -14,7 +14,7 @@ const services = [
     tag: "B1/B2",
     title: "Turismo | Negócios",
     desc: "Visto americano para viagem em família, férias, compras ou negócios a curto prazo. Preenchimento estratégico e assinatura do DS-160, treinamento com simulação real para a entrevista.",
-    href: "/assessoria-visto-americano",
+    href: "/visto-americano-turismo-negocios",
   },
   {
     icon: RefreshCw,
@@ -35,7 +35,7 @@ const services = [
     tag: "F1",
     title: "Estudante",
     desc: "Universidades, high school, intercâmbio e cursos de idiomas. Suporte completo do formulário I-20 ao treinamento para a entrevista consular.",
-    href: "/assessoria-visto-americano",
+    href: "/visto-americano-estudante",
   },
 ];
 

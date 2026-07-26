@@ -19,8 +19,10 @@ import { Route as QuantoCustaVistoAmericanoRouteImport } from './routes/quanto-c
 import { Route as RenovarVistoAmericanoRouteImport } from './routes/renovar-visto-americano'
 import { Route as VistoAmericanoAnapolisRouteImport } from './routes/visto-americano-anapolis'
 import { Route as VistoAmericanoCriancasRouteImport } from './routes/visto-americano-criancas'
+import { Route as VistoAmericanoEstudanteRouteImport } from './routes/visto-americano-estudante'
 import { Route as VistoAmericanoFamiliaRouteImport } from './routes/visto-americano-familia'
 import { Route as VistoAmericanoNegadoRouteImport } from './routes/visto-americano-negado'
+import { Route as VistoAmericanoTurismoNegociosRouteImport } from './routes/visto-americano-turismo-negocios'
 import { Route as VistoNegado214bRouteImport } from './routes/visto-negado-214b'
 
 const IndexRoute = IndexRouteImport.update({
@@ -77,6 +79,11 @@ const VistoAmericanoCriancasRoute = VistoAmericanoCriancasRouteImport.update({
   path: '/visto-americano-criancas',
   getParentRoute: () => rootRouteImport,
 } as any)
+const VistoAmericanoEstudanteRoute = VistoAmericanoEstudanteRouteImport.update({
+  id: '/visto-americano-estudante',
+  path: '/visto-americano-estudante',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const VistoAmericanoFamiliaRoute = VistoAmericanoFamiliaRouteImport.update({
   id: '/visto-americano-familia',
   path: '/visto-americano-familia',
@@ -87,6 +94,12 @@ const VistoAmericanoNegadoRoute = VistoAmericanoNegadoRouteImport.update({
   path: '/visto-americano-negado',
   getParentRoute: () => rootRouteImport,
 } as any)
+const VistoAmericanoTurismoNegociosRoute =
+  VistoAmericanoTurismoNegociosRouteImport.update({
+    id: '/visto-americano-turismo-negocios',
+    path: '/visto-americano-turismo-negocios',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const VistoNegado214bRoute = VistoNegado214bRouteImport.update({
   id: '/visto-negado-214b',
   path: '/visto-negado-214b',
@@ -104,8 +117,10 @@ export interface FileRoutesByFullPath {
   '/renovar-visto-americano': typeof RenovarVistoAmericanoRoute
   '/visto-americano-anapolis': typeof VistoAmericanoAnapolisRoute
   '/visto-americano-criancas': typeof VistoAmericanoCriancasRoute
+  '/visto-americano-estudante': typeof VistoAmericanoEstudanteRoute
   '/visto-americano-familia': typeof VistoAmericanoFamiliaRoute
   '/visto-americano-negado': typeof VistoAmericanoNegadoRoute
+  '/visto-americano-turismo-negocios': typeof VistoAmericanoTurismoNegociosRoute
   '/visto-negado-214b': typeof VistoNegado214bRoute
 }
 export interface FileRoutesByTo {
@@ -119,8 +134,10 @@ export interface FileRoutesByTo {
   '/renovar-visto-americano': typeof RenovarVistoAmericanoRoute
   '/visto-americano-anapolis': typeof VistoAmericanoAnapolisRoute
   '/visto-americano-criancas': typeof VistoAmericanoCriancasRoute
+  '/visto-americano-estudante': typeof VistoAmericanoEstudanteRoute
   '/visto-americano-familia': typeof VistoAmericanoFamiliaRoute
   '/visto-americano-negado': typeof VistoAmericanoNegadoRoute
+  '/visto-americano-turismo-negocios': typeof VistoAmericanoTurismoNegociosRoute
   '/visto-negado-214b': typeof VistoNegado214bRoute
 }
 export interface FileRoutesById {
@@ -135,8 +152,10 @@ export interface FileRoutesById {
   '/renovar-visto-americano': typeof RenovarVistoAmericanoRoute
   '/visto-americano-anapolis': typeof VistoAmericanoAnapolisRoute
   '/visto-americano-criancas': typeof VistoAmericanoCriancasRoute
+  '/visto-americano-estudante': typeof VistoAmericanoEstudanteRoute
   '/visto-americano-familia': typeof VistoAmericanoFamiliaRoute
   '/visto-americano-negado': typeof VistoAmericanoNegadoRoute
+  '/visto-americano-turismo-negocios': typeof VistoAmericanoTurismoNegociosRoute
   '/visto-negado-214b': typeof VistoNegado214bRoute
 }
 export interface FileRouteTypes {
@@ -152,8 +171,10 @@ export interface FileRouteTypes {
     | '/renovar-visto-americano'
     | '/visto-americano-anapolis'
     | '/visto-americano-criancas'
+    | '/visto-americano-estudante'
     | '/visto-americano-familia'
     | '/visto-americano-negado'
+    | '/visto-americano-turismo-negocios'
     | '/visto-negado-214b'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -167,8 +188,10 @@ export interface FileRouteTypes {
     | '/renovar-visto-americano'
     | '/visto-americano-anapolis'
     | '/visto-americano-criancas'
+    | '/visto-americano-estudante'
     | '/visto-americano-familia'
     | '/visto-americano-negado'
+    | '/visto-americano-turismo-negocios'
     | '/visto-negado-214b'
   id:
     | '__root__'
@@ -182,8 +205,10 @@ export interface FileRouteTypes {
     | '/renovar-visto-americano'
     | '/visto-americano-anapolis'
     | '/visto-americano-criancas'
+    | '/visto-americano-estudante'
     | '/visto-americano-familia'
     | '/visto-americano-negado'
+    | '/visto-americano-turismo-negocios'
     | '/visto-negado-214b'
   fileRoutesById: FileRoutesById
 }
@@ -198,8 +223,10 @@ export interface RootRouteChildren {
   RenovarVistoAmericanoRoute: typeof RenovarVistoAmericanoRoute
   VistoAmericanoAnapolisRoute: typeof VistoAmericanoAnapolisRoute
   VistoAmericanoCriancasRoute: typeof VistoAmericanoCriancasRoute
+  VistoAmericanoEstudanteRoute: typeof VistoAmericanoEstudanteRoute
   VistoAmericanoFamiliaRoute: typeof VistoAmericanoFamiliaRoute
   VistoAmericanoNegadoRoute: typeof VistoAmericanoNegadoRoute
+  VistoAmericanoTurismoNegociosRoute: typeof VistoAmericanoTurismoNegociosRoute
   VistoNegado214bRoute: typeof VistoNegado214bRoute
 }
 
@@ -275,6 +302,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof VistoAmericanoCriancasRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/visto-americano-estudante': {
+      id: '/visto-americano-estudante'
+      path: '/visto-americano-estudante'
+      fullPath: '/visto-americano-estudante'
+      preLoaderRoute: typeof VistoAmericanoEstudanteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/visto-americano-familia': {
       id: '/visto-americano-familia'
       path: '/visto-americano-familia'
@@ -287,6 +321,13 @@ declare module '@tanstack/react-router' {
       path: '/visto-americano-negado'
       fullPath: '/visto-americano-negado'
       preLoaderRoute: typeof VistoAmericanoNegadoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/visto-americano-turismo-negocios': {
+      id: '/visto-americano-turismo-negocios'
+      path: '/visto-americano-turismo-negocios'
+      fullPath: '/visto-americano-turismo-negocios'
+      preLoaderRoute: typeof VistoAmericanoTurismoNegociosRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/visto-negado-214b': {
@@ -310,8 +351,10 @@ const rootRouteChildren: RootRouteChildren = {
   RenovarVistoAmericanoRoute: RenovarVistoAmericanoRoute,
   VistoAmericanoAnapolisRoute: VistoAmericanoAnapolisRoute,
   VistoAmericanoCriancasRoute: VistoAmericanoCriancasRoute,
+  VistoAmericanoEstudanteRoute: VistoAmericanoEstudanteRoute,
   VistoAmericanoFamiliaRoute: VistoAmericanoFamiliaRoute,
   VistoAmericanoNegadoRoute: VistoAmericanoNegadoRoute,
+  VistoAmericanoTurismoNegociosRoute: VistoAmericanoTurismoNegociosRoute,
   VistoNegado214bRoute: VistoNegado214bRoute,
 }
 export const routeTree = rootRouteImport
