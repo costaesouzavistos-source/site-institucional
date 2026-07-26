@@ -1,5 +1,4 @@
 import { createLPRoute } from "@/components/site/LPPage";
-import imgConsulado from "/images/optimized/IMG_2270.JPG.jpg";
 
 export const Route = createLPRoute({
   slug: "visto-americano-negado",
@@ -19,8 +18,10 @@ export const Route = createLPRoute({
   heroHighlight: "Vamos entender o que aconteceu",
   heroSubtitle:
     "Negativa não é o fim. Analisamos o motivo da recusa, corrigimos os pontos fracos e preparamos você para retornar ao consulado com um caso muito mais sólido.",
-  heroImage: imgConsulado,
-  heroImageAlt: "Pessoa preocupada com documentos de visto negado",
+  heroImage: "/images/lps-images/09-negado-hero.jpg",
+  heroImageAlt: "Pessoa avaliando os próximos passos após visto negado",
+  problemImage: "/images/lps-images/09-negado-problem.jpg",
+  problemImageAlt: "Motivos comuns de negativa de visto americano",
 
   lastUpdated: "julho de 2026",
   summary:

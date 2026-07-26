@@ -1,5 +1,4 @@
 import { createLPRoute } from "@/components/site/LPPage";
-import heroFamily from "@/assets/hero-family.jpg";
 
 export const Route = createLPRoute({
   slug: "visto-americano-criancas",
@@ -18,8 +17,10 @@ export const Route = createLPRoute({
   heroHighlight: "do bebê ao adolescente",
   heroSubtitle:
     "Crianças e bebês também precisam de visto para os Estados Unidos. Cuidamos da documentação específica, autorizações e todo o acompanhamento dos responsáveis.",
-  heroImage: heroFamily,
+  heroImage: "/images/lps-images/06-criancas-hero.jpg",
   heroImageAlt: "Criança com passaporte para viagem aos Estados Unidos",
+  problemImage: "/images/lps-images/06-criancas-problem.jpg",
+  problemImageAlt: "Cuidados especiais no visto americano para crianças",
 
   lastUpdated: "julho de 2026",
   summary:

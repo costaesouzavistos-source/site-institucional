@@ -1,5 +1,4 @@
 import { createLPRoute } from "@/components/site/LPPage";
-import passport from "@/assets/passport.jpg";
 
 export const Route = createLPRoute({
   slug: "visto-americano-goiania",
@@ -19,8 +18,10 @@ export const Route = createLPRoute({
   heroHighlight: "atendimento online, especialista real",
   heroSubtitle:
     "Você mora em Goiânia ou em qualquer cidade de Goiás e quer tirar o visto americano? Nossa assessoria é 100% remota, com acompanhamento humano do início ao fim.",
-  heroImage: passport,
-  heroImageAlt: "Goiânia ao entardecer, atendimento de visto americano online",
+  heroImage: "/images/lps-images/08-goiania-hero.jpg",
+  heroImageAlt: "Assessoria de visto americano para moradores de Goiânia",
+  problemImage: "/images/lps-images/08-goiania-problem.jpg",
+  problemImageAlt: "Desafios do visto americano para quem mora fora da capital",
 
   lastUpdated: "julho de 2026",
   summary:

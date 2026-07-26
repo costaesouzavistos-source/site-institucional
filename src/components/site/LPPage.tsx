@@ -30,6 +30,8 @@ export interface LPConfig {
 
   problemTitle: string;
   problemPoints: string[];
+  problemImage?: string;
+  problemImageAlt?: string;
 
   solutionTitle: string;
   solutionPoints: string[];
@@ -556,8 +558,8 @@ function LPProblem({ config }: { config: LPConfig }) {
             className="relative overflow-hidden rounded-2xl bg-navy-deep"
           >
             <img
-              src={config.heroImage}
-              alt={config.heroImageAlt}
+              src={config.problemImage ?? config.heroImage}
+              alt={config.problemImageAlt ?? config.heroImageAlt}
               className="h-full w-full object-cover opacity-40"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/80 to-transparent" />

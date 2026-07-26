@@ -1,5 +1,4 @@
 import { createLPRoute } from "@/components/site/LPPage";
-import passport from "@/assets/passport.jpg";
 
 export const Route = createLPRoute({
   slug: "como-tirar-visto-americano",
@@ -19,8 +18,10 @@ export const Route = createLPRoute({
   heroHighlight: "guia completo em 7 passos",
   heroSubtitle:
     "Do formulário DS-160 à entrevista consular: entenda cada etapa, quanto custa e quanto tempo demora antes de começar o processo.",
-  heroImage: passport,
-  heroImageAlt: "Planejamento de viagem para os Estados Unidos",
+  heroImage: "/images/lps-images/02-como-tirar-hero.jpg",
+  heroImageAlt: "Planejamento do processo de visto americano passo a passo",
+  problemImage: "/images/lps-images/02-como-tirar-problem.jpg",
+  problemImageAlt: "Etapas do processo de visto americano que exigem atenção",
 
   lastUpdated: "julho de 2026",
   summary:

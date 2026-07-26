@@ -1,5 +1,4 @@
 import { createLPRoute } from "@/components/site/LPPage";
-import jaqueline from "/images/optimized/IMG_5787-avatar.jpg";
 
 export const Route = createLPRoute({
   slug: "especialista-visto-americano",
@@ -19,8 +18,10 @@ export const Route = createLPRoute({
   heroHighlight: "em todas as etapas",
   heroSubtitle:
     "Nossos especialistas analisam seu perfil, montam a estratégia e preparam você para a entrevista consular. Atendimento humano, direto e sem enrolação.",
-  heroImage: jaqueline,
+  heroImage: "/images/lps-images/04-especialista-hero.jpg",
   heroImageAlt: "Especialista em visto americano atendendo cliente",
+  problemImage: "/images/lps-images/04-especialista-problem.jpg",
+  problemImageAlt: "Falta de orientação especializada custando caro no processo de visto",
 
   lastUpdated: "julho de 2026",
   summary:

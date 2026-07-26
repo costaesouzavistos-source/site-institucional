@@ -1,5 +1,4 @@
 import { createLPRoute } from "@/components/site/LPPage";
-import passport from "@/assets/passport.jpg";
 
 export const Route = createLPRoute({
   slug: "documentos-visto-americano",
@@ -19,8 +18,10 @@ export const Route = createLPRoute({
   heroHighlight: "organizados e aprovados",
   heroSubtitle:
     "A documentação certa é metade do caminho. Listamos o que você precisa, o que pode reforçar seu caso e como apresentar tudo na entrevista.",
-  heroImage: passport,
+  heroImage: "/images/lps-images/03-documentos-hero.jpg",
   heroImageAlt: "Documentos organizados para visto americano",
+  problemImage: "/images/lps-images/03-documentos-problem.jpg",
+  problemImageAlt: "Documentação incompleta como causa comum de negativa de visto",
 
   lastUpdated: "julho de 2026",
   summary:

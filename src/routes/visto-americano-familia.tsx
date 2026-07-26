@@ -1,5 +1,4 @@
 import { createLPRoute } from "@/components/site/LPPage";
-import heroFamily from "@/assets/hero-family.jpg";
 
 export const Route = createLPRoute({
   slug: "visto-americano-familia",
@@ -19,8 +18,10 @@ export const Route = createLPRoute({
   heroHighlight: "todos juntos, todos aprovados",
   heroSubtitle:
     "Viajar em família para os Estados Unidos exige planejamento. Cada membro tem seu próprio DS-160 e sua própria taxa — mas a estratégia pode ser pensada em conjunto.",
-  heroImage: heroFamily,
+  heroImage: "/images/lps-images/07-familia-hero.jpg",
   heroImageAlt: "Família brasileira planejando viagem para os Estados Unidos",
+  problemImage: "/images/lps-images/07-familia-problem.jpg",
+  problemImageAlt: "Particularidades do visto americano para famílias",
 
   lastUpdated: "julho de 2026",
   summary:
