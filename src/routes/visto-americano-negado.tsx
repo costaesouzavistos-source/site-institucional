@@ -87,13 +87,13 @@ export const Route = createLPRoute({
 
   relatedLinks: [
     { label: "Entenda a negativa por 214(b)", href: "/visto-negado-214b" },
-    { label: "Documentos necessários para o visto", href: "/documentos-visto-americano" },
+    { label: "Fale com um especialista", href: "/especialista-visto-americano" },
   ],
 
   faqs: [
     {
       q: "Posso solicitar o visto novamente após uma negativa?",
-      a: "Sim. Não existe prazo mínimo obrigatório, mas é importante só retornar ao consulado quando o caso estiver realmente mais forte.",
+      a: "Sim. Não existe prazo mínimo obrigatório para reaplicar, mas é importante só retornar ao consulado quando o caso estiver realmente mais forte.",
     },
     {
       q: "Quanto tempo devo esperar para tentar de novo?",

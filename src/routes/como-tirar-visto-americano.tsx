@@ -119,8 +119,8 @@ export const Route = createLPRoute({
   },
 
   relatedLinks: [
-    { label: "Quais documentos você precisa reunir", href: "/documentos-visto-americano" },
-    { label: "Como renovar visto pelo Dropbox", href: "/renovar-visto-americano" },
+    { label: "Fale com um especialista", href: "/especialista-visto-americano" },
+    { label: "Visto americano negado: o que fazer", href: "/visto-americano-negado" },
   ],
 
   timelineTitle: "Quanto tempo demora",

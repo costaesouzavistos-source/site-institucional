@@ -3,7 +3,7 @@ import { Instagram, Facebook, Mail, MapPin, Phone } from "lucide-react";
 export function Footer() {
   return (
     <footer className="border-t border-gold/20 bg-navy-deep text-cream/80">
-      <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-10 px-6 py-16 sm:grid-cols-2 lg:grid-cols-4 lg:px-10">
+      <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-10 px-6 py-16 sm:grid-cols-2 lg:grid-cols-5 lg:px-10">
         <div>
           <img
             src="/logo-definitiva-transparente.png"
@@ -57,6 +57,67 @@ export function Footer() {
             <li>
               <a href="#faq" className="hover:text-gold">
                 Perguntas frequentes
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div className="mb-4 text-xs uppercase tracking-[0.25em] text-gold">Guias sobre o visto</div>
+          <ul className="space-y-2 text-sm">
+            <li>
+              <a href="/assessoria-visto-americano" className="hover:text-gold">
+                Assessoria completa
+              </a>
+            </li>
+            <li>
+              <a href="/como-tirar-visto-americano" className="hover:text-gold">
+                Como tirar o visto
+              </a>
+            </li>
+            <li>
+              <a href="/quanto-custa-visto-americano" className="hover:text-gold">
+                Quanto custa o visto
+              </a>
+            </li>
+            <li>
+              <a href="/documentos-visto-americano" className="hover:text-gold">
+                Documentos necessários
+              </a>
+            </li>
+            <li>
+              <a href="/ds-160" className="hover:text-gold">
+                O que é o DS-160
+              </a>
+            </li>
+            <li>
+              <a href="/renovar-visto-americano" className="hover:text-gold">
+                Renovar o visto
+              </a>
+            </li>
+            <li>
+              <a href="/visto-americano-negado" className="hover:text-gold">
+                Visto negado: o que fazer
+              </a>
+            </li>
+            <li>
+              <a href="/visto-negado-214b" className="hover:text-gold">
+                Entenda o 214(b)
+              </a>
+            </li>
+            <li>
+              <a href="/visto-americano-familia" className="hover:text-gold">
+                Visto para família
+              </a>
+            </li>
+            <li>
+              <a href="/visto-americano-criancas" className="hover:text-gold">
+                Visto para crianças
+              </a>
+            </li>
+            <li>
+              <a href="/visto-americano-anapolis" className="hover:text-gold">
+                Atendimento em Anápolis
               </a>
             </li>
           </ul>

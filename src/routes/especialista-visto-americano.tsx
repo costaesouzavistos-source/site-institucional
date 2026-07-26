@@ -51,10 +51,10 @@ export const Route = createLPRoute({
 
   solutionTitle: "O que um especialista da Costa & Souza faz pelo seu caso",
   solutionPoints: [
-    "Diagnóstico inicial completo para B1/B2 Turismo/Negócios, F1 Estudante, Renovação (Dropbox) ou Reversão de Visto Negado (214(b)).",
+    "Análise de perfil completa para B1/B2 Turismo/Negócios, F1 Estudante, Renovação (Dropbox) ou Reversão de Visto Negado (214(b)).",
     "Plano de ação personalizado para aumentar a confiança do consulado no seu perfil.",
     "Treinamento para entrevista com as perguntas mais frequentes e como responder.",
-    "Revisão cruzada de documentos, DS-160 e comprovação de vínculos.",
+    "Revisão do DS-160 cruzada com os documentos e a comprovação de vínculos.",
     "Suporte contínuo até o dia da entrevista e após a decisão.",
   ],
 
@@ -77,8 +77,8 @@ export const Route = createLPRoute({
   },
 
   relatedLinks: [
-    { label: "Como funciona a assessoria de visto americano", href: "/assessoria-visto-americano" },
-    { label: "Como funciona o processo do visto americano", href: "/como-tirar-visto-americano" },
+    { label: "Visto americano negado: o que fazer", href: "/visto-americano-negado" },
+    { label: "Atendimento em Anápolis", href: "/visto-americano-anapolis" },
   ],
 
   faqs: [

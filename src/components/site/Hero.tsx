@@ -51,8 +51,8 @@ export function Hero({
   subtitle = (
     <>
       Mais de <strong className="text-gold-soft">16.300 vistos aprovados</strong> para famílias
-      brasileiras. Assessoria especializada de Anápolis para todo o Brasil, 100% remota, do primeiro
-      formulário ao carimbo no passaporte.
+      brasileiras. Cuidamos de todas as etapas — DS-160, documentação, CASV e entrevista
+      consular — com assessoria especializada de Anápolis para todo o Brasil, 100% remota.
     </>
   ),
   ctaText = "Fale com um Especialista",

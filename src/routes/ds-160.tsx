@@ -83,8 +83,8 @@ export const Route = createLPRoute({
   },
 
   relatedLinks: [
-    { label: "Como funciona o processo do visto americano", href: "/como-tirar-visto-americano" },
-    { label: "Quanto custa o visto americano", href: "/quanto-custa-visto-americano" },
+    { label: "Fale com um especialista", href: "/especialista-visto-americano" },
+    { label: "Visto americano negado: o que fazer", href: "/visto-americano-negado" },
   ],
 
   faqs: [

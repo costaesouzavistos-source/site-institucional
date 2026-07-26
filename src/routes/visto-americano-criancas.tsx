@@ -95,7 +95,7 @@ export const Route = createLPRoute({
 
   relatedLinks: [
     { label: "Visto americano para família", href: "/visto-americano-familia" },
-    { label: "Documentos necessários para o visto", href: "/documentos-visto-americano" },
+    { label: "Fale com um especialista", href: "/especialista-visto-americano" },
   ],
 
   faqs: [
@@ -104,12 +104,20 @@ export const Route = createLPRoute({
       a: "Sim. Todo viajante, independente da idade, precisa de visto ou ESTA para entrar nos Estados Unidos.",
     },
     {
-      q: "Criança precisa ir à entrevista no consulado?",
-      a: "Depende da idade. Bebês e crianças pequenas geralmente não precisam. Crianças maiores podem ser convocadas.",
+      q: "A entrevista infantil funciona diferente da entrevista de um adulto?",
+      a: "Sim. Quando é exigida, a entrevista infantil costuma ser mais curta e focada em confirmar a viagem e o acompanhamento dos responsáveis, não no perfil da criança em si.",
+    },
+    {
+      q: "Menor de idade precisa ir à entrevista no consulado?",
+      a: "Depende da idade. Bebês e crianças pequenas geralmente não precisam. Menores maiores podem ser convocados.",
     },
     {
       q: "O que é a autorização de viagem para menor?",
       a: "É um documento assinado pelo pai ou mãe que não acompanha a criança na viagem, autorizando a saída do país.",
+    },
+    {
+      q: "E quando os pais são separados ou divorciados?",
+      a: "A autorização do pai ou mãe que não viaja continua sendo necessária, além de documentos que comprovem a guarda e o vínculo parental de ambos.",
     },
     {
       q: "A taxa do visto é mais barata para crianças?",

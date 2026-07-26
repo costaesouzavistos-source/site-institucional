@@ -90,8 +90,8 @@ export const Route = createLPRoute({
   },
 
   relatedLinks: [
-    { label: "Quanto custa o visto americano", href: "/quanto-custa-visto-americano" },
-    { label: "Documentos necessários para o visto", href: "/documentos-visto-americano" },
+    { label: "Visto americano negado: o que fazer", href: "/visto-americano-negado" },
+    { label: "Fale com um especialista", href: "/especialista-visto-americano" },
   ],
 
   faqs: [
@@ -110,6 +110,10 @@ export const Route = createLPRoute({
     {
       q: "As regras do dropbox podem mudar de novo?",
       a: "Sim. As regras são definidas pelo Departamento de Estado dos EUA e já mudaram mais de uma vez nos últimos anos. Sempre confirme a regra vigente antes de planejar sua renovação.",
+    },
+    {
+      q: "Mesmo pelo dropbox, preciso ir ao CASV?",
+      a: "Depende do consulado e da sua idade. Alguns solicitantes ainda precisam comparecer ao CASV para coleta de biometria, mesmo quando dispensados da entrevista.",
     },
   ],
 });

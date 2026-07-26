@@ -96,16 +96,16 @@ export const Route = createLPRoute({
 
   relatedLinks: [
     { label: "Visto americano para crianças", href: "/visto-americano-criancas" },
-    { label: "Quanto custa o visto americano", href: "/quanto-custa-visto-americano" },
+    { label: "Fale com um especialista", href: "/especialista-visto-americano" },
   ],
 
   faqs: [
     {
-      q: "Crianças precisam fazer entrevista?",
-      a: "Depende da idade. Bebês e crianças pequenas geralmente não precisam. Crianças maiores podem ser convocadas conforme a regra do consulado.",
+      q: "Menores de idade precisam fazer entrevista?",
+      a: "Depende da idade. Bebês e crianças pequenas geralmente não precisam. Menores maiores podem ser convocados conforme a regra do consulado.",
     },
     {
-      q: "Posso fazer o visto da família toda junto?",
+      q: "Posso fazer o visto de todo o grupo familiar junto?",
       a: "Sim. Os pedidos podem ser vinculados e as entrevistas agendadas de forma conjunta, quando possível.",
     },
     {

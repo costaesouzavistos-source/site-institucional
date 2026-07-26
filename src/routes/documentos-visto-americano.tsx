@@ -44,8 +44,9 @@ export const Route = createLPRoute({
 
   documentsTitle: "Documentos que reforçam o seu caso",
   documents: [
-    "Comprovantes de renda: holerites, extratos bancários, declaração de Imposto de Renda",
-    "Comprovantes de vínculo com o Brasil: contrato de trabalho, matrícula escolar, imóveis",
+    "Comprovante financeiro: holerites, extratos bancários, declaração de Imposto de Renda",
+    "Comprovante de vínculo empregatício: contrato de trabalho ou declaração do empregador",
+    "Comprovantes de vínculo com o Brasil: matrícula escolar, imóveis, família",
     "Certidões (casamento, nascimento dos filhos) quando relevantes para o perfil",
     "Histórico de viagens internacionais anteriores, se houver",
     "Carta do empregador ou da empresa, em casos de viagem de negócios",
@@ -97,9 +98,8 @@ export const Route = createLPRoute({
   },
 
   relatedLinks: [
-    { label: "Como funciona o processo do visto americano", href: "/como-tirar-visto-americano" },
-    { label: "Quanto custa o visto americano", href: "/quanto-custa-visto-americano" },
-    { label: "O que é o DS-160", href: "/ds-160" },
+    { label: "Visto americano para família", href: "/visto-americano-familia" },
+    { label: "Visto americano para crianças", href: "/visto-americano-criancas" },
   ],
 
   faqs: [

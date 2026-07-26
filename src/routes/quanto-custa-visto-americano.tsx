@@ -123,8 +123,8 @@ export const Route = createLPRoute({
   },
 
   relatedLinks: [
-    { label: "Como tirar o visto americano passo a passo", href: "/como-tirar-visto-americano" },
-    { label: "Documentos necessários para o visto", href: "/documentos-visto-americano" },
+    { label: "Visto americano negado: o que fazer", href: "/visto-americano-negado" },
+    { label: "Fale com um especialista", href: "/especialista-visto-americano" },
   ],
 
   faqs: [

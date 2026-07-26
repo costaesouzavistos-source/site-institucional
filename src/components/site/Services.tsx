@@ -14,24 +14,28 @@ const services = [
     tag: "B1/B2",
     title: "Turismo | Negócios",
     desc: "Visto americano para viagem em família, férias, compras ou negócios a curto prazo. Preenchimento estratégico e assinatura do DS-160, treinamento com simulação real para a entrevista.",
+    href: "/assessoria-visto-americano",
   },
   {
     icon: RefreshCw,
     tag: "+10 anos de visto",
     title: "Renovação",
     desc: "Processo de renovação de visto americano com representação e isenção de entrevista, quando elegível. Envio e devolução do passaporte com acompanhamento seguro.",
+    href: "/renovar-visto-americano",
   },
   {
     icon: ShieldAlert,
     tag: "214(B)",
     title: "Reversão de Visto Negado",
     desc: "Análise do motivo da negativa, estruturação estratégica do perfil e defesa de reversão para retornar ao consulado com muito mais segurança.",
+    href: "/visto-negado-214b",
   },
   {
     icon: GraduationCap,
     tag: "F1",
     title: "Estudante",
     desc: "Universidades, high school, intercâmbio e cursos de idiomas. Suporte completo do formulário I-20 ao treinamento para a entrevista consular.",
+    href: "/assessoria-visto-americano",
   },
 ];
 
@@ -60,7 +64,7 @@ export function Services() {
           {services.map((s, i) => (
             <motion.a
               key={s.title}
-              href="#contato"
+              href={s.href}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}

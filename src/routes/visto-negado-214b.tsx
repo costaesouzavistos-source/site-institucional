@@ -87,7 +87,7 @@ export const Route = createLPRoute({
 
   relatedLinks: [
     { label: "Visto americano negado: o que fazer", href: "/visto-americano-negado" },
-    { label: "Como funciona o processo do visto americano", href: "/como-tirar-visto-americano" },
+    { label: "Fale com um especialista", href: "/especialista-visto-americano" },
   ],
 
   faqs: [
@@ -102,6 +102,10 @@ export const Route = createLPRoute({
     {
       q: "Quanto tempo leva para fortalecer um caso 214(b)?",
       a: "Depende da situação. Alguns casos precisam de alguns meses para organizar documentação e comprovação suficiente.",
+    },
+    {
+      q: "Como evitar uma nova negativa na próxima tentativa?",
+      a: "O ponto principal é apresentar mudanças reais desde a primeira negativa: vínculos mais claros, renda mais estável ou documentação mais completa. Repetir o mesmo caso tende a gerar o mesmo resultado.",
     },
     {
       q: "Uma nova entrevista com o mesmo perfil tem outro resultado?",

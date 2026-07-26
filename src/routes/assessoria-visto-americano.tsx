@@ -87,8 +87,8 @@ export const Route = createLPRoute({
   },
 
   relatedLinks: [
-    { label: "Como funciona o processo do visto americano", href: "/como-tirar-visto-americano" },
-    { label: "Quanto custa o visto americano", href: "/quanto-custa-visto-americano" },
+    { label: "Fale com um especialista", href: "/especialista-visto-americano" },
+    { label: "Visto americano negado: o que fazer", href: "/visto-americano-negado" },
   ],
 
   faqs: [
@@ -103,6 +103,10 @@ export const Route = createLPRoute({
     {
       q: "Atendem em todo o Brasil?",
       a: "Sim. O processo é 100% remoto, por WhatsApp e videochamada, para clientes de qualquer estado.",
+    },
+    {
+      q: "Vocês são uma empresa de visto confiável?",
+      a: "A Costa & Souza é uma consultoria especializada, com mais de 10 anos de atuação e milhares de casos acompanhados. Somos uma empresa privada e independente, sem vínculo com o consulado ou o governo americano.",
     },
     {
       q: "Quanto custa a assessoria de visto americano?",

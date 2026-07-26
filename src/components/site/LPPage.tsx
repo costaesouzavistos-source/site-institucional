@@ -73,6 +73,15 @@ export interface LPConfig {
   relatedLinks?: { label: string; href: string }[];
 }
 
+const CORE_CLUSTER: { label: string; href: string; slug: string }[] = [
+  { label: "Assessoria de visto americano", href: "/assessoria-visto-americano", slug: "assessoria-visto-americano" },
+  { label: "Como tirar o visto americano", href: "/como-tirar-visto-americano", slug: "como-tirar-visto-americano" },
+  { label: "Renovar o visto americano", href: "/renovar-visto-americano", slug: "renovar-visto-americano" },
+  { label: "O que é o DS-160", href: "/ds-160", slug: "ds-160" },
+  { label: "Quanto custa o visto americano", href: "/quanto-custa-visto-americano", slug: "quanto-custa-visto-americano" },
+  { label: "Documentos necessários para o visto", href: "/documentos-visto-americano", slug: "documentos-visto-americano" },
+];
+
 function buildLocalBusinessSchema(cfg: LPConfig) {
   return {
     "@context": "https://schema.org",
@@ -505,21 +514,39 @@ function LPReviewedBy({ config }: { config: LPConfig }) {
 }
 
 function LPRelatedLinks({ config }: { config: LPConfig }) {
-  if (!config.relatedLinks || config.relatedLinks.length === 0) return null;
+  const core = CORE_CLUSTER.filter((c) => c.slug !== config.slug);
+  const contextual = config.relatedLinks ?? [];
+  if (core.length === 0 && contextual.length === 0) return null;
+
   return (
     <section className="bg-cream pb-16 lg:pb-20">
-      <div className="mx-auto max-w-3xl px-6 lg:px-10">
-        <p className="text-sm text-muted-foreground">
-          Veja também:{" "}
-          {config.relatedLinks.map((l, i) => (
-            <span key={l.href}>
-              <a href={l.href} className="text-gold underline hover:text-gold-soft">
-                {l.label}
-              </a>
-              {i < config.relatedLinks!.length - 1 ? " · " : ""}
-            </span>
-          ))}
-        </p>
+      <div className="mx-auto max-w-3xl space-y-4 px-6 lg:px-10">
+        {core.length > 0 && (
+          <p className="text-sm text-muted-foreground">
+            <span className="font-semibold text-navy-deep">Conteúdos principais:</span>{" "}
+            {core.map((l, i) => (
+              <span key={l.href}>
+                <a href={l.href} className="text-gold underline hover:text-gold-soft">
+                  {l.label}
+                </a>
+                {i < core.length - 1 ? " · " : ""}
+              </span>
+            ))}
+          </p>
+        )}
+        {contextual.length > 0 && (
+          <p className="text-sm text-muted-foreground">
+            <span className="font-semibold text-navy-deep">Veja também:</span>{" "}
+            {contextual.map((l, i) => (
+              <span key={l.href}>
+                <a href={l.href} className="text-gold underline hover:text-gold-soft">
+                  {l.label}
+                </a>
+                {i < contextual.length - 1 ? " · " : ""}
+              </span>
+            ))}
+          </p>
+        )}
       </div>
     </section>
   );

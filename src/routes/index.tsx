@@ -10,7 +10,7 @@ import { Comparison } from "@/components/site/Comparison";
 import { WhyUs } from "@/components/site/WhyUs";
 import { Testimonials } from "@/components/site/Testimonials";
 import { Packages } from "@/components/site/Packages";
-import { FAQ } from "@/components/site/FAQ";
+import { FAQ, faqs } from "@/components/site/FAQ";
 import { ContactCTA } from "@/components/site/ContactCTA";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
@@ -40,6 +40,16 @@ const localBusinessSchema = {
   telephone: "+55-62-99285-6373",
   url: siteUrl,
   priceRange: "$$",
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
 };
 
 export const Route = createFileRoute("/")({
@@ -85,6 +95,10 @@ export const Route = createFileRoute("/")({
       {
         type: "application/ld+json",
         children: JSON.stringify(localBusinessSchema),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(faqSchema),
       },
     ],
   }),

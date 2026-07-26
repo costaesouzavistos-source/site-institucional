@@ -86,8 +86,8 @@ export const Route = createLPRoute({
   },
 
   relatedLinks: [
-    { label: "Como funciona o processo do visto americano", href: "/como-tirar-visto-americano" },
-    { label: "Assessoria de visto americano", href: "/assessoria-visto-americano" },
+    { label: "Fale com um especialista", href: "/especialista-visto-americano" },
+    { label: "Visto americano para família", href: "/visto-americano-familia" },
   ],
 
   faqs: [
