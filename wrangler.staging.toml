@@ -1,0 +1,19 @@
+name = "costa-silva-site-staging"
+compatibility_date = "2026-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+pages_build_output_dir = ".output/public"
+
+[vars]
+NODE_ENV = "staging"
+VITE_SITE_URL = "https://staging.costaesilva.com.br"
+VITE_WHATSAPP_MESSAGE = "[STAGING] Olá, gostaria de falar com um especialista em vistos americanos."
+
+[[headers]]
+for = "/*"
+[headers.values]
+X-Frame-Options = "DENY"
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "strict-origin-when-cross-origin"
+Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+X-Robots-Tag = "noindex, nofollow"

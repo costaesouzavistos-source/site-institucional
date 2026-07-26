@@ -1,0 +1,45 @@
+name = "costa-silva-site"
+compatibility_date = "2026-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Cloudflare Pages project
+pages_build_output_dir = ".output/public"
+
+[vars]
+NODE_ENV = "production"
+VITE_SITE_URL = "https://www.costaesilva.com.br"
+VITE_WHATSAPP_MESSAGE = "Olá, gostaria de falar com um especialista em vistos americanos."
+
+# Secrets (adicionar via Cloudflare Dashboard ou `wrangler secret put`):
+# VITE_WHATSAPP_NUMBER
+# VITE_GA_ID
+# VITE_GTM_ID
+# VITE_META_PIXEL_ID
+# VITE_TURNSTILE_SITE_KEY
+# LEAD_WEBHOOK_URL
+# LEAD_EMAIL
+# TURNSTILE_SECRET_KEY
+# RESEND_API_KEY
+
+[[headers]]
+for = "/*"
+[headers.values]
+X-Frame-Options = "DENY"
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "strict-origin-when-cross-origin"
+Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+
+[[headers]]
+for = "/assets/*"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/*.js"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/*.css"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
