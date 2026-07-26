@@ -1,5 +1,4 @@
 import { createLPRoute } from "@/components/site/LPPage";
-import heroFamily from "@/assets/hero-family.jpg";
 
 export const Route = createLPRoute({
   slug: "visto-americano-turismo-negocios",
@@ -19,7 +18,7 @@ export const Route = createLPRoute({
   heroHighlight: "B1/B2, o mais pedido por brasileiros",
   heroSubtitle:
     "Férias, visita à família ou uma reunião de negócios de curto prazo: o B1/B2 é a categoria mais comum de visto americano — e também a que gera mais dúvidas sobre o que ele realmente permite.",
-  heroImage: heroFamily,
+    heroImage: "/images/lps-images/11-student-university.png",
   heroImageAlt: "Família brasileira se preparando para viajar aos Estados Unidos",
 
   lastUpdated: "julho de 2026",
