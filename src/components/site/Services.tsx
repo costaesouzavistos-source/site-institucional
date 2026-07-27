@@ -48,7 +48,7 @@ export function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7 }}
-          className="max-w-2xl"
+          className="max-w-4xl"
         >
           <div className="mb-4 text-xs uppercase tracking-[0.25em] text-gold">— Tipos de Visto</div>
           <h2 className="font-serif text-4xl leading-tight text-navy-deep text-balance sm:text-5xl">

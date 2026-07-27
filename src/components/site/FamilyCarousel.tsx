@@ -55,7 +55,7 @@ export function FamilyCarousel() {
   return (
     <section className="bg-cream py-16 lg:py-24">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
-        <div className="mb-10 max-w-2xl">
+        <div className="mb-10 max-w-4xl">
           <span className="mb-3 block text-xs font-semibold uppercase tracking-[0.2em] text-gold">
             — Famílias realizadas
           </span>

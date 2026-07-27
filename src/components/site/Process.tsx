@@ -32,7 +32,7 @@ export function Process() {
   return (
     <section id="processo" className="relative bg-navy-deep py-24 text-cream lg:py-32">
       <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
-        <div className="max-w-2xl">
+        <div className="max-w-4xl">
           <div className="mb-4 text-xs uppercase tracking-[0.25em] text-gold">— Como Funciona</div>
           <h2 className="font-serif text-4xl leading-tight text-cream text-balance sm:text-5xl">
             Um processo claro, do primeiro contato ao{" "}

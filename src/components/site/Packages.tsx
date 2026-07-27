@@ -102,7 +102,7 @@ export function Packages() {
   return (
     <section id="pacotes" className="relative bg-champagne py-24 lg:py-32">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
-        <div className="max-w-2xl">
+        <div className="max-w-4xl">
           <div className="mb-4 text-xs uppercase tracking-[0.25em] text-navy-deep/70">
             — Pacotes
           </div>
