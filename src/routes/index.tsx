@@ -4,6 +4,7 @@ import { Header } from "@/components/site/Header";
 import { Hero } from "@/components/site/Hero";
 import { TrustBar } from "@/components/site/TrustBar";
 import { Services } from "@/components/site/Services";
+import { GuidesHub } from "@/components/site/GuidesHub";
 import { Process } from "@/components/site/Process";
 import { DreamInNumbers } from "@/components/site/DreamInNumbers";
 import { Comparison } from "@/components/site/Comparison";
@@ -120,6 +121,9 @@ function Index() {
           </FadeInSection>
           <FadeInSection>
             <Services />
+          </FadeInSection>
+          <FadeInSection>
+            <GuidesHub />
           </FadeInSection>
           <FadeInSection>
             <Process />

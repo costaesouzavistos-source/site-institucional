@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { HeartHandshake, ShieldCheck, Sparkles, UserCheck } from "lucide-react";
+import { Globe2, HeartHandshake, ShieldCheck, Sparkles, UserCheck } from "lucide-react";
 
 const items = [
   {
@@ -22,6 +22,11 @@ const items = [
     title: "Do DS-160 ao embarque",
     desc: "Preenchimento do formulário, equipe de suporte, simulação e treinamento para entrevista e orientações de viagem.",
   },
+  {
+    icon: Globe2,
+    title: "Suporte no Brasil e nos EUA",
+    desc: "Assessoria de um especialista tanto para quem está solicitando o visto no Brasil quanto para quem já está nos Estados Unidos durante o processo.",
+  },
 ];
 
 export function WhyUs() {
@@ -38,7 +43,7 @@ export function WhyUs() {
           </h2>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((it, i) => (
             <motion.div
               key={it.title}
