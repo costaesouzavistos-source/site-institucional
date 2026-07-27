@@ -1,5 +1,4 @@
 import { createLPRoute } from "@/components/site/LPPage";
-import passport from "@/assets/passport.jpg";
 
 export const Route = createLPRoute({
   slug: "visto-americano-estudante",
@@ -19,8 +18,10 @@ export const Route = createLPRoute({
   heroHighlight: "F1, para intercâmbio e universidade",
   heroSubtitle:
     "Curso de idioma, high school, graduação ou pós: o visto F1 tem uma etapa que a maioria esquece — o I-20, que precisa vir antes até do DS-160.",
-  heroImage: passport,
-  heroImageAlt: "Estudante brasileiro se preparando para estudar nos Estados Unidos",
+  heroImage: "/images/lps-images/12-estudante-hero.png",
+  heroImageAlt: "Estudante brasileiro no campus de uma universidade americana",
+  problemImage: "/images/lps-images/12-estudante-problem.png",
+  problemImageAlt: "Consultor orientando estudante sobre o processo do visto F1",
 
   lastUpdated: "julho de 2026",
   summary:

@@ -18,8 +18,10 @@ export const Route = createLPRoute({
   heroHighlight: "B1/B2, o mais pedido por brasileiros",
   heroSubtitle:
     "Férias, visita à família ou uma reunião de negócios de curto prazo: o B1/B2 é a categoria mais comum de visto americano — e também a que gera mais dúvidas sobre o que ele realmente permite.",
-    heroImage: "/images/lps-images/11-student-university.png",
-  heroImageAlt: "Família brasileira se preparando para viajar aos Estados Unidos",
+  heroImage: "/images/lps-images/11-turismo-negocios-hero.png",
+  heroImageAlt: "Casal brasileiro se preparando para viajar aos Estados Unidos",
+  problemImage: "/images/lps-images/11-turismo-negocios-problem.png",
+  problemImageAlt: "Consultor revisando documentos de visto B1/B2 com o cliente",
 
   lastUpdated: "julho de 2026",
   summary:
