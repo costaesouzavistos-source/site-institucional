@@ -19,7 +19,7 @@ const steps = [
   {
     n: "04",
     title: "Acompanhamento ao consulado",
-    desc: "Translado ao consulado com motorista particular(custos adicionais).",
+    desc: "Translado ao consulado com motorista particular (custos adicionais).",
   },
   {
     n: "05",
@@ -32,7 +32,7 @@ export function Process() {
   return (
     <section id="processo" className="relative bg-navy-deep py-24 text-cream lg:py-32">
       <div className="relative mx-auto max-w-[1440px] px-6 lg:px-10">
-        <div className="max-w-4xl">
+        <div className="mx-auto max-w-2xl text-center">
           <div className="mb-4 text-xs uppercase tracking-[0.25em] text-gold">— Como Funciona</div>
           <h2 className="font-serif text-4xl leading-tight text-cream text-balance sm:text-5xl">
             Um processo claro, do primeiro contato ao{" "}
@@ -40,50 +40,21 @@ export function Process() {
           </h2>
         </div>
 
-        <div className="relative mt-16">
-          {/* vertical line */}
-          <div className="absolute left-[15px] top-2 bottom-2 w-px bg-gold/30 md:left-1/2 md:-translate-x-1/2" />
-
-          <ol className="space-y-12 md:space-y-16">
-            {steps.map((s, i) => (
-              <motion.li
-                key={s.n}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-80px" }}
-                transition={{ duration: 0.7, delay: 0.05 * i }}
-                className={`relative grid grid-cols-[40px_1fr] gap-6 md:grid-cols-2 md:gap-16 ${
-                  i % 2 === 1 ? "md:[&>*:first-child]:col-start-2" : ""
-                }`}
-              >
-                <div className={`md:contents ${i % 2 === 0 ? "" : ""}`}>
-                  <div
-                    className={`hidden md:block ${
-                      i % 2 === 0 ? "md:text-right md:pr-16" : "md:order-2 md:pl-16"
-                    }`}
-                  >
-                    <div className="font-serif text-6xl text-gold/30">{s.n}</div>
-                    <h3 className="mt-2 font-serif text-2xl text-cream">{s.title}</h3>
-                    <p className="mt-3 text-sm leading-relaxed text-cream/70">{s.desc}</p>
-                  </div>
-                </div>
-
-                {/* dot */}
-                <div className="absolute left-0 top-1 grid h-8 w-8 place-items-center rounded-full border border-gold/50 bg-navy-deep text-[10px] font-semibold text-gold md:left-1/2 md:-translate-x-1/2">
-                  {s.n}
-                </div>
-
-                {/* mobile content */}
-                <div className="md:hidden">
-                  <h3 className="font-serif text-xl text-cream">{s.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-cream/70">{s.desc}</p>
-                </div>
-
-                {/* desktop spacer */}
-                <div className="hidden md:block" />
-              </motion.li>
-            ))}
-          </ol>
+        <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {steps.map((s, i) => (
+            <motion.div
+              key={s.n}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.6, delay: i * 0.08 }}
+              className="rounded-2xl border border-gold/10 bg-cream/[0.03] p-7"
+            >
+              <div className="font-serif text-4xl text-gold/40">{s.n}</div>
+              <h3 className="mt-4 font-serif text-xl text-cream">{s.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-cream/70">{s.desc}</p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

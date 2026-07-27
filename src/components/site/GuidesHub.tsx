@@ -57,7 +57,7 @@ export function GuidesHub() {
   return (
     <section className="relative bg-champagne py-24 lg:py-32">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
-        <div className="max-w-4xl">
+        <div className="mx-auto max-w-2xl text-center">
           <div className="mb-4 text-xs uppercase tracking-[0.25em] text-navy-deep/70">
             — Guias sobre Visto Americano
           </div>
