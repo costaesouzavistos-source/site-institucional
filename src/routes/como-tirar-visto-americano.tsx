@@ -121,13 +121,13 @@ export const Route = createLPRoute({
   timelineItems: [
     {
       label: "São Paulo e Brasília",
-      value: "70 a 90 dias",
+      value: "30 a 90 dias",
     },
-    { label: "Rio de Janeiro e Recife", value: "70 a 90 dias" },
-    { label: "Porto Alegre", value: "70 a 90 dias" },
+    { label: "Rio de Janeiro e Recife", value: "30 a 90 dias" },
+    { label: "Porto Alegre", value: "30 a 90 dias" },
     {
       label: "Processamento pós-entrevista",
-      value: "Alguns dias úteis; pode levar semanas em caso de revisão administrativa (221(g))",
+      value: "7 a 10 dias úteis",
     },
   ],
   timelineNote:
@@ -137,7 +137,7 @@ export const Route = createLPRoute({
   documents: [
     "Passaporte válido",
     "Confirmação do formulário DS-160 impressa",
-    "Comprovante de agendamento impresso",
+    "Comprometimento de Agendamento",
     "Comprovantes de vínculo com o Brasil (emprego, imóvel, família)",
     "Comprovantes de renda ou patrimônio",
     "Documentos específicos do visto (ex.: carta de admissão para F1, carta da empresa para negócios)",
