@@ -17,7 +17,7 @@ export const Route = createLPRoute({
   heroTitle: "Visto americano em Anápolis",
   heroHighlight: "",
   heroSubtitle:
-    "Anápolis é onde a Costa & Souza está.",
+    "Anápolis é onde a Costa & Souza está. Fale conosco pelo WhatsApp ou agende uma videochamada.",
   heroImage: "/images/lps-images/08-goiania-hero.jpg",
   heroImageAlt: "Assessoria de visto americano para moradores de Anápolis",
   problemImage: "/images/lps-images/08-goiania-problem.jpg",
