@@ -4,7 +4,7 @@ export const Route = createLPRoute({
   slug: "como-tirar-visto-americano",
   title: "Como Tirar Visto Americano em 2026: Guia Completo (7 Passos) | Costa & Souza",
   description:
-    "Passo a passo para tirar o visto americano em 2026: DS-160, taxas (US$185 + nova taxa de integridade), tempo de espera por consulado e documentos. Fale grátis com um especialista.",
+    "Passo a passo para tirar o visto americano em 2026: DS-160, taxa consular, tempo de espera por consulado e documentos. Fale grátis com um especialista.",
   keywords:
     "como tirar visto americano, passo a passo visto americano, documentos visto americano, entrevista visto americano, DS-160, CASV, quanto custa visto americano",
   ogImage: "https://costaesouza.com.br/og-image.jpg",
@@ -25,15 +25,14 @@ export const Route = createLPRoute({
 
   lastUpdated: "julho de 2026",
   summary:
-    "Tirar o visto americano envolve 3 partes: um formulário online (DS-160), o pagamento de taxas obrigatórias e uma entrevista em um consulado americano no Brasil. Nos últimos anos o processo ganhou uma taxa extra para quem tem o visto aprovado e os prazos de entrevista variam bastante entre São Paulo, Rio de Janeiro, Brasília, Recife e Porto Alegre. Este guia resume o que muda em 2026 e o que costuma pesar mais na hora da aprovação.",
+    "Tirar o visto americano envolve 3 etapas: preencher o formulário online DS-160, pagar a taxa consular obrigatória e comparecer à entrevista em um consulado americano no Brasil. Os prazos de entrevista variam entre São Paulo, Rio de Janeiro, Brasília, Recife e Porto Alegre. Este guia resume o processo e o que costuma pesar mais na hora da aprovação.",
 
   quickTable: {
     title: "Visto americano em resumo",
     rows: [
       { label: "Custo mínimo (obrigatório)", value: "US$185 — taxa MRV" },
-      { label: "Custo se o visto for aprovado", value: "+ US$250 — Taxa de Integridade de Visto" },
       { label: "Onde é feito", value: "DS-160 online + biometria no CASV + entrevista no consulado" },
-      { label: "Tempo médio de espera por entrevista", value: "30 dias a 6 meses, dependendo do consulado" },
+      { label: "Tempo médio de espera por entrevista", value: "70 a 90 dias" },
       { label: "Validade típica (B1/B2 aprovado)", value: "Até 10 anos, múltiplas entradas" },
     ],
   },
@@ -47,7 +46,7 @@ export const Route = createLPRoute({
     {
       title: "2. Preencha o formulário DS-160",
       description:
-        "É o formulário eletrônico oficial do Departamento de Estado dos EUA. Sem ele, não é possível pagar a taxa nem agendar entrevista. Cada resposta deve ser consistente com seus documentos.",
+        "É o formulário oficial para análise de informações sobre o solicitante.",
     },
     {
       title: "3. Pague a taxa MRV (US$185)",
@@ -72,21 +71,16 @@ export const Route = createLPRoute({
     {
       title: "7. Aguarde o resultado e retire o passaporte",
       description:
-        "Se aprovado, o passaporte com o visto carimbado é devolvido em alguns dias úteis (pode levar mais tempo em caso de revisão administrativa, o chamado 221(g)). É neste momento que passa a valer a nova Taxa de Integridade de Visto, quando já estiver em vigor no seu consulado.",
+        "Se aprovado, o passaporte com o visto impresso é devolvido em alguns dias úteis. O prazo pode ser maior em caso de revisão administrativa, o chamado 221(g).",
     },
   ],
 
   costTitle: "Quanto custa tirar o visto americano",
   costItems: [
     {
-      label: "Taxa MRV (DS-160)",
+      label: "Taxa MRV (taxa consular)",
       value: "US$185",
       note: "Obrigatória para qualquer solicitação. Não é reembolsável, mesmo em caso de negativa.",
-    },
-    {
-      label: "Taxa de Integridade de Visto",
-      value: "+ US$250",
-      note: "Nova taxa criada em 2025, cobrada só se o visto for aprovado. Implementação ainda irregular entre consulados em 2026.",
     },
     {
       label: "SEVIS (somente F1 / J1)",
@@ -94,9 +88,9 @@ export const Route = createLPRoute({
       note: "Paga antes do DS-160, exclusiva de vistos de estudante e intercâmbio.",
     },
     {
-      label: "Agendamento expresso (opcional, B1/B2)",
-      value: "US$750",
-      note: "Programa temporário (jul.–dez. 2026) para conseguir entrevista em até 10 dias úteis.",
+      label: "Taxa de entrega premium",
+      value: "R$ 64 por pessoa",
+      note: "Opcional, para receber o passaporte com o visto pelos Correios na comodidade da sua residência.",
     },
   ],
   costNote:
@@ -127,10 +121,10 @@ export const Route = createLPRoute({
   timelineItems: [
     {
       label: "São Paulo e Brasília",
-      value: "~1 mês para vagas recorrentes; 4 a 6 meses para o primeiro agendamento disponível",
+      value: "70 a 90 dias",
     },
-    { label: "Rio de Janeiro e Recife", value: "Normalmente menos de 30 dias" },
-    { label: "Porto Alegre", value: "Cerca de 2,5 meses" },
+    { label: "Rio de Janeiro e Recife", value: "70 a 90 dias" },
+    { label: "Porto Alegre", value: "70 a 90 dias" },
     {
       label: "Processamento pós-entrevista",
       value: "Alguns dias úteis; pode levar semanas em caso de revisão administrativa (221(g))",
@@ -141,24 +135,19 @@ export const Route = createLPRoute({
 
   documentsTitle: "Documentos necessários",
   documents: [
-    "Passaporte válido por pelo menos 6 meses além da data da viagem",
-    "Confirmação do formulário DS-160",
-    "Recibo de pagamento da taxa MRV",
-    "1 fotografia recente dentro do padrão exigido",
+    "Passaporte válido",
+    "Confirmação do formulário DS-160 impressa",
+    "Comprovante de agendamento impresso",
     "Comprovantes de vínculo com o Brasil (emprego, imóvel, família)",
     "Comprovantes de renda ou patrimônio",
-    "Itinerário ou motivo da viagem, quando aplicável",
     "Documentos específicos do visto (ex.: carta de admissão para F1, carta da empresa para negócios)",
   ],
 
   mistakesTitle: "Erros comuns que atrasam ou reprovam o visto",
   commonMistakes: [
-    "Preencher o DS-160 com informações que não conferem com os demais documentos",
-    "Memorizar respostas para a entrevista em vez de responder com naturalidade",
+    "Preencher o DS-160 com informações incoerentes ou não verdadeiras",
+    "Demonstrar insegurança na entrevista, não responder com precisão ou dar respostas incoerentes com as informações do DS-160",
     "Não comprovar vínculos suficientes com o Brasil (trabalho, família, patrimônio)",
-    "Deixar o agendamento da entrevista para última hora, sem considerar a fila do consulado",
-    "Ignorar a nova Taxa de Integridade de Visto ao planejar o orçamento da viagem",
-    "Usar comprovantes de renda desatualizados ou incompatíveis com a declaração de IR",
   ],
 
   problemTitle: "O processo de visto americano parece complexo porque realmente exige atenção",
@@ -196,11 +185,11 @@ export const Route = createLPRoute({
     },
     {
       q: "Quanto custa tirar o visto americano em 2026?",
-      a: "A taxa obrigatória (MRV) é de US$185, paga por qualquer solicitante. Se o visto for aprovado, também há a nova Taxa de Integridade de Visto de US$250, criada em 2025. Vistos de estudante (F1) e intercâmbio (J1) têm ainda a taxa SEVIS.",
+      a: "A taxa consular obrigatória (MRV) é de US$185. Vistos de estudante (F1) e intercâmbio (J1) também têm a taxa SEVIS. A entrega premium custa R$ 64 por pessoa.",
     },
     {
       q: "Quanto tempo demora para tirar visto americano?",
-      a: "Varia bastante por consulado: de menos de 30 dias no Rio e Recife a até 6 meses para o primeiro agendamento disponível em São Paulo. Depois da entrevista, o resultado costuma sair em poucos dias úteis.",
+      a: "O prazo de espera por entrevista costuma ficar entre 70 e 90 dias. Depois da entrevista, o processamento normalmente leva alguns dias úteis, salvo revisão administrativa.",
     },
     {
       q: "O que é o CASV?",

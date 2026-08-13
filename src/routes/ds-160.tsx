@@ -51,9 +51,9 @@ export const Route = createLPRoute({
   problemTitle: "Por que vale revisar o DS-160 com um especialista",
   problemPoints: [
     "Não é possível editar o formulário depois de enviado.",
-    "Inconsistências entre o DS-160 e a documentação geram perguntas na entrevista.",
+    "Inconsistência entre o DS-160, a documentação e as respostas na hora da entrevista.",
     "Cada tipo de visto tem particularidades que mudam como as perguntas devem ser respondidas.",
-    "Um formulário revisado chega mais seguro ao dia da entrevista.",
+    "Um formulário bem preenchido e revisado passa mais segurança para a análise da autoridade consular.",
   ],
 
   solutionTitle: "Como a Costa & Souza cuida do seu DS-160",

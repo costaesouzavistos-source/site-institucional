@@ -15,9 +15,9 @@ export const Route = createLPRoute({
   telephone: "+55-62-99285-6373",
 
   heroTitle: "Visto americano em Anápolis",
-  heroHighlight: "presencial na nossa sede, ou online",
+  heroHighlight: "com atendimento especializado",
   heroSubtitle:
-    "Anápolis é onde a Costa & Souza está. Se você mora aqui, pode nos visitar pessoalmente ou resolver tudo pelo WhatsApp e videochamada — como preferir.",
+    "Conte com a Costa & Souza para cuidar do seu processo de visto americano, com atendimento presencial em Anápolis ou 100% remoto.",
   heroImage: "/images/lps-images/08-goiania-hero.jpg",
   heroImageAlt: "Assessoria de visto americano para moradores de Anápolis",
   problemImage: "/images/lps-images/08-goiania-problem.jpg",

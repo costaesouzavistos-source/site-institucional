@@ -5,9 +5,9 @@ export const Route = createLPRoute({
   slug: "quanto-custa-visto-americano",
   title: "Quanto Custa o Visto Americano em 2026: Tabela Completa | Costa & Souza",
   description:
-    "Quanto custa tirar ou renovar o visto americano em 2026: taxa MRV, nova Taxa de Integridade, SEVIS e taxas extras por tipo de visto. Fale grátis com um especialista.",
+    "Quanto custa tirar ou renovar o visto americano em 2026: taxa MRV, SEVIS e entrega premium. Fale grátis com um especialista.",
   keywords:
-    "quanto custa visto americano, preço visto americano, taxa visto americano, valor visto americano, taxa MRV, taxa de integridade de visto",
+    "quanto custa visto americano, preço visto americano, taxa visto americano, valor visto americano, taxa MRV, taxa consular",
   ogImage: "https://costaesouza.com.br/og-image.jpg",
   canonical: "https://costaesouza.com.br/quanto-custa-visto-americano",
   schemaName: "Quanto Custa o Visto Americano - Costa & Souza",
@@ -18,22 +18,22 @@ export const Route = createLPRoute({
   heroTitle: "Quanto custa o visto americano",
   heroHighlight: "em 2026, com todas as taxas",
   heroSubtitle:
-    "Nem todo custo aparece de primeira. Veja o que é obrigatório, o que só é cobrado se o visto for aprovado, e o que muda por tipo de visto.",
+    "Veja o que é obrigatório, quais taxas se aplicam a cada tipo de visto e quanto custa receber o passaporte em casa.",
   heroImage: passport,
   heroImageAlt: "Cálculo do custo do visto americano",
 
   lastUpdated: "julho de 2026",
   summary:
-    "O custo do visto americano varia por tipo de visto e por decisão do consulado. Toda solicitação exige o pagamento de uma taxa obrigatória (a MRV), mas há cobranças adicionais que só valem para quem tem o visto aprovado ou para categorias específicas, como estudante e intercâmbio. Este guia resume o que pagar, quando pagar e como evitar surpresas no orçamento.",
+    "O custo do visto americano varia conforme a categoria solicitada. Toda solicitação exige o pagamento da taxa consular MRV, enquanto vistos de estudante e intercâmbio também exigem a taxa SEVIS. A entrega premium pelos Correios é opcional. Este guia resume o que pagar, quando pagar e como evitar surpresas no orçamento.",
 
   quickTable: {
     title: "Total estimado por tipo de visto",
     rows: [
-      { label: "B1/B2 (turismo ou negócios)", value: "US$185 na solicitação + US$250 se aprovado" },
-      { label: "F1 (estudante)", value: "US$185 + US$350 (SEVIS) + US$250 se aprovado" },
-      { label: "J1 (intercâmbio)", value: "US$185 + US$220 (SEVIS) + US$250 se aprovado" },
-      { label: "Renovação (Dropbox)", value: "Mesma taxa MRV do visto original + US$250 se aprovado" },
-      { label: "Agendamento expresso (opcional)", value: "+ US$750, quando disponível no seu consulado" },
+      { label: "B1/B2 (turismo ou negócios)", value: "US$185 — taxa consular MRV" },
+      { label: "F1 (estudante)", value: "US$185 + US$350 (SEVIS)" },
+      { label: "J1 (intercâmbio)", value: "US$185 + US$220 (SEVIS)" },
+      { label: "Renovação", value: "Mesma taxa consular MRV do visto original" },
+      { label: "Entrega premium (opcional)", value: "R$ 64 por pessoa" },
     ],
   },
 
@@ -45,14 +45,9 @@ export const Route = createLPRoute({
   costTitle: "Detalhamento de cada taxa",
   costItems: [
     {
-      label: "Taxa MRV",
+      label: "Taxa MRV (taxa consular)",
       value: "US$185",
       note: "Obrigatória para qualquer solicitação de visto de não imigrante. Paga antes de agendar e não é reembolsável, mesmo em caso de negativa.",
-    },
-    {
-      label: "Taxa de Integridade de Visto",
-      value: "US$250",
-      note: "Criada por lei em 2025, cobrada apenas quando o visto é aprovado. O rollout entre consulados ainda é irregular em 2026.",
     },
     {
       label: "SEVIS (F1)",
@@ -65,9 +60,9 @@ export const Route = createLPRoute({
       note: "Exclusiva de vistos de intercâmbio, paga antes do DS-160.",
     },
     {
-      label: "Agendamento expresso (B1/B2)",
-      value: "US$750",
-      note: "Programa temporário (jul.–dez. 2026) para interview em até 10 dias úteis, onde disponível.",
+      label: "Taxa de entrega premium",
+      value: "R$ 64 por pessoa",
+      note: "Opcional, para receber o passaporte com o visto pelos Correios na comodidade da sua residência.",
     },
   ],
   costNote:
@@ -84,23 +79,17 @@ export const Route = createLPRoute({
     "Esquecer a taxa SEVIS em vistos de estudante (F1) e intercâmbio (J1).",
     "Não considerar a variação do dólar e o IOF do cartão no valor final em reais.",
     "Pagar por sites de terceiros que cobram para preencher o DS-160, que é gratuito no portal oficial.",
-    "Ignorar a nova Taxa de Integridade de Visto ao planejar o orçamento da viagem.",
   ],
 
-  problemTitle: "Custo mal calculado atrasa o planejamento da viagem",
-  problemPoints: [
-    "Taxas em dólar variam com a cotação no dia do pagamento.",
-    "Cada tipo de visto tem uma combinação diferente de taxas obrigatórias.",
-    "Sites não oficiais cobram por serviços que já são gratuitos no site do governo.",
-    "A nova Taxa de Integridade de Visto ainda confunde quem já pesquisou antes de 2025.",
-  ],
+  problemTitle: "",
+  problemPoints: [],
 
   solutionTitle: "Como a Costa & Souza evita surpresas no seu orçamento",
   solutionPoints: [
     "Diagnóstico do tipo de visto certo antes de qualquer pagamento.",
     "Checklist de todas as taxas aplicáveis ao seu caso específico.",
     "Orientação sobre onde pagar oficialmente, sem intermediários que cobram taxas extras.",
-    "Acompanhamento até a aprovação, incluindo a taxa cobrada nesse momento.",
+    "Acompanhamento durante todas as etapas do processo.",
   ],
 
   trustTitle: "Milhares de brasileiros já organizaram o orçamento do visto com a gente",
@@ -128,10 +117,6 @@ export const Route = createLPRoute({
   ],
 
   faqs: [
-    {
-      q: "O visto americano tem uma taxa separada só para quem é aprovado?",
-      a: "Sim. Desde 2025, existe a Taxa de Integridade de Visto de US$250, cobrada apenas quando o visto é emitido. Ela é separada da taxa MRV, que todo solicitante paga.",
-    },
     {
       q: "Preciso pagar se o visto for negado?",
       a: "A taxa MRV (US$185) já é paga antes da entrevista e não é reembolsável, independente do resultado.",

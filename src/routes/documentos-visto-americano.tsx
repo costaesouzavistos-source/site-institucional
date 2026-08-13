@@ -30,10 +30,9 @@ export const Route = createLPRoute({
   quickTable: {
     title: "Documentos básicos (quase todo caso)",
     rows: [
-      { label: "Passaporte", value: "Válido, com folhas em branco disponíveis" },
-      { label: "Formulário DS-160", value: "Confirmação impressa ou em PDF" },
-      { label: "Foto", value: "5x7 cm, fundo branco, tirada nos últimos 6 meses" },
-      { label: "Comprovante da taxa MRV", value: "Recibo do pagamento (US$185)" },
+      { label: "Passaporte", value: "Válido" },
+      { label: "Formulário DS-160", value: "Confirmação impressa" },
+      { label: "Comprovante de agendamento", value: "Impresso" },
     ],
   },
 
@@ -57,7 +56,6 @@ export const Route = createLPRoute({
   commonMistakes: [
     "Renda mal comprovada, gerando dúvida sobre a capacidade financeira.",
     "Vínculos com o Brasil pouco claros ou sem documentação de apoio.",
-    "Foto fora do padrão, causando retrabalho no CASV.",
     "Documentos desatualizados ou inconsistentes com o que foi preenchido no DS-160.",
   ],
 
@@ -66,7 +64,6 @@ export const Route = createLPRoute({
   problemPoints: [
     "Renda mal comprovada gera dúvida sobre a capacidade financeira.",
     "Vínculos com o Brasil precisam ser claros e documentados.",
-    "Foto fora do padrão pode causar retrabalho no CASV.",
     "Documentos desatualizados ou inconsistentes prejudicam o DS-160.",
   ],
 

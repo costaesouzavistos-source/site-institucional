@@ -17,7 +17,7 @@ export const Route = createLPRoute({
   heroTitle: "Assessoria para visto americano que transforma",
   heroHighlight: "ansiedade em aprovação",
   heroSubtitle:
-    "Você não precisa enfrentar o processo sozinho. Nossa equipe cuida da estratégia, do DS-160 e da preparação para entrevista — do início ao carimbo no passaporte.",
+    "Você não precisa enfrentar o processo sozinho. Nossa equipe cuida da parte estratégica, tanto no DS-160 quanto na preparação para a entrevista — do início ao fim do processo.",
   heroImage: "/images/lps-images/01-assessoria-hero.jpg",
   heroImageAlt: "Assessoria especializada em visto americano com atendimento premium",
   problemImage: "/images/lps-images/01-assessoria-problem.jpg",
@@ -55,8 +55,8 @@ export const Route = createLPRoute({
   problemPoints: [
     "O DS-160 tem dezenas de campos que, preenchidos de forma incorreta, levam à negativa.",
     "A entrevista consular exige respostas objetivas, consistentes e seguras.",
-    "Cada caso é único: renda, vínculos, histórico de viagem e profissão influenciam na decisão.",
-    "Muitas famílias desistem na primeira dificuldade ou perdem tempo com informações desencontradas.",
+    "Cada caso é único: estratégia, renda, vínculos, histórico de viagem e profissão influenciam na decisão.",
+    "Muitas pessoas desistem na primeira dificuldade ou perdem tempo com informações desencontradas.",
   ],
 
   solutionTitle: "Como nossa assessoria aumenta suas chances de aprovação",

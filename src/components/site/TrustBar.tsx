@@ -15,7 +15,7 @@ const items: TrustItem[] = [
   { icon: Users, end: 16300, prefix: "+", label: "vistos aprovados" },
   { icon: Award, end: 10, prefix: "+", label: "anos de experiência" },
   { icon: Shield, end: 98, suffix: "%", label: "taxa de aprovação" },
-  { icon: MapPin, value: "Brasil | EUA | Europa", label: "atendimento nacional 100% remoto" },
+  { icon: MapPin, value: "Brasil | EUA | Europa", label: "atendimento presencial ou 100% remoto" },
 ];
 
 export function TrustBar() {

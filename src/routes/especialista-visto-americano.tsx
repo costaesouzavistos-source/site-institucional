@@ -30,8 +30,7 @@ export const Route = createLPRoute({
   quickTable: {
     title: "Quem atende o seu caso",
     rows: [
-      { label: "Lucas Philipe", value: "Estratégia de caso, DS-160 e preparação para entrevista" },
-      { label: "Jaqueline Costa", value: "Atendimento humano, organização documental e casos de família" },
+      { label: "Lucas Philipe e Jaqueline Costa", value: "Estratégia de caso, DS-160, preparação para entrevista, atendimento humano e organização documental" },
       { label: "Atuação", value: "+10 anos, atendimento 100% remoto em todo o Brasil" },
     ],
   },

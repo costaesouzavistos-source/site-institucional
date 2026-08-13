@@ -38,7 +38,7 @@ export function WhyUs() {
             — Por que Costa & Souza
           </div>
           <h2 className="font-serif text-4xl leading-tight text-navy-deep text-balance sm:text-5xl">
-            Uma consultoria que trata seu processo de visto com{" "}
+            Uma consultoria que trata seu visto com{" "}
             <span className="italic">seriedade e compromisso</span>.
           </h2>
         </div>

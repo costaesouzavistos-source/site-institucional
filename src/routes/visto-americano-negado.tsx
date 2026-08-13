@@ -30,7 +30,7 @@ export const Route = createLPRoute({
   quickTable: {
     title: "Motivos mais comuns de negativa",
     rows: [
-      { label: "214(b)", value: "Consulado não convencido da intenção de retorno ao Brasil (motivo mais comum)" },
+      { label: "214(b)", value: "Consulado não convencido da intenção da viagem, dos vínculos suficientes e do retorno ao Brasil (motivo mais comum)" },
       { label: "Documentação insuficiente", value: "Renda ou vínculos mal comprovados" },
       { label: "Inconsistências no DS-160", value: "Respostas que não conferem com os documentos" },
       { label: "212(a)", value: "Motivos específicos de inelegibilidade (menos comum, mais técnico)" },
@@ -45,8 +45,6 @@ export const Route = createLPRoute({
   mistakesTitle: "Erros comuns depois de uma negativa",
   commonMistakes: [
     "Tentar de novo rapidamente sem mudar nada no caso.",
-    "Não guardar ou não entender o que foi escrito na carta de negativa.",
-    "Repetir exatamente as mesmas respostas na próxima entrevista.",
     "Achar que o motivo foi 'aleatório', quando geralmente há um padrão identificável.",
   ],
 

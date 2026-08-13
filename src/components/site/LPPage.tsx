@@ -553,6 +553,8 @@ function LPRelatedLinks({ config }: { config: LPConfig }) {
 }
 
 function LPProblem({ config }: { config: LPConfig }) {
+  if (config.problemPoints.length === 0) return null;
+
   return (
     <section id="como-funciona" className="bg-cream py-24 lg:py-32">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-10">

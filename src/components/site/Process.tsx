@@ -35,7 +35,7 @@ export function Process() {
         <div className="mx-auto max-w-2xl text-center">
           <div className="mb-4 text-xs uppercase tracking-[0.25em] text-gold">— Como Funciona</div>
           <h2 className="font-serif text-4xl leading-tight text-cream text-balance sm:text-5xl">
-            Um processo claro, do primeiro contato ao{" "}
+            Um processo claro, do início ao{" "}
             <span className="italic text-gold-soft">visto aprovado</span>.
           </h2>
         </div>

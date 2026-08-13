@@ -32,7 +32,7 @@ export const Route = createLPRoute({
     rows: [
       { label: "DS-160", value: "Um formulário por pessoa, inclusive bebês" },
       { label: "Taxa MRV", value: "US$185 por pessoa, sem desconto para grupo" },
-      { label: "Entrevista", value: "Bebês e crianças pequenas costumam ser dispensados" },
+      { label: "Entrevista", value: "Obrigatória para todos, independentemente da idade, exceto idosos acima de 80 anos" },
       { label: "Pai/mãe que não viaja", value: "Autorização de viagem + comprovação de vínculo" },
     ],
   },
@@ -102,7 +102,7 @@ export const Route = createLPRoute({
   faqs: [
     {
       q: "Menores de idade precisam fazer entrevista?",
-      a: "Depende da idade. Bebês e crianças pequenas geralmente não precisam. Menores maiores podem ser convocados conforme a regra do consulado.",
+      a: "Todos devem comparecer, independentemente da idade, exceto idosos acima de 80 anos.",
     },
     {
       q: "Posso fazer o visto de todo o grupo familiar junto?",
