@@ -7,8 +7,8 @@ export const Route = createLPRoute({
     "Visto B1/B2 em 2026: o mais pedido por brasileiros. Entenda validade, tempo de permanência e o que não pode ser feito com ele. Fale com um especialista.",
   keywords:
     "visto b1/b2, visto de turismo americano, visto de negócios americano, visto turismo eua, visto b1 b2",
-  ogImage: "https://costaesouza.com.br/og-image.jpg",
-  canonical: "https://costaesouza.com.br/visto-americano-turismo-negocios",
+  ogImage: "https://costaesouzavistos.com/og-image.jpg",
+  canonical: "https://costaesouzavistos.com/visto-americano-turismo-negocios",
   schemaName: "Visto Americano B1/B2 - Costa & Souza",
   schemaDescription:
     "Assessoria para visto americano de turismo e negócios (B1/B2) com atendimento remoto em todo o Brasil.",

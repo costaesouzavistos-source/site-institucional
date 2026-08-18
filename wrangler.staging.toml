@@ -1,4 +1,4 @@
-name = "costa-silva-site-staging"
+name = "costa-souza-vistos-site-staging"
 compatibility_date = "2026-01-01"
 compatibility_flags = ["nodejs_compat"]
 
@@ -6,7 +6,7 @@ pages_build_output_dir = ".output/public"
 
 [vars]
 NODE_ENV = "staging"
-VITE_SITE_URL = "https://staging.costaesilva.com.br"
+VITE_SITE_URL = "https://staging.costaesouzavistos.com"
 VITE_WHATSAPP_MESSAGE = "[STAGING] Olá, gostaria de falar com um especialista em vistos americanos."
 
 [[headers]]

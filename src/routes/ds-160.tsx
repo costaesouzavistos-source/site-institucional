@@ -7,8 +7,8 @@ export const Route = createLPRoute({
   description:
     "Entenda o que é o DS-160 e por que pequenos erros no formulário podem atrasar ou negar seu visto americano. Peça a revisão de um especialista.",
   keywords: "DS-160, formulário DS-160, DS-160 visto americano, erro DS-160",
-  ogImage: "https://costaesouza.com.br/og-image.jpg",
-  canonical: "https://costaesouza.com.br/ds-160",
+  ogImage: "https://costaesouzavistos.com/og-image.jpg",
+  canonical: "https://costaesouzavistos.com/ds-160",
   schemaName: "DS-160 - Costa & Souza",
   schemaDescription:
     "Orientação sobre o formulário DS-160 com atendimento remoto em todo o Brasil.",

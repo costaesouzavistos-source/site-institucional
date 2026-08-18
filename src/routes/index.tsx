@@ -20,7 +20,7 @@ import { AboutTeam } from "@/components/site/AboutTeam";
 import { WhatsAppModal } from "@/components/site/WhatsAppModal";
 import { WhatsAppModalProvider } from "@/contexts/WhatsAppModalContext";
 
-const siteUrl = import.meta.env.VITE_SITE_URL || "https://costaesouza.com.br";
+const siteUrl = import.meta.env.VITE_SITE_URL || "https://costaesouzavistos.com";
 const ogImage = `${siteUrl}/og-image.jpg`;
 
 import { FadeInSection } from "@/components/animations/FadeInSection";

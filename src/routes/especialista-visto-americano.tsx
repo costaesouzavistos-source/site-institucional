@@ -7,8 +7,8 @@ export const Route = createLPRoute({
     "Fale com um especialista em visto americano. Atendimento personalizado, remoto e focado em aprovação. +16.300 casos aprovados.",
   keywords:
     "especialista visto americano, consultor visto americano, assessor visto americano, visto americano aprovação, Brasil",
-  ogImage: "https://costaesouza.com.br/og-image.jpg",
-  canonical: "https://costaesouza.com.br/especialista-visto-americano",
+  ogImage: "https://costaesouzavistos.com/og-image.jpg",
+  canonical: "https://costaesouzavistos.com/especialista-visto-americano",
   schemaName: "Especialista em Visto Americano - Costa & Souza",
   schemaDescription:
     "Especialista em visto americano com atendimento personalizado em todo o Brasil.",

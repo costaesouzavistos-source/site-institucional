@@ -8,8 +8,8 @@ export const Route = createLPRoute({
     "Quanto custa tirar ou renovar o visto americano em 2026: taxa MRV, SEVIS e entrega premium. Fale grátis com um especialista.",
   keywords:
     "quanto custa visto americano, preço visto americano, taxa visto americano, valor visto americano, taxa MRV, taxa consular",
-  ogImage: "https://costaesouza.com.br/og-image.jpg",
-  canonical: "https://costaesouza.com.br/quanto-custa-visto-americano",
+  ogImage: "https://costaesouzavistos.com/og-image.jpg",
+  canonical: "https://costaesouzavistos.com/quanto-custa-visto-americano",
   schemaName: "Quanto Custa o Visto Americano - Costa & Souza",
   schemaDescription:
     "Guia de custos do visto americano com atendimento remoto em todo o Brasil.",

@@ -27,7 +27,7 @@ export function Footer() {
             </li>
             <li className="flex items-start gap-2">
               <Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-              <span>contato@costaesouza.com.br</span>
+              <span>contato@costaesouzavistos.com</span>
             </li>
             <li className="flex items-start gap-2">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />

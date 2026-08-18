@@ -7,8 +7,8 @@ export const Route = createLPRoute({
     "Visto americano para família em 2026: pais, filhos e bebês. Documentação por membro da família, autorizações e custo total. Atendimento Brasil.",
   keywords:
     "visto americano família, visto americano casal, visto americano crianças, visto para família inteira, bebê visto americano",
-  ogImage: "https://costaesouza.com.br/og-image.jpg",
-  canonical: "https://costaesouza.com.br/visto-americano-familia",
+  ogImage: "https://costaesouzavistos.com/og-image.jpg",
+  canonical: "https://costaesouzavistos.com/visto-americano-familia",
   schemaName: "Visto Americano para Família - Costa & Souza",
   schemaDescription:
     "Assessoria para visto americano de família, casal e crianças com atendimento remoto.",

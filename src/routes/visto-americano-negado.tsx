@@ -7,8 +7,8 @@ export const Route = createLPRoute({
     "Seu visto americano foi negado? Entenda os motivos mais comuns e o que avaliar antes de tentar novamente. Análise honesta do seu caso com um especialista.",
   keywords:
     "visto americano negado, visto negado eua, reverter visto negado, segunda tentativa visto americano, 214b",
-  ogImage: "https://costaesouza.com.br/og-image.jpg",
-  canonical: "https://costaesouza.com.br/visto-americano-negado",
+  ogImage: "https://costaesouzavistos.com/og-image.jpg",
+  canonical: "https://costaesouzavistos.com/visto-americano-negado",
   schemaName: "Visto Americano Negado - Costa & Souza",
   schemaDescription:
     "Análise e estratégia para visto americano negado. Segunda tentativa com mais segurança.",

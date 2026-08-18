@@ -7,8 +7,8 @@ export const Route = createLPRoute({
     "Lista completa de documentos para o visto americano em 2026: passaporte, DS-160, comprovantes de renda e vínculos. Evite surpresas na entrevista.",
   keywords:
     "documentos visto americano, documentação visto americano, comprovante renda visto americano, passaporte visto americano, foto visto americano, DS-160, CASV",
-  ogImage: "https://costaesouza.com.br/og-image.jpg",
-  canonical: "https://costaesouza.com.br/documentos-visto-americano",
+  ogImage: "https://costaesouzavistos.com/og-image.jpg",
+  canonical: "https://costaesouzavistos.com/documentos-visto-americano",
   schemaName: "Documentos para Visto Americano - Costa & Souza",
   schemaDescription:
     "Lista completa e organizada de documentos para visto americano com atendimento remoto.",

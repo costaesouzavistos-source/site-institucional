@@ -7,8 +7,8 @@ export const Route = createLPRoute({
     "Visto negado por 214(b) em 2026? Entenda o que a lei diz e o que costuma fortalecer um caso para uma nova entrevista. Fale com a Costa & Souza.",
   keywords:
     "214b, visto negado 214b, section 214b, vínculos Brasil visto americano, intenção de retorno visto americano",
-  ogImage: "https://costaesouza.com.br/og-image.jpg",
-  canonical: "https://costaesouza.com.br/visto-negado-214b",
+  ogImage: "https://costaesouzavistos.com/og-image.jpg",
+  canonical: "https://costaesouzavistos.com/visto-negado-214b",
   schemaName: "Visto Negado 214(b) - Costa & Souza",
   schemaDescription:
     "Entenda o motivo 214(b) e aprenda a fortalecer seu vínculo com o Brasil para nova entrevista.",

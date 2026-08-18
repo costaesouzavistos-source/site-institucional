@@ -1,14 +1,14 @@
-name: Deploy Costa & Silva — Staging
+name: Deploy Costa & Souza — Staging
 
 on:
   push:
     branches: [main]
     paths:
-      - "authority-engine/projects/costa-silva-site/**"
+      - "site-costa-souza-vistos/**"
       - ".github/workflows/deploy-costa-silva-staging.yml"
 
 concurrency:
-  group: costa-silva-staging
+  group: costa-souza-vistos-staging
   cancel-in-progress: true
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: authority-engine/projects/costa-silva-site
+        working-directory: site-costa-souza-vistos
     steps:
       - uses: actions/checkout@v4
 
@@ -41,7 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: authority-engine/projects/costa-silva-site
+        working-directory: site-costa-souza-vistos
     steps:
       - uses: actions/checkout@v4
 
@@ -56,7 +56,7 @@ jobs:
       - name: Build
         run: bun run build
         env:
-          VITE_SITE_URL: https://staging.costaesilva.com.br
+          VITE_SITE_URL: https://staging.costaesouzavistos.com
           VITE_WHATSAPP_NUMBER: ${{ secrets.VITE_WHATSAPP_NUMBER }}
           VITE_WHATSAPP_MESSAGE: "[STAGING] Olá, gostaria de falar com um especialista em vistos americanos."
           VITE_GA_ID: ${{ secrets.VITE_GA_ID }}
@@ -69,4 +69,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy .output/public --project-name=costa-silva-site-staging --branch=main
+          command: pages deploy .output/public --project-name=costa-souza-vistos-site-staging --branch=main

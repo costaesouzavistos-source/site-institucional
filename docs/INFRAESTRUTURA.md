@@ -1,8 +1,8 @@
-# Infraestrutura Cloud — Costa & Silva Site
+# Infraestrutura Cloud — Costa & Souza Site
 
 ## 1. Resumo executivo
 
-O `costa-silva-site` é uma aplicação **TanStack Start** (React + Vite + TypeScript) gerada via Lovable. Hoje o build é feito pelo `@lovable.dev/vite-tanstack-config`, que usa **Nitro** com target **Cloudflare** como padrão.
+O `costa-souza-vistos-site` é uma aplicação **TanStack Start** (React + Vite + TypeScript) gerada via Lovable. Hoje o build é feito pelo `@lovable.dev/vite-tanstack-config`, que usa **Nitro** com target **Cloudflare** como padrão.
 
 Este documento propõe uma infraestrutura cloud **pronta para produção**, mantendo o mesmo stack e fornecedor, mas com:
 
@@ -78,10 +78,10 @@ Este documento propõe uma infraestrutura cloud **pronta para produção**, mant
 
 ### 4.1. Cloudflare Pages (host principal)
 
-- **Project name**: `costa-silva-site`
+- **Project name**: `costa-souza-vistos-site`
 - **Build command**: `bun run build`
 - **Build output directory**: `dist` (verificar após build; Nitro pode usar `.output` ou `.nitro`)
-- **Root directory**: `authority-engine/projects/costa-silva-site`
+- **Root directory**: `site-costa-souza-vistos`
 - **Environment variables** (ver seção 5):
   - `NODE_ENV`
   - `VITE_WHATSAPP_NUMBER`
@@ -111,7 +111,7 @@ Funções necessárias para evoluir o site:
 | **KV**  | Cache de páginas, configurações, rate-limit por IP                                      |
 | **D1**  | Leads, depoimentos, conteúdo dinâmico leve (se não usar PostgreSQL da Authority Engine) |
 
-> **Recomendação**: para começar, usar KV apenas para cache/rate-limit. Se a Costa & Silva for integrada na Authority Engine, migrar dados para PostgreSQL via Prisma.
+> **Recomendação**: para começar, usar KV apenas para cache/rate-limit. Se a Costa & Souza for integrada na Authority Engine, migrar dados para PostgreSQL via Prisma.
 
 ### 4.4. Cloudflare Turnstile (CAPTCHA invisible)
 
@@ -120,9 +120,9 @@ Funções necessárias para evoluir o site:
 
 ### 4.5. DNS e domínios
 
-- **Domínio principal**: `costaesilva.com.br` (exemplo)
-- **Registro**: CNAME `www` → `costa-silva-site.pages.dev`
-- **Apex**: usar CNAME flattening do Cloudflare ou redirecionar `costaesilva.com.br` → `www.costaesilva.com.br`
+- **Domínio principal**: `costaesouzavistos.com` (exemplo)
+- **Registro**: CNAME `www` → `costa-souza-vistos-site.pages.dev`
+- **Apex**: usar CNAME flattening do Cloudflare ou redirecionar `costaesouzavistos.com` → `www.costaesouzavistos.com`
 - **Redirecionamentos**:
   - `http://*` → `https://*`
   - `www` ↔ apex (definir canonical)
@@ -134,7 +134,7 @@ Funções necessárias para evoluir o site:
 ### 5.1. Públicas (prefixo `VITE_` para serem injetadas no build)
 
 ```env
-VITE_SITE_URL=https://www.costaesilva.com.br
+VITE_SITE_URL=https://costaesouzavistos.com
 VITE_WHATSAPP_NUMBER=5562000000000
 VITE_WHATSAPP_MESSAGE=Olá, gostaria de falar com um especialista em vistos americanos.
 VITE_GA_ID=G-XXXXXXXXXX
@@ -147,7 +147,7 @@ VITE_TURNSTILE_SITE_KEY=0x4AAAAAA...
 
 ```env
 LEAD_WEBHOOK_URL=https://hooks.zapier.com/...
-LEAD_EMAIL=contato@costaesilva.com.br
+LEAD_EMAIL=contato@costaesouzavistos.com
 TURNSTILE_SECRET_KEY=0x4AAAAAA...
 RESEND_API_KEY=re_...
 AUTHORITY_ENGINE_API_KEY=...
@@ -164,7 +164,7 @@ AUTHORITY_ENGINE_API_KEY=...
 └── workflows/
     ├── deploy-staging.yml
     └── deploy-production.yml
-projects/costa-silva-site/
+projects/costa-souza-vistos-site/
 ├── wrangler.toml
 ├── wrangler.staging.toml
 └── docs/INFRAESTRUTURA.md (este arquivo)
@@ -189,13 +189,13 @@ Tag vX.Y.Z
 ### 6.3. Exemplo de workflow (staging)
 
 ```yaml
-name: Deploy Costa & Silva — Staging
+name: Deploy Costa & Souza — Staging
 
 on:
   push:
     branches: [main]
     paths:
-      - "authority-engine/projects/costa-silva-site/**"
+      - "site-costa-souza-vistos/**"
       - ".github/workflows/deploy-costa-silva-staging.yml"
 
 jobs:
@@ -203,7 +203,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: authority-engine/projects/costa-silva-site
+        working-directory: site-costa-souza-vistos
     steps:
       - uses: actions/checkout@v4
 
@@ -224,7 +224,7 @@ jobs:
       - name: Build
         run: bun run build
         env:
-          VITE_SITE_URL: https://staging.costaesilva.com.br
+          VITE_SITE_URL: https://staging.costaesouzavistos.com
           VITE_WHATSAPP_NUMBER: ${{ secrets.VITE_WHATSAPP_NUMBER }}
 
       - name: Deploy to Cloudflare Pages (staging)
@@ -232,7 +232,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy .output/public --project-name=costa-silva-site-staging --branch=main
+          command: pages deploy .output/public --project-name=costa-souza-vistos-site-staging --branch=main
 ```
 
 > **Nota**: o diretório de build (`dist`, `.output/public` ou `.nitro`) deve ser confirmado após rodar `bun run build` localmente.
@@ -314,7 +314,7 @@ Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' h
 
 ## 11. Próximos passos imediatos
 
-1. **Definir domínio** real da Costa & Silva (ex: `costaesilva.com.br`).
+1. **Definir domínio** real da Costa & Souza (ex: `costaesouzavistos.com`).
 2. **Criar conta/projetos no Cloudflare**: Pages + DNS + Workers.
 3. **Gerar `CLOUDFLARE_API_TOKEN`** com permissões para Pages e Workers.
 4. **Adicionar secrets** no GitHub (Cloudflare token, account ID, WhatsApp number, etc.).
@@ -336,7 +336,7 @@ Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' h
 ### Passos
 
 ```bash
-cd authority-engine/projects/costa-silva-site
+cd site-costa-souza-vistos
 
 # Com Bun (recomendado)
 bun install
@@ -365,7 +365,7 @@ cp .env.example .env.local
 ## 14. Arquivos de infraestrutura a criar
 
 ```text
-authority-engine/projects/costa-silva-site/
+site-costa-souza-vistos/
 ├── wrangler.toml              # Configuração de deploy
 ├── wrangler.staging.toml      # Configuração de staging
 ├── .env.example               # Variáveis de ambiente documentadas
@@ -379,4 +379,4 @@ authority-engine/projects/costa-silva-site/
 
 ---
 
-_Documento interno. Ajustar domínios, IDs e secrets conforme a conta real da Costa & Silva._
+_Documento interno. Ajustar domínios, IDs e secrets conforme a conta real da Costa & Souza._

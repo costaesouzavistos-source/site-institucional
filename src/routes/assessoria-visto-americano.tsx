@@ -7,8 +7,8 @@ export const Route = createLPRoute({
     "Assessoria completa para visto americano em 2026: diagnóstico, DS-160, documentos e preparação para entrevista. +16.300 aprovações. Fale com um especialista.",
   keywords:
     "assessoria visto americano, consultoria visto americano, especialista visto americano, ajuda para visto americano, Anápolis, Goiás",
-  ogImage: "https://costaesouza.com.br/og-image.jpg",
-  canonical: "https://costaesouza.com.br/assessoria-visto-americano",
+  ogImage: "https://costaesouzavistos.com/og-image.jpg",
+  canonical: "https://costaesouzavistos.com/assessoria-visto-americano",
   schemaName: "Assessoria para Visto Americano - Costa & Souza",
   schemaDescription:
     "Assessoria especializada para visto americano. Atendimento remoto em todo o Brasil.",

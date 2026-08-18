@@ -1,4 +1,4 @@
-name = "costa-silva-site"
+name = "costa-souza-vistos-site"
 compatibility_date = "2026-01-01"
 compatibility_flags = ["nodejs_compat"]
 
@@ -7,7 +7,7 @@ pages_build_output_dir = ".output/public"
 
 [vars]
 NODE_ENV = "production"
-VITE_SITE_URL = "https://www.costaesilva.com.br"
+VITE_SITE_URL = "https://costaesouzavistos.com"
 VITE_WHATSAPP_MESSAGE = "Olá, gostaria de falar com um especialista em vistos americanos."
 
 # Secrets (adicionar via Cloudflare Dashboard ou `wrangler secret put`):

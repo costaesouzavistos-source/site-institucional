@@ -7,8 +7,8 @@ export const Route = createLPRoute({
     "Visto F1 em 2026: o que é o I-20, a taxa SEVIS e o que avaliar antes de estudar nos EUA. Fale com um especialista em visto de estudante.",
   keywords:
     "visto f1, visto de estudante americano, visto para estudar nos eua, I-20, taxa SEVIS",
-  ogImage: "https://costaesouza.com.br/og-image.jpg",
-  canonical: "https://costaesouza.com.br/visto-americano-estudante",
+  ogImage: "https://costaesouzavistos.com/og-image.jpg",
+  canonical: "https://costaesouzavistos.com/visto-americano-estudante",
   schemaName: "Visto Americano de Estudante F1 - Costa & Souza",
   schemaDescription:
     "Assessoria para visto americano de estudante (F1) com atendimento remoto em todo o Brasil.",

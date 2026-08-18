@@ -49,7 +49,7 @@ export const submitLead = createServerFn({ method: "POST" })
     const payload = {
       ...lead,
       timestamp,
-      site: "costa-silva-site",
+      site: "costa-souza-vistos-site",
     };
 
     // 1. Log local para debugging/auditoria (não expõe dados sensíveis em produção)
@@ -89,7 +89,7 @@ export const submitLead = createServerFn({ method: "POST" })
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            from: "Costa & Souza <noreply@costaesouza.com.br>",
+            from: "Costa & Souza <noreply@costaesouzavistos.com>",
             to: leadEmail,
             subject: "Novo lead — Costa & Souza",
             text: `Novo lead recebido:\n\nNome: ${lead.name}\nTelefone: ${lead.phone}\nTipo de visto: ${lead.visa}\nMensagem: ${lead.message || "Não informada"}\nOrigem: ${lead.source || "site"}`,

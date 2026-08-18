@@ -7,8 +7,8 @@ export const Route = createLPRoute({
     "Visto americano em Anápolis em 2026: atendimento presencial na nossa sede ou 100% online, e o caminho mais curto até o consulado em Brasília.",
   keywords:
     "visto americano anapolis, visto americano goias, assessoria visto americano anapolis, especialista visto americano goias",
-  ogImage: "https://costaesouza.com.br/og-image.jpg",
-  canonical: "https://costaesouza.com.br/visto-americano-anapolis",
+  ogImage: "https://costaesouzavistos.com/og-image.jpg",
+  canonical: "https://costaesouzavistos.com/visto-americano-anapolis",
   schemaName: "Visto Americano em Anápolis - Costa & Souza",
   schemaDescription:
     "Assessoria para visto americano em Anápolis e todo o estado de Goiás. Atendimento presencial ou online.",

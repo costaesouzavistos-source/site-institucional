@@ -1,17 +1,17 @@
-name: Deploy Costa & Silva — Production
+name: Deploy Costa & Souza — Production
 
 on:
   push:
     tags:
-      - "costa-silva@v*"
+      - "costa-souza-vistos@v*"
   workflow_dispatch:
     inputs:
       tag:
-        description: "Tag de release (ex: costa-silva@v1.0.0)"
+        description: "Tag de release (ex: costa-souza-vistos@v1.0.0)"
         required: true
 
 concurrency:
-  group: costa-silva-production
+  group: costa-souza-vistos-production
   cancel-in-progress: true
 
 jobs:
@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: authority-engine/projects/costa-silva-site
+        working-directory: site-costa-souza-vistos
     steps:
       - uses: actions/checkout@v4
         with:
@@ -46,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: authority-engine/projects/costa-silva-site
+        working-directory: site-costa-souza-vistos
     steps:
       - uses: actions/checkout@v4
         with:
@@ -63,7 +63,7 @@ jobs:
       - name: Build
         run: bun run build
         env:
-          VITE_SITE_URL: https://www.costaesilva.com.br
+          VITE_SITE_URL: https://costaesouzavistos.com
           VITE_WHATSAPP_NUMBER: ${{ secrets.VITE_WHATSAPP_NUMBER }}
           VITE_WHATSAPP_MESSAGE: "Olá, gostaria de falar com um especialista em vistos americanos."
           VITE_GA_ID: ${{ secrets.VITE_GA_ID }}
@@ -76,4 +76,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy .output/public --project-name=costa-silva-site --branch=main
+          command: pages deploy .output/public --project-name=costa-souza-vistos-site --branch=main

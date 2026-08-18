@@ -18,7 +18,7 @@ const specialists = [
     name: "Jaqueline Costa",
     role: "Especialista em Vistos Americanos",
     photo: "/images/optimized/IMG_5787-avatar.jpg",
-    imageZoom: "scale-[1.4]",
+    imageZoom: "scale-100",
     imagePosition: "object-center",
     // PLACEHOLDER: ajustar anos de experiência e formação conforme dados reais.
     experience: "+10 anos",

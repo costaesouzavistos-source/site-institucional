@@ -7,8 +7,8 @@ export const Route = createLPRoute({
     "Renovação de visto americano em 2026: veja as regras atuais do dropbox (sem entrevista) e o que fazer se seu caso não for elegível. Fale com um especialista.",
   keywords:
     "renovar visto americano, renovação visto americano, dropbox visto americano, interview waiver, visto vencido",
-  ogImage: "https://costaesouza.com.br/og-image.jpg",
-  canonical: "https://costaesouza.com.br/renovar-visto-americano",
+  ogImage: "https://costaesouzavistos.com/og-image.jpg",
+  canonical: "https://costaesouzavistos.com/renovar-visto-americano",
   schemaName: "Renovar Visto Americano - Costa & Souza",
   schemaDescription:
     "Renovação de visto americano com atendimento remoto em todo o Brasil. Dropbox e entrevista.",

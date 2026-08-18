@@ -7,8 +7,8 @@ export const Route = createLPRoute({
     "Visto americano para crianças e bebês em 2026: documentos, autorização de viagem e quando é preciso entrevista. Fale com um especialista.",
   keywords:
     "visto americano crianças, visto americano bebê, visto americano menor, autorização visto americano menor, visto americano infantil",
-  ogImage: "https://costaesouza.com.br/og-image.jpg",
-  canonical: "https://costaesouza.com.br/visto-americano-criancas",
+  ogImage: "https://costaesouzavistos.com/og-image.jpg",
+  canonical: "https://costaesouzavistos.com/visto-americano-criancas",
   schemaName: "Visto Americano para Crianças - Costa & Souza",
   schemaDescription: "Assessoria para visto americano de crianças e bebês com atendimento remoto.",
   telephone: "+55-62-99285-6373",

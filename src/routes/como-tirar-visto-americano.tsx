@@ -7,8 +7,8 @@ export const Route = createLPRoute({
     "Passo a passo para tirar o visto americano em 2026: DS-160, taxa consular, tempo de espera por consulado e documentos. Fale grátis com um especialista.",
   keywords:
     "como tirar visto americano, passo a passo visto americano, documentos visto americano, entrevista visto americano, DS-160, CASV, quanto custa visto americano",
-  ogImage: "https://costaesouza.com.br/og-image.jpg",
-  canonical: "https://costaesouza.com.br/como-tirar-visto-americano",
+  ogImage: "https://costaesouzavistos.com/og-image.jpg",
+  canonical: "https://costaesouzavistos.com/como-tirar-visto-americano",
   schemaName: "Como Tirar Visto Americano - Costa & Souza",
   schemaDescription:
     "Guia passo a passo para tirar visto americano com atendimento remoto em todo o Brasil.",

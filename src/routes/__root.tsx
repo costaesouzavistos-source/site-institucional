@@ -112,7 +112,7 @@ function RootShell({ children }: { children: ReactNode }) {
   const gaId = import.meta.env.VITE_GA_ID;
   const gtmId = import.meta.env.VITE_GTM_ID;
   const pixelId = import.meta.env.VITE_META_PIXEL_ID;
-  const siteUrl = import.meta.env.VITE_SITE_URL || "https://costaesouza.com.br";
+  const siteUrl = import.meta.env.VITE_SITE_URL || "https://costaesouzavistos.com";
   const ogImage = `${siteUrl}/og-image.jpg`;
 
   return (
