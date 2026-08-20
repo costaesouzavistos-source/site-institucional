@@ -16,7 +16,7 @@ const CONTACTS = [
     photo: "/images/optimized/foto-lucas.jpeg",
   },
   {
-    name: "Jaqueline Costa",
+    name: "Jacqueline Costa",
     role: "Especialista em Vistos Americanos",
     phone: "5562992927288",
     photo: "/images/optimized/IMG_5787-avatar.jpg",

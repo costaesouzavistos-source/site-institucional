@@ -20,8 +20,8 @@ const familyImages = [
     alt: "Família brasileira com personagem no parque",
   },
   {
-    src: "/images/optimized/CC65FEE0-72FB-4710-BDAE-F9BF23467CB9.jpg",
-    thumb: "/images/optimized/CC65FEE0-72FB-4710-BDAE-F9BF23467CB9-thumb.jpg",
+    src: "/images/optimized/D5F1CDA9-E954-4A87-89E1-7853DA4C277A.jpg",
+    thumb: "/images/optimized/D5F1CDA9-E954-4A87-89E1-7853DA4C277A-thumb.jpg",
     alt: "Família brasileira celebrando a aprovação do visto",
   },
 ];

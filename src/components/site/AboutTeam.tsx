@@ -12,18 +12,18 @@ const specialists = [
     // PLACEHOLDER: ajustar formação conforme dados reais.
     experience: "+10 anos",
     education: "Formação em Direito e Relações Internacionais",
-    bio: "Acompanha famílias e empresários em todo o processo de visto americano, do diagnóstico inicial à aprovação. Focado em estratégia, preparação para entrevista e análise de negativas.",
+    bio: "Especialista em visto americano e em reversão de visto negado. Criador do método único que mais aprova no País. Atuação em vistos B1/B2 Turismo/Negócios e F1 Estudante, desde o diagnóstico inicial à aprovação. Focado em estratégia, preparação para entrevista e grande experiência em defesa processual para quem teve o visto negado.",
   },
   {
-    name: "Jaqueline Costa",
+    name: "Jacqueline Costa",
     role: "Especialista em Vistos Americanos",
     photo: "/images/optimized/IMG_5787-avatar.jpg",
     imageZoom: "scale-100",
     imagePosition: "object-center",
     // PLACEHOLDER: ajustar anos de experiência e formação conforme dados reais.
-    experience: "+10 anos",
-    education: "Formação em Administração e Atendimento ao Cliente",
-    bio: "Cuida do atendimento humano e da organização documental dos processos. Especialista em casos de família, renovação e preparação emocional para a entrevista consular.",
+    experience: "+10 anos de experiência em vistos americanos e 18 anos de turismo.",
+    education: "Formação em Administração e Marketing.",
+    bio: "Especialista em Visto Americano e Reversão de visto negado. Atuação em vistos B1/B2 Turismo/Negócios, F1 Estudante, desde do diagnóstico à aprovação. Focada em preparação para entrevista e ampla experiência em vendas de viagens para Europa e Estados Unidos.",
   },
 ];
 
