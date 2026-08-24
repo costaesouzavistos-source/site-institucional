@@ -133,5 +133,9 @@ export const Route = createLPRoute({
       q: "As taxas do visto americano podem mudar?",
       a: "Sim, são definidas pelo Departamento de Estado dos EUA e podem ser reajustadas sem aviso prévio. Sempre confirme o valor vigente antes de pagar.",
     },
+    {
+      q: "Vocês garantem a aprovação do visto?",
+      a: "Nenhuma consultoria séria pode garantir aprovação — a decisão é sempre do consulado americano. O que garantimos é a melhor preparação possível: estratégia individual, DS-160 sem erros e treinamento real para a entrevista.",
+    },
   ],
 });

@@ -10,6 +10,12 @@ import { Toaster } from "sonner";
 import { motion } from "motion/react";
 import { MessageCircle, CheckCircle, ArrowRight } from "lucide-react";
 import { useWhatsAppModal } from "@/contexts/WhatsAppModalContext";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export interface LPConfig {
   slug: string;
@@ -93,12 +99,15 @@ function buildLocalBusinessSchema(cfg: LPConfig) {
     areaServed: "BR",
     address: {
       "@type": "PostalAddress",
+      streetAddress: "Av. Juscelino Kubitschek, 500, Sala 404 - Jundiaí",
       addressLocality: "Anápolis",
       addressRegion: "GO",
+      postalCode: "75110-390",
       addressCountry: "BR",
     },
     telephone: cfg.telephone ?? "+55-62-99285-6373",
     url: cfg.canonical,
+    image: cfg.ogImage,
     priceRange: "$$",
   };
 }
@@ -184,8 +193,10 @@ function LPPage({ config }: { config: LPConfig }) {
           <LPTimeline config={config} />
           <LPDocuments config={config} />
           <LPMistakes config={config} />
-          <LPProblem config={config} />
-          <LPSolution config={config} />
+          <div id="como-funciona">
+            <LPProblem config={config} />
+            <LPSolution config={config} />
+          </div>
           <LPRelatedLinks config={config} />
           <LPReviewedBy config={config} />
           <LPFAQ config={config} />
@@ -224,11 +235,11 @@ function LPHero({ config }: { config: LPConfig }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-gold">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-gold">
               <span className="h-1.5 w-1.5 rounded-full bg-gold" />
               Costa & Souza
             </div>
-            <h1 className="font-serif text-4xl leading-[1.1] text-cream text-balance sm:text-5xl lg:text-6xl">
+            <h1 className="font-serif text-4xl leading-[1.15] text-cream text-balance sm:text-5xl lg:text-6xl">
               {config.heroTitle}{" "}
               {config.heroHighlight && (
                 <span className="italic text-gold-soft">{config.heroHighlight}</span>
@@ -240,7 +251,7 @@ function LPHero({ config }: { config: LPConfig }) {
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <button
                 onClick={openWhatsAppModal}
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-4 text-sm font-semibold text-navy-deep shadow-lg shadow-gold/20 transition-all hover:bg-gold-soft hover:shadow-gold/30"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-4 text-sm font-semibold text-navy-deep shadow-lg shadow-gold/20 transition-all hover:scale-[1.03] hover:bg-gold-soft hover:shadow-gold/30 active:scale-[0.98]"
               >
                 <MessageCircle className="h-4 w-4" />
                 Falar com um Especialista
@@ -296,7 +307,7 @@ function LPSummary({ config }: { config: LPConfig }) {
       <div className="mx-auto max-w-3xl px-6 lg:px-10">
         <p className="text-lg leading-relaxed text-muted-foreground">{config.summary}</p>
         {config.lastUpdated && (
-          <p className="mt-4 text-xs uppercase tracking-wider text-gold">
+          <p className="mt-4 text-xs uppercase tracking-[0.25em] text-gold">
             Atualizado em {config.lastUpdated}
           </p>
         )}
@@ -474,7 +485,7 @@ function LPInlineCTA({ text, buttonText }: { text: string; buttonText?: string }
           <p className="text-sm font-medium text-navy-deep">{text}</p>
           <button
             onClick={openWhatsAppModal}
-            className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition-all hover:bg-gold-soft"
+            className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition-all hover:scale-[1.03] hover:bg-gold-soft active:scale-[0.98]"
           >
             <MessageCircle className="h-4 w-4" />
             {buttonText ?? "Falar com um especialista"}
@@ -500,7 +511,7 @@ function LPReviewedBy({ config }: { config: LPConfig }) {
             />
           )}
           <div>
-            <p className="text-xs uppercase tracking-wider text-gold">Conteúdo revisado por</p>
+            <p className="text-xs uppercase tracking-[0.25em] text-gold">Conteúdo revisado por</p>
             <p className="font-serif text-lg text-navy-deep">{name}</p>
             <p className="text-sm text-muted-foreground">
               {role}
@@ -556,7 +567,7 @@ function LPProblem({ config }: { config: LPConfig }) {
   if (config.problemPoints.length === 0) return null;
 
   return (
-    <section id="como-funciona" className="bg-cream py-24 lg:py-32">
+    <section className="bg-cream py-24 lg:py-32">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20">
           <motion.div
@@ -636,7 +647,7 @@ function LPSolution({ config }: { config: LPConfig }) {
         <div className="mt-12 text-center">
           <button
             onClick={openWhatsAppModal}
-            className="inline-flex items-center gap-2 rounded-full bg-gold px-8 py-4 text-sm font-semibold text-navy-deep transition-all hover:bg-gold-soft"
+            className="inline-flex items-center gap-2 rounded-full bg-gold px-8 py-4 text-sm font-semibold text-navy-deep transition-all hover:scale-[1.03] hover:bg-gold-soft active:scale-[0.98]"
           >
             <MessageCircle className="h-4 w-4" />
             Quero falar com um especialista
@@ -658,16 +669,19 @@ function LPFAQ({ config }: { config: LPConfig }) {
           </h2>
         </div>
 
-        <div className="mx-auto max-w-3xl divide-y divide-border">
-          {config.faqs.map((f, i) => (
-            <details key={i} className="group py-5">
-              <summary className="flex cursor-pointer list-none items-center justify-between font-serif text-lg text-navy-deep hover:text-gold">
-                {f.q}
-                <span className="ml-4 transition-transform group-open:rotate-180">▼</span>
-              </summary>
-              <p className="mt-3 leading-relaxed text-muted-foreground">{f.a}</p>
-            </details>
-          ))}
+        <div className="mx-auto max-w-3xl">
+          <Accordion type="single" collapsible className="w-full">
+            {config.faqs.map((f, i) => (
+              <AccordionItem key={i} value={`item-${i}`} className="border-b border-border">
+                <AccordionTrigger className="py-5 text-left font-serif text-lg text-navy-deep hover:text-gold">
+                  {f.q}
+                </AccordionTrigger>
+                <AccordionContent className="pb-5 text-base leading-relaxed text-muted-foreground">
+                  {f.a}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </div>
     </section>

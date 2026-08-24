@@ -116,5 +116,9 @@ export const Route = createLPRoute({
       q: "Existe desconto na taxa para famílias grandes?",
       a: "Não. A taxa MRV é cobrada individualmente, inclusive para bebês, sem desconto por quantidade de pessoas.",
     },
+    {
+      q: "Vocês garantem a aprovação do visto?",
+      a: "Nenhuma consultoria séria pode garantir aprovação — a decisão é sempre do consulado americano. O que garantimos é a melhor preparação possível: estratégia individual, DS-160 sem erros e treinamento real para a entrevista.",
+    },
   ],
 });

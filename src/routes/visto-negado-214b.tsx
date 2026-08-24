@@ -111,5 +111,9 @@ export const Route = createLPRoute({
       q: "Uma nova entrevista com o mesmo perfil tem outro resultado?",
       a: "Dificilmente. Sem mudanças concretas nos vínculos, renda ou na forma de apresentar o caso, o resultado tende a se repetir.",
     },
+    {
+      q: "Vocês garantem a reversão da negativa?",
+      a: "Não. Nenhuma assessoria pode garantir esse resultado, pois a decisão é do oficial consular. O que garantimos é uma análise honesta do caso e a melhor estratégia possível para a nova tentativa — DS-160 sem erros e preparação real para a entrevista.",
+    },
   ],
 });

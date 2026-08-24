@@ -55,18 +55,18 @@ const guides = [
 
 export function GuidesHub() {
   return (
-    <section className="relative bg-champagne py-24 lg:py-32">
+    <section className="relative bg-champagne py-16 lg:py-20">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
-          <div className="mb-4 text-xs uppercase tracking-[0.25em] text-navy-deep/70">
-            — Guias sobre Visto Americano
+          <div className="mb-4 text-xs uppercase tracking-[0.25em] text-gold">
+            — Ainda com dúvidas sobre o seu caso?
           </div>
-          <h2 className="font-serif text-4xl leading-tight text-navy-deep text-balance sm:text-5xl">
-            Tudo o que você precisa saber, <span className="italic">num só lugar</span>.
+          <h2 className="font-serif text-3xl leading-tight text-navy-deep text-balance sm:text-4xl">
+            Veja o guia completo <span className="italic">do seu tipo de visto</span>.
           </h2>
         </div>
 
-        <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+        <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
           {guides.map((g, i) => (
             <motion.a
               key={g.href}
@@ -81,7 +81,7 @@ export function GuidesHub() {
                 <g.icon className="h-4 w-4" />
               </div>
               <span className="font-serif text-lg leading-tight text-navy-deep">{g.title}</span>
-              <span className="inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground group-hover:text-gold">
+              <span className="inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground group-hover:text-gold">
                 Ver guia
                 <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </span>

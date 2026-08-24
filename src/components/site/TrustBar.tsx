@@ -21,7 +21,7 @@ const items: TrustItem[] = [
 export function TrustBar() {
   return (
     <section className="border-b border-border bg-cream">
-      <div className="mx-auto grid max-w-[1440px] grid-cols-1 divide-y divide-border sm:grid-cols-4 sm:divide-x sm:divide-y-0">
+      <div className="mx-auto grid max-w-[1440px] grid-cols-1 divide-y divide-border sm:grid-cols-2 sm:divide-x md:grid-cols-4 md:divide-y-0">
         {items.map((it, i) => (
           <motion.div
             key={it.label}
@@ -35,7 +35,7 @@ export function TrustBar() {
               <it.icon className="h-5 w-5" />
             </div>
             <div className="min-w-0">
-              <div className="font-serif text-2xl text-navy-deep">
+              <div className="font-serif text-2xl text-navy-deep sm:text-3xl">
                 {it.end !== undefined ? (
                   <CountUp end={it.end} prefix={it.prefix} suffix={it.suffix} />
                 ) : (

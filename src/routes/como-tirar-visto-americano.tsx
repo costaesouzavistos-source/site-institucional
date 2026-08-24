@@ -207,5 +207,9 @@ export const Route = createLPRoute({
       q: "Posso tirar visto americano sozinho?",
       a: "Sim, é possível. Mas a assessoria reduz erros no DS-160 e prepara você para a entrevista, aumentando as chances de aprovação.",
     },
+    {
+      q: "Vocês garantem a aprovação do visto?",
+      a: "Nenhuma consultoria séria pode garantir aprovação — a decisão é sempre do consulado americano. O que garantimos é a melhor preparação possível: estratégia individual, DS-160 sem erros e treinamento real para a entrevista.",
+    },
   ],
 });

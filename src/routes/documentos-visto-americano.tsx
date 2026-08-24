@@ -116,5 +116,9 @@ export const Route = createLPRoute({
       q: "Existe uma lista oficial fixa de documentos?",
       a: "Não. O consulado avalia o conjunto do caso, e a documentação ideal varia por perfil e tipo de visto. Por isso a revisão individual faz diferença.",
     },
+    {
+      q: "Vocês garantem a aprovação do visto?",
+      a: "Nenhuma consultoria séria pode garantir aprovação — a decisão é sempre do consulado americano. O que garantimos é a melhor preparação possível: estratégia individual, DS-160 sem erros e treinamento real para a entrevista.",
+    },
   ],
 });

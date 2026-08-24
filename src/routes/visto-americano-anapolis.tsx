@@ -107,5 +107,9 @@ export const Route = createLPRoute({
       q: "O tempo de espera por entrevista em Brasília é longo?",
       a: "Varia ao longo do ano, com picos de demanda em períodos de férias e antes de grandes eventos. Ajudamos a planejar o melhor momento para agendar.",
     },
+    {
+      q: "Vocês garantem a aprovação do visto?",
+      a: "Nenhuma consultoria séria pode garantir aprovação — a decisão é sempre do consulado americano. O que garantimos é a melhor preparação possível: estratégia individual, DS-160 sem erros e treinamento real para a entrevista.",
+    },
   ],
 });

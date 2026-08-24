@@ -85,6 +85,14 @@
     scroll-behavior: smooth;
   }
 
+  a:focus-visible,
+  button:focus-visible,
+  summary:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
@@ -123,6 +131,56 @@
   );
 }
 
+@keyframes flag-wave {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+@utility animate-flag-wave {
+  animation: flag-wave 3.8s ease-in-out infinite;
+}
+
 @utility bg-gold-gradient {
   background-image: linear-gradient(135deg, var(--gold) 0%, var(--gold-soft) 100%);
+}
+
+@keyframes typewriter-reveal {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@utility animate-typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: bottom;
+  width: 100%;
+  animation-name: typewriter-reveal;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

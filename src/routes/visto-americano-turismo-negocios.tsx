@@ -106,5 +106,9 @@ export const Route = createLPRoute({
       q: "O B1/B2 vale para toda a família?",
       a: "Cada pessoa da família precisa do seu próprio visto B1/B2, mas os pedidos podem ser preparados e agendados em conjunto.",
     },
+    {
+      q: "Vocês garantem a aprovação do visto?",
+      a: "Nenhuma consultoria séria pode garantir aprovação — a decisão é sempre do consulado americano. O que garantimos é a melhor preparação possível: estratégia individual, DS-160 sem erros e treinamento real para a entrevista.",
+    },
   ],
 });

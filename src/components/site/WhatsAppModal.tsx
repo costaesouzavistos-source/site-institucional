@@ -7,17 +7,18 @@ import {
 } from "@/components/ui/dialog";
 import { useWhatsAppModal } from "@/contexts/WhatsAppModalContext";
 import { MessageCircle, X } from "lucide-react";
+import { motion } from "motion/react";
 
 const CONTACTS = [
   {
     name: "Lucas Philipe",
-    role: "Especialista em Vistos Americanos",
+    role: "Especialista em Reversão de Visto Negado",
     phone: "5562992856373",
     photo: "/images/optimized/foto-lucas.jpeg",
   },
   {
     name: "Jacqueline Costa",
-    role: "Especialista em Vistos Americanos",
+    role: "Especialista em Turismo e Entrevista Consular",
     phone: "5562992927288",
     photo: "/images/optimized/IMG_5787-avatar.jpg",
   },
@@ -32,10 +33,10 @@ export function WhatsAppModal() {
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && close()}>
-      <DialogContent className="max-w-lg border-gold/20 bg-navy-deep p-0 text-cream sm:max-w-xl sm:rounded-2xl">
+      <DialogContent className="max-w-lg rounded-2xl border-gold/20 bg-navy-deep p-0 text-cream sm:max-w-xl">
         <button
           onClick={close}
-          className="absolute right-4 top-4 z-10 rounded-full p-1 text-cream/70 transition-colors hover:text-cream"
+          className="absolute right-4 top-4 z-10 -m-2.5 rounded-full p-3 text-cream/70 transition-colors hover:text-cream"
           aria-label="Fechar"
         >
           <X className="h-5 w-5" />
@@ -56,9 +57,12 @@ export function WhatsAppModal() {
         </DialogHeader>
 
         <div className="grid gap-5 px-8 pb-8">
-          {CONTACTS.map((contact) => (
-            <a
+          {CONTACTS.map((contact, i) => (
+            <motion.a
               key={contact.phone}
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.35, delay: 0.15 + i * 0.08, ease: [0.16, 1, 0.3, 1] }}
               href={buildWhatsAppUrl(contact.phone)}
               target="_blank"
               rel="noopener noreferrer"
@@ -81,7 +85,7 @@ export function WhatsAppModal() {
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold text-navy-deep transition-transform group-hover:scale-110">
                 <MessageCircle className="h-5 w-5 sm:h-6 sm:w-6" />
               </div>
-            </a>
+            </motion.a>
           ))}
         </div>
       </DialogContent>

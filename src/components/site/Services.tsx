@@ -50,9 +50,11 @@ export function Services() {
           transition={{ duration: 0.7 }}
           className="mx-auto max-w-2xl text-center"
         >
-          <div className="mb-4 text-xs uppercase tracking-[0.25em] text-gold">— Tipos de Visto</div>
+          <div className="mb-4 text-xs uppercase tracking-[0.25em] text-gold">
+            01 — Diagnóstico
+          </div>
           <h2 className="font-serif text-4xl leading-tight text-navy-deep text-balance sm:text-5xl">
-            Para cada sonho, <span className="italic">um caminho</span> até os Estados Unidos.
+            Primeiro, vamos entender <span className="italic">qual é o seu caso</span>.
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
             Atendemos todas as categorias de visto não-imigrante com estratégia e acompanhamento
@@ -75,7 +77,7 @@ export function Services() {
                 <div className="grid h-12 w-12 place-items-center rounded-full bg-navy-deep text-gold transition-colors group-hover:bg-gold group-hover:text-navy-deep">
                   <s.icon className="h-5 w-5" />
                 </div>
-                <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-gold">
+                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">
                   {s.tag}
                 </span>
               </div>

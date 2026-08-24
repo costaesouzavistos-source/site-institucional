@@ -115,5 +115,9 @@ export const Route = createLPRoute({
       q: "Mesmo pelo dropbox, preciso ir ao CASV?",
       a: "Depende do consulado e da sua idade. Alguns solicitantes ainda precisam comparecer ao CASV para coleta de biometria, mesmo quando dispensados da entrevista.",
     },
+    {
+      q: "Vocês garantem a aprovação do visto?",
+      a: "Nenhuma consultoria séria pode garantir aprovação — a decisão é sempre do consulado americano. O que garantimos é a melhor preparação possível: estratégia individual, DS-160 sem erros e treinamento real para a entrevista.",
+    },
   ],
 });

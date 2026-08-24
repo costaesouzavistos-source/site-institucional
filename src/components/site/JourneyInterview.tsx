@@ -9,7 +9,6 @@ const specialists = [
     photo: "/images/optimized/foto-lucas.jpeg",
     imageZoom: "scale-[1.4]",
     imagePosition: "object-center",
-    // PLACEHOLDER: ajustar formação conforme dados reais.
     experience: "+10 anos",
     education: "Formação em Direito e Relações Internacionais",
     bio: "Especialista em visto americano e em reversão de visto negado. Criador do método único que mais aprova no País. Atuação em vistos B1/B2 Turismo/Negócios e F1 Estudante, desde o diagnóstico inicial à aprovação. Focado em estratégia, preparação para entrevista e grande experiência em defesa processual para quem teve o visto negado.",
@@ -20,18 +19,17 @@ const specialists = [
     photo: "/images/optimized/IMG_5787-avatar.jpg",
     imageZoom: "scale-100",
     imagePosition: "object-center",
-    // PLACEHOLDER: ajustar anos de experiência e formação conforme dados reais.
     experience: "+10 anos de experiência em vistos americanos e 18 anos de turismo.",
     education: "Formação em Administração e Marketing.",
     bio: "Especialista em Visto Americano e Reversão de visto negado. Atuação em vistos B1/B2 Turismo/Negócios, F1 Estudante, desde do diagnóstico à aprovação. Focada em preparação para entrevista e ampla experiência em vendas de viagens para Europa e Estados Unidos.",
   },
 ];
 
-export function AboutTeam() {
+export function JourneyInterview() {
   const { open: openWhatsAppModal } = useWhatsAppModal();
 
   return (
-    <section id="sobre" className="bg-cream py-24 lg:py-32">
+    <section id="quem-somos" className="bg-cream py-24 lg:py-32">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -40,13 +38,16 @@ export function AboutTeam() {
           transition={{ duration: 0.7 }}
           className="mb-16 text-center"
         >
-          <div className="mb-4 text-xs uppercase tracking-[0.25em] text-gold">— Quem somos</div>
-          <h2 className="font-serif text-3xl leading-tight text-navy-deep text-balance sm:text-4xl lg:text-5xl">
-            Os especialistas por trás da <span className="italic">Costa & Souza</span>
+          <div className="mb-4 text-xs uppercase tracking-[0.25em] text-gold">
+            03 — Preparação para entrevista
+          </div>
+          <h2 className="font-serif text-4xl leading-tight text-navy-deep text-balance sm:text-5xl">
+            Você fala sempre com <span className="italic">a mesma pessoa</span>, do início à
+            aprovação.
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-            Uma equipe pequena, focada e com experiência real em vistos americanos. Cada caso é
-            analisado por quem entende do assunto.
+            Treinamento com simulação real e material de apoio — sem robôs, sem terceirização.
+            Cada caso é preparado por quem entende do assunto.
           </p>
         </motion.div>
 
@@ -72,7 +73,7 @@ export function AboutTeam() {
                 </div>
 
                 <div className="flex flex-col justify-center p-6 sm:p-8">
-                  <div className="mb-1 text-xs font-semibold uppercase tracking-wider text-gold">
+                  <div className="mb-1 text-xs font-semibold uppercase tracking-[0.2em] text-gold">
                     {person.role}
                   </div>
                   <h3 className="font-serif text-2xl text-navy-deep">{person.name}</h3>

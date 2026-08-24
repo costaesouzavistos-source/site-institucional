@@ -78,13 +78,13 @@ export function FAQ() {
           </p>
         </motion.div>
 
-        <Accordion type="single" collapsible className="w-full">
+        <Accordion type="single" collapsible className="w-full max-w-2xl">
           {faqs.map((f, i) => (
             <AccordionItem key={i} value={`item-${i}`} className="border-b border-border">
               <AccordionTrigger className="py-5 text-left font-serif text-lg text-navy-deep hover:text-gold">
                 {f.q}
               </AccordionTrigger>
-              <AccordionContent className="pb-5 text-base leading-relaxed text-muted-foreground">
+              <AccordionContent className="pb-5 text-base leading-relaxed text-muted-foreground max-w-[65ch]">
                 {f.a}
                 {f.link && (
                   <>

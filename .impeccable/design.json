@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-24T00:00:00.000Z",
+  "title": "Design System: Costa & Souza Especialistas em Vistos Americanos",
+  "extensions": {
+    "colorMeta": {
+      "consulate-navy-deep": {
+        "role": "primary",
+        "displayName": "Consulate Navy Deep",
+        "canonical": "oklch(0.22 0.055 260)",
+        "tonalRamp": [
+          "oklch(0.15 0.04 260)",
+          "oklch(0.22 0.055 260)",
+          "oklch(0.30 0.07 260)",
+          "oklch(0.40 0.065 260)",
+          "oklch(0.50 0.055 260)",
+          "oklch(0.65 0.04 260)",
+          "oklch(0.80 0.025 260)",
+          "oklch(0.95 0.01 260)"
+        ]
+      },
+      "consulate-navy": {
+        "role": "primary-variant",
+        "displayName": "Consulate Navy",
+        "canonical": "oklch(0.3 0.07 260)",
+        "tonalRamp": [
+          "oklch(0.15 0.04 260)",
+          "oklch(0.22 0.055 260)",
+          "oklch(0.30 0.07 260)",
+          "oklch(0.40 0.065 260)",
+          "oklch(0.50 0.055 260)",
+          "oklch(0.65 0.04 260)",
+          "oklch(0.80 0.025 260)",
+          "oklch(0.95 0.01 260)"
+        ]
+      },
+      "boarding-gold": {
+        "role": "secondary",
+        "displayName": "Boarding Gold",
+        "canonical": "oklch(0.78 0.11 82)",
+        "tonalRamp": [
+          "oklch(0.15 0.03 82)",
+          "oklch(0.30 0.06 82)",
+          "oklch(0.45 0.09 82)",
+          "oklch(0.60 0.11 82)",
+          "oklch(0.78 0.11 82)",
+          "oklch(0.86 0.07 82)",
+          "oklch(0.92 0.04 82)",
+          "oklch(0.97 0.015 82)"
+        ]
+      },
+      "boarding-gold-soft": {
+        "role": "secondary-variant",
+        "displayName": "Boarding Gold Soft",
+        "canonical": "oklch(0.86 0.07 85)",
+        "tonalRamp": [
+          "oklch(0.15 0.03 82)",
+          "oklch(0.30 0.06 82)",
+          "oklch(0.45 0.09 82)",
+          "oklch(0.60 0.11 82)",
+          "oklch(0.78 0.11 82)",
+          "oklch(0.86 0.07 82)",
+          "oklch(0.92 0.04 82)",
+          "oklch(0.97 0.015 82)"
+        ]
+      },
+      "champagne": {
+        "role": "neutral",
+        "displayName": "Champagne",
+        "canonical": "oklch(0.97 0.004 260)",
+        "tonalRamp": [
+          "oklch(0.15 0.02 260)",
+          "oklch(0.30 0.015 260)",
+          "oklch(0.50 0.01 260)",
+          "oklch(0.70 0.008 260)",
+          "oklch(0.85 0.005 260)",
+          "oklch(0.90 0.004 260)",
+          "oklch(0.97 0.004 260)",
+          "oklch(0.995 0.001 260)"
+        ]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Cream",
+        "canonical": "oklch(0.995 0.001 260)",
+        "tonalRamp": [
+          "oklch(0.15 0.02 260)",
+          "oklch(0.30 0.015 260)",
+          "oklch(0.50 0.01 260)",
+          "oklch(0.70 0.008 260)",
+          "oklch(0.85 0.005 260)",
+          "oklch(0.90 0.004 260)",
+          "oklch(0.97 0.004 260)",
+          "oklch(0.995 0.001 260)"
+        ]
+      },
+      "card-white": {
+        "role": "neutral-surface",
+        "displayName": "Card White",
+        "canonical": "oklch(1 0 0)",
+        "tonalRamp": [
+          "oklch(0.15 0 0)",
+          "oklch(0.3 0 0)",
+          "oklch(0.5 0 0)",
+          "oklch(0.7 0 0)",
+          "oklch(0.85 0 0)",
+          "oklch(0.92 0 0)",
+          "oklch(0.97 0 0)",
+          "oklch(1 0 0)"
+        ]
+      },
+      "ink": {
+        "role": "neutral-text",
+        "displayName": "Ink",
+        "canonical": "oklch(0.18 0.02 260)",
+        "tonalRamp": [
+          "oklch(0.10 0.015 260)",
+          "oklch(0.18 0.02 260)",
+          "oklch(0.28 0.02 260)",
+          "oklch(0.4 0.015 260)",
+          "oklch(0.55 0.012 260)",
+          "oklch(0.7 0.008 260)",
+          "oklch(0.85 0.005 260)",
+          "oklch(0.95 0.003 260)"
+        ]
+      },
+      "border-sand": {
+        "role": "border",
+        "displayName": "Border Sand",
+        "canonical": "oklch(0.9 0.015 85)",
+        "tonalRamp": [
+          "oklch(0.3 0.02 85)",
+          "oklch(0.45 0.02 85)",
+          "oklch(0.6 0.02 85)",
+          "oklch(0.75 0.018 85)",
+          "oklch(0.85 0.016 85)",
+          "oklch(0.9 0.015 85)",
+          "oklch(0.95 0.01 85)",
+          "oklch(0.98 0.006 85)"
+        ]
+      },
+      "muted-sand": {
+        "role": "muted-surface",
+        "displayName": "Muted Sand",
+        "canonical": "oklch(0.95 0.015 85)",
+        "tonalRamp": [
+          "oklch(0.3 0.02 85)",
+          "oklch(0.45 0.02 85)",
+          "oklch(0.6 0.02 85)",
+          "oklch(0.75 0.018 85)",
+          "oklch(0.85 0.016 85)",
+          "oklch(0.9 0.015 85)",
+          "oklch(0.95 0.015 85)",
+          "oklch(0.98 0.006 85)"
+        ]
+      },
+      "slate-muted": {
+        "role": "muted-text",
+        "displayName": "Slate Muted",
+        "canonical": "oklch(0.45 0.02 260)",
+        "tonalRamp": [
+          "oklch(0.15 0.02 260)",
+          "oklch(0.25 0.02 260)",
+          "oklch(0.35 0.02 260)",
+          "oklch(0.45 0.02 260)",
+          "oklch(0.58 0.016 260)",
+          "oklch(0.7 0.012 260)",
+          "oklch(0.85 0.006 260)",
+          "oklch(0.95 0.003 260)"
+        ]
+      },
+      "alert-red": {
+        "role": "destructive",
+        "displayName": "Alert Red",
+        "canonical": "oklch(0.55 0.2 27)",
+        "tonalRamp": [
+          "oklch(0.2 0.1 27)",
+          "oklch(0.3 0.14 27)",
+          "oklch(0.4 0.17 27)",
+          "oklch(0.55 0.2 27)",
+          "oklch(0.65 0.18 27)",
+          "oklch(0.75 0.14 27)",
+          "oklch(0.87 0.08 27)",
+          "oklch(0.95 0.03 27)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero H1 only; always one italic phrase." },
+      "headline": { "displayName": "Headline", "purpose": "Section H2s; paired with an em-dash eyebrow label." },
+      "title": { "displayName": "Title", "purpose": "Card titles, step titles, FAQ questions." },
+      "body": { "displayName": "Body", "purpose": "Paragraph copy, table cells, FAQ answers." },
+      "label": { "displayName": "Label", "purpose": "Eyebrow section labels, stat captions, nav microcopy." }
+    },
+    "shadows": [
+      { "name": "structural-hover-lift", "value": "0 20px 60px -30px var(--navy-deep)", "purpose": "Card hover lift on Services/GuidesHub cards, paired with -translate-y-1." },
+      { "name": "gold-interactive-glow", "value": "0 10px 30px -5px var(--gold)", "purpose": "Rests under every primary CTA and the WhatsApp float button; intensifies on hover." },
+      { "name": "dark-panel-elevation", "value": "shadow-xl shadow-navy-deep/20", "purpose": "Single emphasized dark panel per section, e.g. the 'with us' side of Comparison." }
+    ],
+    "motion": [
+      { "name": "fade-rise-in-view", "value": "opacity 0→1, y 20px→30px→0, duration 0.5-0.7s, ease easeOut", "purpose": "Default scroll-reveal for nearly every section (FadeInSection, per-component whileInView blocks)." },
+      { "name": "hero-cinematic-ease", "value": "cubic-bezier(0.22, 1, 0.36, 1), duration 1.1s", "purpose": "Hero headline/CTA entrance only." },
+      { "name": "stagger-index", "value": "delay: i * 0.08s to i * 0.15s", "purpose": "Grid/list items (services, process steps, trust stats) revealing in sequence." },
+      { "name": "cta-press-scale", "value": "hover:scale-1.02-1.03, active:scale-0.98", "purpose": "Every primary/secondary CTA button." },
+      { "name": "whatsapp-ping", "value": "animate-ping, gold/60 ring, continuous", "purpose": "Signals the floating WhatsApp button is live and waiting." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Gold pill CTA that opens the WhatsApp specialist modal; used in headers, heroes, and inline CTAs site-wide.",
+      "html": "<button class=\"ds-btn-primary\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7.9 20A9 9 0 1 0 4 16.1L2 22Z\"/></svg>Fale com um Especialista</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-radius: 9999px; background: oklch(0.78 0.11 82); color: oklch(0.22 0.055 260); font-size: 14px; font-weight: 600; padding: 16px 28px; border: none; cursor: pointer; box-shadow: 0 10px 30px -5px oklch(0.78 0.11 82 / 0.2); transition: transform 0.2s, background 0.2s, box-shadow 0.2s; } .ds-btn-primary .ds-icon { width: 16px; height: 16px; } .ds-btn-primary:hover { background: oklch(0.86 0.07 85); transform: scale(1.03); box-shadow: 0 14px 36px -5px oklch(0.78 0.11 82 / 0.3); } .ds-btn-primary:active { transform: scale(0.98); } .ds-btn-primary:focus-visible { outline: 2px solid oklch(0.78 0.11 82); outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Button (on dark)",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outline pill CTA used over navy/dark hero and section backgrounds.",
+      "html": "<a class=\"ds-btn-secondary-dark\" href=\"#pacotes\">Ver Pacotes</a>",
+      "css": ".ds-btn-secondary-dark { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-radius: 9999px; border: 1px solid oklch(0.995 0.001 260 / 0.3); background: oklch(0.995 0.001 260 / 0.05); color: oklch(0.995 0.001 260); font-size: 14px; font-weight: 600; padding: 16px 28px; cursor: pointer; backdrop-filter: blur(4px); transition: transform 0.2s, border-color 0.2s, background 0.2s; } .ds-btn-secondary-dark:hover { transform: scale(1.03); border-color: oklch(0.995 0.001 260 / 0.6); background: oklch(0.995 0.001 260 / 0.1); } .ds-btn-secondary-dark:active { transform: scale(0.98); }"
+    },
+    {
+      "name": "Content Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Bordered card with structural hover lift; used for services, guides, and testimonials.",
+      "html": "<a class=\"ds-card\" href=\"#\"><div class=\"ds-card-badge\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2 2 7l10 5 10-5-10-5Z\"/></svg></div><span class=\"ds-card-tag\">B1/B2</span><h3 class=\"ds-card-title\">Turismo | Negócios</h3><p class=\"ds-card-desc\">Visto americano para viagem em família, férias, compras ou negócios a curto prazo.</p></a>",
+      "css": ".ds-card { display: flex; flex-direction: column; border-radius: 16px; border: 1px solid oklch(0.22 0.055 260 / 0.1); background: oklch(1 0 0); padding: 32px; text-decoration: none; transition: transform 0.5s, border-color 0.5s, box-shadow 0.5s; } .ds-card:hover { transform: translateY(-4px); border-color: oklch(0.78 0.11 82); box-shadow: 0 20px 60px -30px oklch(0.22 0.055 260); } .ds-card-badge { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 9999px; background: oklch(0.22 0.055 260); color: oklch(0.78 0.11 82); } .ds-card-badge svg { width: 20px; height: 20px; } .ds-card-tag { margin-top: 12px; font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: oklch(0.78 0.11 82); } .ds-card-title { margin-top: 12px; font-family: Fraunces, Georgia, serif; font-size: 24px; color: oklch(0.22 0.055 260); } .ds-card-desc { margin-top: 12px; font-size: 14px; line-height: 1.6; color: oklch(0.45 0.02 260); }"
+    },
+    {
+      "name": "Icon Badge",
+      "kind": "custom",
+      "refersTo": "icon-badge",
+      "description": "Circular navy badge with a gold icon, used to open every card, trust stat, and list item.",
+      "html": "<div class=\"ds-icon-badge\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2 2 7l10 5 10-5-10-5Z\"/></svg></div>",
+      "css": ".ds-icon-badge { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 9999px; background: oklch(0.22 0.055 260); color: oklch(0.78 0.11 82); flex-shrink: 0; } .ds-icon-badge svg { width: 20px; height: 20px; }"
+    },
+    {
+      "name": "Eyebrow Label",
+      "kind": "custom",
+      "description": "The em-dash section label that precedes every H2 site-wide.",
+      "html": "<div class=\"ds-eyebrow\">— Tipos de Visto</div>",
+      "css": ".ds-eyebrow { font-size: 12px; text-transform: uppercase; letter-spacing: 0.25em; color: oklch(0.78 0.11 82); font-family: Inter, sans-serif; margin-bottom: 16px; }"
+    },
+    {
+      "name": "FAQ Accordion Item",
+      "kind": "custom",
+      "description": "Accordion row used for FAQ; Fraunces question, chevron rotates open, Inter answer with an inline gold link.",
+      "html": "<details class=\"ds-faq-item\" open><summary class=\"ds-faq-q\">Como tirar o visto americano?<span class=\"ds-faq-chevron\">▼</span></summary><p class=\"ds-faq-a\">O processo passa pelo formulário DS-160, pagamento da taxa MRV, agendamento da biometria no CASV e a entrevista consular. <a class=\"ds-faq-link\" href=\"#\">Ver o passo a passo completo</a></p></details>",
+      "css": ".ds-faq-item { border-bottom: 1px solid oklch(0.9 0.015 85); padding: 20px 0; } .ds-faq-q { display: flex; align-items: center; justify-content: space-between; cursor: pointer; list-style: none; font-family: Fraunces, Georgia, serif; font-size: 18px; color: oklch(0.22 0.055 260); } .ds-faq-q:hover { color: oklch(0.78 0.11 82); } .ds-faq-chevron { margin-left: 16px; transition: transform 0.2s; } .ds-faq-item[open] .ds-faq-chevron { transform: rotate(180deg); } .ds-faq-a { margin-top: 12px; line-height: 1.6; color: oklch(0.45 0.02 260); } .ds-faq-link { font-weight: 500; color: oklch(0.78 0.11 82); text-decoration: underline; } .ds-faq-link:hover { color: oklch(0.86 0.07 85); }"
+    },
+    {
+      "name": "WhatsApp Float Button",
+      "kind": "custom",
+      "description": "Persistent fixed circular action button with a continuous ping ring, signature of the site.",
+      "html": "<button class=\"ds-wa-float\" aria-label=\"Falar no WhatsApp\"><span class=\"ds-wa-ping\"></span><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z\"/></svg></button>",
+      "css": ".ds-wa-float { position: fixed; bottom: 24px; right: 24px; display: grid; place-items: center; width: 56px; height: 56px; border-radius: 9999px; background: oklch(0.78 0.11 82); color: oklch(0.22 0.055 260); border: none; cursor: pointer; box-shadow: 0 10px 30px -5px oklch(0.22 0.055 260); transition: transform 0.2s; } .ds-wa-float:hover { transform: scale(1.1); } .ds-wa-float svg { width: 24px; height: 24px; position: relative; } .ds-wa-ping { position: absolute; inset: 0; border-radius: 9999px; background: oklch(0.78 0.11 82 / 0.6); animation: ds-ping 1.6s cubic-bezier(0,0,0.2,1) infinite; } @keyframes ds-ping { 75%, 100% { transform: scale(2); opacity: 0; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Private Consulate Lounge",
+    "overview": "Costa & Souza sells reassurance for one of the most anxious purchases a family makes: the right to enter the United States. The system's job is to feel like stepping out of a government waiting room and into a private advisory lounge — the same authority and gravity, none of the cold bureaucracy. Consulate Navy carries that authority: it is the dominant surface across the hero, the process timeline, and every high-stakes moment (the WhatsApp specialist picker, the final CTA). Boarding Gold is rationed against it — an eyebrow label, a badge, a CTA, an italic word — so that when it appears, it reads as a moment of warmth and forward motion rather than decoration. Cream and Champagne hold the in-between, editorial-magazine-like sections (services, guides, FAQ) where the navy would be too heavy to sustain.\n\nThe voice is warm and reassuring first, with calm authority, premium confidence, and aspirational emotion all present but none allowed to dominate — the same balance the copy strikes between \"we are serious professionals\" and \"we are the people who get your family to the theme park.\" Fraunces' high-contrast serif with true italics does the emotional work (softening headlines with an italicized phrase — \"a viagem dos sonhos\", \"seriedade e compromisso\") while Inter carries the procedural, trustworthy detail (FAQ answers, document lists, cost tables) in a plain, legible voice. Real client photography — a family at the consulate, a castle at dusk, a phone full of WhatsApp screenshots — keeps the system anchored in lived experience rather than stock-photo travel fantasy.\n\nConfirmed anti-reference: this system must never drift toward a government portal, a generic law-firm template, or a cold SaaS dashboard. Sharp corners, gray neutral shadows, dense bureaucratic tables without warmth, and monospace/utilitarian type are all signals of that failure mode and are excluded on sight.",
+    "keyCharacteristics": [
+      "Consulate Navy as the dominant, authority-carrying surface; Boarding Gold rationed to eyebrows, badges, CTAs, and single italic words.",
+      "Fraunces serif display type with italic emphasis phrases, paired with plain-spoken Inter for procedural content.",
+      "Flat, bordered surfaces at rest; depth only appears as a large, soft, tinted glow on hover or emphasis — never a neutral gray shadow.",
+      "Every clickable CTA is a full pill or a perfect circle; content containers are generously rounded (16px); nothing in the system is a sharp rectangle.",
+      "Real family/travel photography, cinematic navy gradient overlays, and a legal disclaimer that is treated as a first-class trust signal, not fine print."
+    ],
+    "rules": [
+      { "name": "The Rationed Gold Rule", "body": "Boarding Gold never fills a large surface. It lives in eyebrow labels, icon-badge fills, CTA fills, thin borders (gold/10–gold/40), and single italicized words. If gold is covering more than a button or a badge, it has drifted out of system.", "section": "colors" },
+      { "name": "The Whisper Border Rule", "body": "Borders on light surfaces are either Border Sand or Consulate Navy Deep at 10% opacity; borders on dark surfaces are Boarding Gold at 10–30% opacity. No pure black, pure white, or neutral gray border ever appears.", "section": "colors" },
+      { "name": "The Em-Dash Eyebrow Rule", "body": "Every major section opens with a small uppercase Inter label prefixed by an em dash, set in Boarding Gold at 0.25em tracking. Do not replace it with a plain label, badge, or icon.", "section": "typography" },
+      { "name": "The One Italic Rule", "body": "Every H1/H2 carries exactly one italicized clause or word. Headlines with zero or multiple italic passages both break the rhythm.", "section": "typography" },
+      { "name": "The Ambient Glow Rule", "body": "No neutral gray shadow ever appears. Every shadow is tinted — navy for structural/passive elevation, gold for interactive/action elevation — and always large, soft, and heavily negative-spread rather than tight and hard-edged.", "section": "elevation" },
+      { "name": "The Pill-or-Circle Rule", "body": "No clickable CTA element is ever a squared or gently-rounded rectangle; it is either a full pill or a perfect circle, always.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do ration Boarding Gold to eyebrows, CTAs, icon-badge fills, thin borders, and single italic words — never a large fill.",
+      "Do give every H1/H2 exactly one italicized Fraunces phrase and, for H2s, an em-dash eyebrow label above it.",
+      "Do keep clickable CTAs as full pills or perfect circles, and content containers at rounded-2xl (16px).",
+      "Do tint every shadow — navy for passive/structural elevation, gold for interactive/action elevation — large, soft, and heavily negative-spread.",
+      "Do route every \"talk to us\" action through the shared WhatsAppModal specialist picker, not a bare wa.me link, so the \"choose your specialist\" moment stays consistent site-wide.",
+      "Do keep the legal/no-guarantee disclaimer visible in the footer of every page.",
+      "Do hold landing-page long-form content (tables, steps, documents, FAQ) to a max-w-3xl column even though the hero/trust band stays full-width."
+    ],
+    "donts": [
+      "Don't use a neutral gray shadow, border, or background anywhere — every shadow and border in this system is tinted navy, gold, or warm sand.",
+      "Don't let gold cover a large surface (a full section background, a large card fill) — it stops reading as an accent the moment it does.",
+      "Don't use a sharp or gently-rounded rectangle for a clickable CTA — buttons are pills, icon targets are circles.",
+      "Don't default to the shadcn Button/Input primitives' native rounded-md styling for visible marketing surfaces.",
+      "Don't drift toward a government-portal, generic law-firm, or cold SaaS-dashboard look.",
+      "Don't run the hero parallax/scale-on-scroll effect on mobile — it is deliberately disabled below the md breakpoint for scroll performance."
+    ]
+  }
+}

@@ -108,5 +108,9 @@ export const Route = createLPRoute({
       q: "Vale a pena preencher o DS-160 sem ajuda?",
       a: "É possível, mas como não há segunda chance depois do envio, muitos preferem ter uma revisão especializada antes de confirmar.",
     },
+    {
+      q: "Vocês garantem a aprovação do visto?",
+      a: "Nenhuma consultoria séria pode garantir aprovação — a decisão é sempre do consulado americano. O que garantimos é a melhor preparação possível: estratégia individual, DS-160 sem erros e treinamento real para a entrevista.",
+    },
   ],
 });

@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
-import { Check } from "lucide-react";
 import { useWhatsAppModal } from "@/contexts/WhatsAppModalContext";
+import { DrawCheck } from "@/components/animations/DrawCheck";
 
 const plans = [
   {
@@ -57,7 +57,7 @@ function PlanCard({ p, i }: { p: (typeof plans)[0]; i: number }) {
       }`}
     >
       {p.highlight && (
-        <div className="absolute -top-3 left-8 rounded-full bg-gold px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-navy-deep">
+        <div className="absolute -top-3 left-8 rounded-full bg-gold px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-navy-deep">
           Mais escolhido
         </div>
       )}
@@ -74,11 +74,9 @@ function PlanCard({ p, i }: { p: (typeof plans)[0]; i: number }) {
       </div>
 
       <ul className="mt-8 space-y-3.5 text-sm">
-        {p.features.map((f) => (
+        {p.features.map((f, fi) => (
           <li key={f} className="flex items-start gap-3">
-            <Check
-              className={`mt-0.5 h-4 w-4 shrink-0 ${p.highlight ? "text-gold" : "text-gold"}`}
-            />
+            <DrawCheck delay={0.3 + fi * 0.08} className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
             <span className={p.highlight ? "text-cream/85" : "text-navy-deep/80"}>{f}</span>
           </li>
         ))}
@@ -103,7 +101,7 @@ export function Packages() {
     <section id="pacotes" className="relative bg-champagne py-24 lg:py-32">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-10">
         <div className="mx-auto max-w-2xl text-center">
-          <div className="mb-4 text-xs uppercase tracking-[0.25em] text-navy-deep/70">
+          <div className="mb-4 text-xs uppercase tracking-[0.25em] text-gold">
             — Pacotes
           </div>
           <h2 className="font-serif text-4xl leading-tight text-navy-deep text-balance sm:text-5xl">

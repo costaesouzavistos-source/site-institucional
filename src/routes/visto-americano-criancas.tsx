@@ -123,5 +123,9 @@ export const Route = createLPRoute({
       q: "A taxa do visto é mais barata para crianças?",
       a: "Não. A taxa MRV é a mesma para qualquer idade, inclusive bebês.",
     },
+    {
+      q: "Vocês garantem a aprovação do visto?",
+      a: "Nenhuma consultoria séria pode garantir aprovação — a decisão é sempre do consulado americano. O que garantimos é a melhor preparação possível: estratégia individual, DS-160 sem erros e treinamento real para a entrevista.",
+    },
   ],
 });

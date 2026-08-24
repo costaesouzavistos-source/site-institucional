@@ -106,5 +106,9 @@ export const Route = createLPRoute({
       q: "O F1 permite ficar nos EUA depois de formado?",
       a: "Depende do programa e da elegibilidade a extensões como o OPT. Fora dessas regras específicas, a permanência está ligada à duração do curso.",
     },
+    {
+      q: "Vocês garantem a aprovação do visto?",
+      a: "Nenhuma consultoria séria pode garantir aprovação — a decisão é sempre do consulado americano. O que garantimos é a melhor preparação possível: estratégia individual, DS-160 sem erros e treinamento real para a entrevista.",
+    },
   ],
 });

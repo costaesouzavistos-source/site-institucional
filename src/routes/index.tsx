@@ -5,18 +5,14 @@ import { Hero } from "@/components/site/Hero";
 import { TrustBar } from "@/components/site/TrustBar";
 import { Services } from "@/components/site/Services";
 import { GuidesHub } from "@/components/site/GuidesHub";
-import { Process } from "@/components/site/Process";
-import { DreamInNumbers } from "@/components/site/DreamInNumbers";
-import { Comparison } from "@/components/site/Comparison";
-import { WhyUs } from "@/components/site/WhyUs";
-import { Testimonials } from "@/components/site/Testimonials";
+import { JourneyStrategy } from "@/components/site/JourneyStrategy";
+import { JourneyInterview } from "@/components/site/JourneyInterview";
+import { JourneyApproval } from "@/components/site/JourneyApproval";
 import { Packages } from "@/components/site/Packages";
 import { FAQ, faqs } from "@/components/site/FAQ";
 import { ContactCTA } from "@/components/site/ContactCTA";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
-import { FamilyCarousel } from "@/components/site/FamilyCarousel";
-import { AboutTeam } from "@/components/site/AboutTeam";
 import { WhatsAppModal } from "@/components/site/WhatsAppModal";
 import { WhatsAppModalProvider } from "@/contexts/WhatsAppModalContext";
 
@@ -34,12 +30,15 @@ const localBusinessSchema = {
   areaServed: "BR",
   address: {
     "@type": "PostalAddress",
+    streetAddress: "Av. Juscelino Kubitschek, 500, Sala 404 - Jundiaí",
     addressLocality: "Anápolis",
     addressRegion: "GO",
+    postalCode: "75110-390",
     addressCountry: "BR",
   },
   telephone: "+55-62-99285-6373",
   url: siteUrl,
+  image: `${siteUrl}/og-image.jpg`,
   priceRange: "$$",
 };
 
@@ -57,7 +56,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Costa & Souza — Especialistas em Visto Americano | Anápolis GO, Brasil",
+        title: "Costa & Souza — Especialistas em Visto Americano | Anápolis",
       },
       {
         name: "description",
@@ -117,34 +116,22 @@ function Index() {
             <TrustBar />
           </FadeInSection>
           <FadeInSection>
-            <FamilyCarousel />
-          </FadeInSection>
-          <FadeInSection>
             <Services />
           </FadeInSection>
           <FadeInSection>
-            <GuidesHub />
+            <JourneyStrategy />
           </FadeInSection>
           <FadeInSection>
-            <Process />
+            <JourneyInterview />
           </FadeInSection>
           <FadeInSection>
-            <DreamInNumbers />
-          </FadeInSection>
-          <FadeInSection>
-            <Comparison />
-          </FadeInSection>
-          <FadeInSection>
-            <WhyUs />
-          </FadeInSection>
-          <FadeInSection>
-            <AboutTeam />
-          </FadeInSection>
-          <FadeInSection>
-            <Testimonials />
+            <JourneyApproval />
           </FadeInSection>
           <FadeInSection>
             <Packages />
+          </FadeInSection>
+          <FadeInSection>
+            <GuidesHub />
           </FadeInSection>
           <FadeInSection>
             <FAQ />

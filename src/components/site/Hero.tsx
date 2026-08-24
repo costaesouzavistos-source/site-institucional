@@ -2,9 +2,17 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { useRef, useState, useEffect, type ReactNode } from "react";
 import { MessageCircle, ArrowRight, Star } from "lucide-react";
 // PLACEHOLDER: imagem gerada via IA — substituir por versão final Higgsfield quando disponível.
-import heroImg from "@/assets/castelo-disney-familia-larga.png";
+import heroImg640 from "@/assets/hero-640.jpg";
+import heroImg1024 from "@/assets/hero-1024.jpg";
+import heroImg1600 from "@/assets/hero-1600.jpg";
+import heroImg from "@/assets/hero-2200.jpg";
+
+const heroSrcSet = `${heroImg640} 640w, ${heroImg1024} 1024w, ${heroImg1600} 1600w, ${heroImg} 2200w`;
 import { trackWhatsAppClick, trackEvent } from "@/lib/analytics";
 import { useWhatsAppModal } from "@/contexts/WhatsAppModalContext";
+import { InstrumentPanel } from "@/components/site/InstrumentPanel";
+import { TypewriterText } from "@/components/animations/TypewriterText";
+import { AttractParticles } from "@/components/animations/AttractParticles";
 
 const DEFAULT_WHATSAPP_URL =
   "https://wa.me/5562992856373?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20especialista%20em%20vistos%20americanos.";
@@ -38,10 +46,10 @@ interface HeroProps {
 }
 
 export function Hero({
-  badge = "Consultoria em vistos americanos",
+  badge = "Especialistas em vistos americanos",
   title = (
     <>
-      Seu visto aprovado.
+      <TypewriterText text="Seu visto aprovado." />
       <br />
       <span className="italic text-gold-soft">A viagem dos sonhos</span>
       <br />
@@ -69,6 +77,7 @@ export function Hero({
   const isMobile = useIsMobile();
   const { scrollY } = useScroll();
   const { open: openWhatsAppModal } = useWhatsAppModal();
+  const [ctaAttracting, setCtaAttracting] = useState(false);
 
   // Desktop: parallax + zoom; mobile: valores fixos para evitar bugs de scroll
   const y = useTransform(scrollY, [0, 1000], isMobile ? [0, 0] : [0, 150]);
@@ -87,9 +96,11 @@ export function Hero({
       >
         <img
           src={imageSrc}
+          srcSet={heroSrcSet}
+          sizes="100vw"
           alt={imageAlt}
-          width={1920}
-          height={1280}
+          width={2200}
+          height={1228}
           className="h-full w-full object-cover object-center"
           fetchPriority="high"
         />
@@ -102,6 +113,8 @@ export function Hero({
       <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/40 via-navy-deep/10 to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/30 via-transparent to-transparent" />
       <div className="pointer-events-none absolute inset-0 [background:radial-gradient(80%_50%_at_50%_100%,transparent,var(--navy-deep)_90%)] opacity-60" />
+
+      <InstrumentPanel />
 
       {/* Content */}
       <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-[1440px] flex-col justify-end px-6 pb-20 pt-40 lg:px-10 lg:pb-28 lg:pt-48">
@@ -130,11 +143,16 @@ export function Hero({
                 trackWhatsAppClick("hero_primary");
                 openWhatsAppModal();
               }}
-              className="group inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-4 text-sm font-semibold text-navy-deep shadow-lg shadow-gold/20 transition-all hover:scale-[1.03] hover:bg-gold-soft hover:shadow-xl hover:shadow-gold/30 active:scale-[0.98]"
+              onMouseEnter={() => setCtaAttracting(true)}
+              onMouseLeave={() => setCtaAttracting(false)}
+              onTouchStart={() => setCtaAttracting(true)}
+              onTouchEnd={() => setCtaAttracting(false)}
+              className="group relative inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-4 text-sm font-semibold text-navy-deep shadow-lg shadow-gold/20 transition-all hover:scale-[1.03] hover:bg-gold-soft hover:shadow-xl hover:shadow-gold/30 active:scale-[0.98]"
             >
-              <MessageCircle className="h-4 w-4" />
-              {ctaText}
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              <AttractParticles active={ctaAttracting} colorClassName="bg-navy-deep/70" />
+              <MessageCircle className="relative h-4 w-4" />
+              <span className="relative">{ctaText}</span>
+              <ArrowRight className="relative h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </button>
             <a
               href={secondaryCtaHref}
