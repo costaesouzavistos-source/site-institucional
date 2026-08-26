@@ -11,7 +11,7 @@ export const Route = createLPRoute({
   canonical: "https://costaesouzavistos.com/visto-americano-estudante",
   schemaName: "Visto Americano de Estudante F1 - Costa & Souza",
   schemaDescription:
-    "Assessoria para visto americano de estudante (F1) com atendimento remoto em todo o Brasil.",
+    "Assessoria para visto americano de estudante (F1) com atendimento remoto em todo o Brasil, Europa e Estados Unidos.",
   telephone: "+55-62-99285-6373",
 
   heroTitle: "Visto americano de estudante",

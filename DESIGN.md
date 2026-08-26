@@ -89,7 +89,7 @@ components:
 
 **Creative North Star: "The Private Consulate Lounge"**
 
-Costa & Souza sells reassurance for one of the most anxious purchases a family makes: the right to enter the United States. The system's job is to feel like stepping out of a government waiting room and into a private advisory lounge — the same authority and gravity, none of the cold bureaucracy. Consulate Navy carries that authority: it is the dominant surface across the hero, the process timeline, and every high-stakes moment (the WhatsApp specialist picker, the final CTA). Boarding Gold is rationed against it — an eyebrow label, a badge, a CTA, an italic word — so that when it appears, it reads as a moment of warmth and forward motion rather than decoration. Cream and Champagne hold the in-between, editorial-magazine-like sections (services, guides, FAQ) where the navy would be too heavy to sustain.
+Costa & Souza sells reassurance for one of the most anxious purchases a family makes: the right to enter the United States. The system's job is to feel like stepping out of a government waiting room and into a private advisory lounge — the same authority and gravity, none of the cold bureaucracy. Consulate Navy carries that authority: it is the dominant surface across the hero, JourneyStrategy's "with us" panel, and every high-stakes moment (the WhatsApp specialist picker, the final CTA). Boarding Gold is rationed against it — an eyebrow label, a badge, a CTA, an italic word — so that when it appears, it reads as a moment of warmth and forward motion rather than decoration. Cream and Champagne hold the in-between, editorial-magazine-like sections (services, guides, FAQ) where the navy would be too heavy to sustain.
 
 The voice is warm and reassuring first, with calm authority, premium confidence, and aspirational emotion all present but none allowed to dominate — the same balance the copy strikes between "we are serious professionals" and "we are the people who get your family to the theme park." Fraunces' high-contrast serif with true italics does the emotional work (softening headlines with an italicized phrase — "a viagem dos sonhos", "seriedade e compromisso") while Inter carries the procedural, trustworthy detail (FAQ answers, document lists, cost tables) in a plain, legible voice. Real client photography — a family at the consulate, a castle at dusk, a phone full of WhatsApp screenshots — keeps the system anchored in lived experience rather than stock-photo travel fantasy.
 
@@ -107,7 +107,7 @@ The voice is warm and reassuring first, with calm authority, premium confidence,
 The palette is a two-color system — Consulate Navy and Boarding Gold — laid over near-white paper tones, with Fraunces-serif italics doing double duty as a third "color" of emphasis.
 
 ### Primary
-- **Consulate Navy Deep** (`oklch(0.22 0.055 260)`): the system's dominant surface. Hero background, Process section, footer, WhatsApp specialist modal, every "we take this seriously" moment. Also doubles as the primary text color on cream backgrounds (via `--foreground`/`--ink`).
+- **Consulate Navy Deep** (`oklch(0.22 0.055 260)`): the system's dominant surface. Hero background, JourneyStrategy's "with us" panel, footer, WhatsApp specialist modal, InstrumentPanel's glass bezel, every "we take this seriously" moment. Also doubles as the primary text color on cream backgrounds (via `--foreground`/`--ink`).
 - **Consulate Navy** (`oklch(0.3 0.07 260)`): a lighter step of the same hue, used only inside the navy-deep gradient (`bg-navy-gradient`) to add depth to large navy fields — never used standalone as a flat fill.
 
 ### Secondary
@@ -116,8 +116,8 @@ The palette is a two-color system — Consulate Navy and Boarding Gold — laid 
 
 ### Neutral
 - **Cream** (`oklch(0.995 0.001 260)`): the default page background — a warm near-white, not a stark white.
-- **Champagne** (`oklch(0.97 0.004 260)`): a slightly deeper warm off-white used to alternate section backgrounds (Guides, Why Us, Comparison's "before" panel) so cream sections don't run together edge-to-edge.
-- **Card White** (`oklch(1 0 0)`): true white, reserved specifically for card surfaces sitting on cream/champagne (Services cards, Testimonials cards) so they lift slightly off the warmer page background.
+- **Champagne** (`oklch(0.97 0.004 260)`): a slightly deeper warm off-white used to alternate section backgrounds (GuidesHub, JourneyStrategy's section bg and its "before" panel) so cream sections don't run together edge-to-edge.
+- **Card White** (`oklch(1 0 0)`): true white, reserved specifically for card surfaces sitting on cream/champagne (Services cards, ProofCarousel's quote-card slides) so they lift slightly off the warmer page background.
 - **Ink** (`oklch(0.18 0.02 260)`): primary body text color on light backgrounds — a near-black with the same faint blue cast as Consulate Navy, keeping text and brand navy visually related rather than a generic gray.
 - **Border Sand** (`oklch(0.9 0.015 85)`): the default hairline border/divider color on light surfaces (tables, dividers, FAQ accordion rules).
 - **Muted Sand** (`oklch(0.95 0.015 85)`) / **Slate Muted** (`oklch(0.45 0.02 260)`): background/foreground pair for de-emphasized UI (form field chrome, muted body copy via `text-muted-foreground`).
@@ -151,11 +151,11 @@ The palette is a two-color system — Consulate Navy and Boarding Gold — laid 
 
 The page is a stack of full-bleed sections, each centered on a `max-w-[1440px]` container with `px-6` (24px) on mobile widening to `lg:px-10` (40px) on desktop — this container/padding pair is constant across the homepage and every landing page and should not be varied per-section. Vertical rhythm between sections is heavy and consistent: `py-24` (96px) on mobile, `lg:py-32` (128px) on desktop, which is what gives the site its unhurried, editorial pace rather than a dense marketing-page feel.
 
-Within sections, content grids step from 1 column on mobile to 2–5 columns at `sm`/`lg` breakpoints depending on content type (2-col comparison, 4-col trust stats, 5-col process steps, 2–4-col service/guide cards), always with a `gap-6` (24px) or tighter rhythm. Two-column "story" layouts (Problem/Solution, DreamInNumbers) alternate text and image/card panels and animate in from opposite horizontal directions.
+Within sections, content grids step from 1 column on mobile to 2–4 columns at `sm`/`lg` breakpoints depending on content type (2-col JourneyStrategy comparison, 4-col trust stats, 2–4-col service/guide cards), always with a `gap-6` (24px) or tighter rhythm. Two-column "story" layouts (LPPage's Problem/Solution) alternate text and image/card panels and animate in from opposite horizontal directions. JourneyApproval breaks from the grid-of-cards convention: its stat row is four `border-l-2 border-gold` left-rule items, not cards, sitting directly above ProofCarousel.
 
-The Hero is the one deliberate departure from the grid: `min-h-[120svh]` (taller than the viewport) with content pinned to the bottom via `flex flex-col justify-end`, so the parallax image has room to breathe above the headline. Parallax and image-scale-on-scroll are desktop-only (`useIsMobile` gates them to fixed values on mobile) — a deliberate simplification for touch scroll performance, not an oversight.
+The homepage Hero is the one deliberate departure from the grid: `min-h-[120svh]` (taller than the viewport) with content pinned to the bottom via `flex flex-col justify-end`, so the parallax image has room to breathe above the headline. It loads a responsive `srcSet` (640/1024/1600/2200w) instead of a single fixed image, and layers `TypewriterText` (CSS-only reveal, full text present in the DOM) into the headline and `InstrumentPanel` (a floating glass gauge, see Components) into its top-right corner. Parallax, image-scale-on-scroll, and InstrumentPanel's cursor parallax are desktop-only (`useIsMobile` gates them to fixed/no-op values on mobile) — a deliberate simplification for touch scroll performance, not an oversight.
 
-Landing pages (`LPPage.tsx`, all 14 `/visto-*`, `/ds-160`, `/documentos-*`, etc. routes) reuse the homepage's Header/Footer/WhatsApp chrome but narrow their content column to `max-w-3xl` for everything below the hero/trust-stats band — tables, step lists, document checklists, and FAQ read as long-form articles, not a repeated marketing scroll. Only the hero and trust-stats strip keep the full `max-w-[1440px]` width.
+Landing pages (`LPPage.tsx`, all 14 `/visto-*`, `/ds-160`, `/documentos-*`, etc. routes) reuse the homepage's Header/Footer/WhatsApp chrome but run their own, lighter-weight hero (`LPHero`: `min-h-[85vh]`, a single static image at 30% opacity under a navy gradient — no srcset, no parallax, no InstrumentPanel/TypewriterText) and narrow their content column to `max-w-3xl` for everything below the hero/trust-stats band — tables, step lists, document checklists, and FAQ read as long-form articles, not a repeated marketing scroll. Only the hero and trust-stats strip keep the full `max-w-[1440px]` width.
 
 ## Elevation & Depth
 
@@ -164,10 +164,13 @@ Flat at rest, ambient glow on interaction — confirmed. Surfaces carry a border
 ### Shadow Vocabulary
 - **Structural hover lift** (`box-shadow: 0 20px 60px -30px var(--navy-deep)`): large, heavily-negative-spread, low-opacity navy glow under a card on hover (Services, GuidesHub cards), paired with `-translate-y-1`. Reads as the card lifting off the page, not a hard-edged shadow.
 - **Gold interactive glow** (`box-shadow: 0 10px 30px -5px var(--gold)` / Tailwind `shadow-gold/20`–`/30`): sits under every primary CTA at rest and intensifies on hover — this is what marks an element as "the thing to click," distinct from the navy structural glow used on passive cards.
-- **Dark panel elevation** (`shadow-xl shadow-navy-deep/20`): used sparingly for a single emphasized panel per section (the "with us" side of the Comparison block) to visually outrank its neutral sibling.
+- **Dark panel elevation** (`shadow-xl shadow-navy-deep/20`): used sparingly for a single emphasized panel per section (the "with us" side of JourneyStrategy's comparison) to visually outrank its neutral sibling.
+- **Glass panel** (`bg-navy-deep/40 backdrop-blur-md border-gold/20`, shadow `0 24px 70px -30px rgba(0,0,0,0.65)`): InstrumentPanel's bezel — the one surface in the system that's translucent rather than flat-filled, reserved for the single floating gauge overlaid on the Hero. Not a general card treatment; don't reuse this glass/blur combination elsewhere.
 
 ### Named Rules
 **The Ambient Glow Rule.** No neutral gray shadow ever appears. Every shadow is tinted — navy for structural/passive elevation, gold for interactive/action elevation — and always large, soft, and heavily negative-spread rather than tight and hard-edged.
+
+**The Reduced-Motion Rule.** A global `prefers-reduced-motion: reduce` media query (`src/styles.css`) forces all animation/transition durations to near-zero and disables smooth scrolling site-wide. Every bespoke motion component (`InstrumentPanel`, `AttractParticles`, `TypewriterText`) additionally checks `useReducedMotion` directly and renders its static/no-motion form — CSS fallback and JS opt-out both apply, never just one.
 
 ## Shapes
 
@@ -188,8 +191,8 @@ Buttons, cards, and inputs all read as **soft-edged and unhurried**: generous ra
 
 ### Cards / Containers
 - **Corner Style:** `rounded-2xl` (16px), no exceptions among marketing cards.
-- **Background:** Card White on Cream/Champagne page backgrounds (Services, Testimonials); Cream at 3% opacity over Navy Deep for dark-section cards (Process steps, Solution points) — never a flat gray card.
-- **Shadow Strategy:** none at rest; Structural hover lift on interactive cards (Services, GuidesHub); static (no hover) for display-only cards (Process steps, Testimonials).
+- **Background:** Card White on Cream/Champagne page backgrounds (Services, ProofCarousel quote cards); Cream at 3% opacity over Navy Deep for dark-section cards (JourneyStrategy's "with us" panel, LPPage's Solution points) — never a flat gray card.
+- **Shadow Strategy:** none at rest; Structural hover lift on interactive cards (Services, GuidesHub); static (no hover) for display-only cards (JourneyInterview's bio cards, ProofCarousel's quote cards).
 - **Border:** Border Sand or `border-navy-deep/10` on light cards; `border-gold/10`–`/30` on dark cards.
 - **Internal Padding:** `p-6`–`p-8` (24–32px); icon badges and eyebrow labels sit inside this padding, never touching the card edge.
 

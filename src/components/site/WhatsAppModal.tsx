@@ -12,13 +12,13 @@ import { motion } from "motion/react";
 const CONTACTS = [
   {
     name: "Lucas Philipe",
-    role: "Especialista em Reversão de Visto Negado",
+    role: "Especialista em Visto Americano de Turismo, Negócios, Estudante e Reversão de Negativa",
     phone: "5562992856373",
     photo: "/images/optimized/foto-lucas.jpeg",
   },
   {
     name: "Jacqueline Costa",
-    role: "Especialista em Turismo e Entrevista Consular",
+    role: "Especialista em Turismo para Europa e Visto Americano de Turismo, Negócios, Estudante e Reversão de Negativa",
     phone: "5562992927288",
     photo: "/images/optimized/IMG_5787-avatar.jpg",
   },
@@ -67,7 +67,7 @@ export function WhatsAppModal() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={close}
-              className="group flex items-center gap-5 rounded-xl border border-gold/20 bg-cream/5 p-5 transition-all hover:border-gold/50 hover:bg-cream/10"
+              className="group flex items-start gap-5 rounded-xl border border-gold/20 bg-cream/5 p-5 transition-all hover:border-gold/50 hover:bg-cream/10"
             >
               <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full border-2 border-gold/30">
                 <img
@@ -76,13 +76,15 @@ export function WhatsAppModal() {
                   className="h-full w-full object-cover"
                 />
               </div>
-              <div className="min-w-0 flex-1">
+              <div className="min-w-0 flex-1 pt-1">
                 <div className="font-serif text-lg text-cream group-hover:text-gold sm:text-xl">
                   {contact.name}
                 </div>
-                <div className="text-sm text-cream/70 sm:text-base">{contact.role}</div>
+                <div className="mt-1 text-xs leading-relaxed text-cream/70 sm:text-sm">
+                  {contact.role}
+                </div>
               </div>
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold text-navy-deep transition-transform group-hover:scale-110">
+              <div className="mt-1 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold text-navy-deep transition-transform group-hover:scale-110">
                 <MessageCircle className="h-5 w-5 sm:h-6 sm:w-6" />
               </div>
             </motion.a>

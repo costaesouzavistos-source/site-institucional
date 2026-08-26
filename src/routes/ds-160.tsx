@@ -11,7 +11,7 @@ export const Route = createLPRoute({
   canonical: "https://costaesouzavistos.com/ds-160",
   schemaName: "DS-160 - Costa & Souza",
   schemaDescription:
-    "Orientação sobre o formulário DS-160 com atendimento remoto em todo o Brasil.",
+    "Orientação sobre o formulário DS-160 com atendimento remoto em todo o Brasil, Europa e Estados Unidos.",
   telephone: "+55-62-99285-6373",
 
   heroTitle: "DS-160: o formulário que decide",

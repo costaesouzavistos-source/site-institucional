@@ -11,7 +11,7 @@ export const Route = createLPRoute({
   canonical: "https://costaesouzavistos.com/visto-americano-familia",
   schemaName: "Visto Americano para Família - Costa & Souza",
   schemaDescription:
-    "Assessoria para visto americano de família, casal e crianças com atendimento remoto.",
+    "Assessoria para visto americano de família, casal e crianças com atendimento remoto em todo o Brasil, Europa e Estados Unidos.",
   telephone: "+55-62-99285-6373",
 
   heroTitle: "Visto americano para família",

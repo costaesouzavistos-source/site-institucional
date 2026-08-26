@@ -11,7 +11,7 @@ export const Route = createLPRoute({
   canonical: "https://costaesouzavistos.com/como-tirar-visto-americano",
   schemaName: "Como Tirar Visto Americano - Costa & Souza",
   schemaDescription:
-    "Guia passo a passo para tirar visto americano com atendimento remoto em todo o Brasil.",
+    "Guia passo a passo para tirar visto americano com atendimento remoto em todo o Brasil, Europa e Estados Unidos.",
   telephone: "+55-62-99285-6373",
 
   heroTitle: "Como tirar visto americano em 2026",

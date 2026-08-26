@@ -95,8 +95,8 @@ function buildLocalBusinessSchema(cfg: LPConfig) {
     name: cfg.schemaName ?? "Costa & Souza Especialistas em Vistos Americanos",
     description:
       cfg.schemaDescription ??
-      "Especialistas em vistos americanos (B1/B2, F1, J1, negócios e renovação). Sede em Anápolis - GO, atendimento remoto em todo o Brasil.",
-    areaServed: "BR",
+      "Especialistas em vistos americanos (B1/B2, F1, J1, negócios e renovação). Sede em Anápolis - GO, atendimento remoto em todo o Brasil, Europa e Estados Unidos.",
+    areaServed: ["Brasil", "Europa", "Estados Unidos"],
     address: {
       "@type": "PostalAddress",
       streetAddress: "Av. Juscelino Kubitschek, 500, Sala 404 - Jundiaí",

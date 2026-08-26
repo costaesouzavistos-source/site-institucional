@@ -10,7 +10,8 @@ export const Route = createLPRoute({
   ogImage: "https://costaesouzavistos.com/og-image.jpg",
   canonical: "https://costaesouzavistos.com/visto-americano-criancas",
   schemaName: "Visto Americano para Crianças - Costa & Souza",
-  schemaDescription: "Assessoria para visto americano de crianças e bebês com atendimento remoto.",
+  schemaDescription:
+    "Assessoria para visto americano de crianças e bebês com atendimento remoto em todo o Brasil, Europa e Estados Unidos.",
   telephone: "+55-62-99285-6373",
 
   heroTitle: "Visto americano para crianças",

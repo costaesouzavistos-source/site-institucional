@@ -11,7 +11,7 @@ export const Route = createLPRoute({
   canonical: "https://costaesouzavistos.com/especialista-visto-americano",
   schemaName: "Especialista em Visto Americano - Costa & Souza",
   schemaDescription:
-    "Especialista em visto americano com atendimento personalizado em todo o Brasil.",
+    "Especialista em visto americano com atendimento personalizado em todo o Brasil, Europa e Estados Unidos.",
   telephone: "+55-62-99285-6373",
 
   heroTitle: "Especialista em visto americano ao seu lado",
@@ -31,7 +31,7 @@ export const Route = createLPRoute({
     title: "Quem atende o seu caso",
     rows: [
       { label: "Lucas Philipe e Jaqueline Costa", value: "Estratégia de caso, DS-160, preparação para entrevista, atendimento humano e organização documental" },
-      { label: "Atuação", value: "+10 anos, atendimento 100% remoto em todo o Brasil" },
+      { label: "Atuação", value: "+10 anos, atendimento 100% remoto em todo o Brasil, Europa e Estados Unidos" },
     ],
   },
 

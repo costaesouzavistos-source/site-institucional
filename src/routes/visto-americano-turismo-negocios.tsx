@@ -11,7 +11,7 @@ export const Route = createLPRoute({
   canonical: "https://costaesouzavistos.com/visto-americano-turismo-negocios",
   schemaName: "Visto Americano B1/B2 - Costa & Souza",
   schemaDescription:
-    "Assessoria para visto americano de turismo e negócios (B1/B2) com atendimento remoto em todo o Brasil.",
+    "Assessoria para visto americano de turismo e negócios (B1/B2) com atendimento remoto em todo o Brasil, Europa e Estados Unidos.",
   telephone: "+55-62-99285-6373",
 
   heroTitle: "Visto americano de turismo e negócios",

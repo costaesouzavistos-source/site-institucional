@@ -82,7 +82,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Especialistas em vistos americanos. Sede em Anápolis - GO, atendimento remoto em todo o Brasil.",
+          "Especialistas em vistos americanos. Sede em Anápolis - GO, atendimento remoto em todo o Brasil, Europa e Estados Unidos.",
       },
       { property: "og:site_name", content: "Costa & Souza" },
       { property: "og:type", content: "website" },

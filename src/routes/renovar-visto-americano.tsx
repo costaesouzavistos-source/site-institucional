@@ -11,7 +11,7 @@ export const Route = createLPRoute({
   canonical: "https://costaesouzavistos.com/renovar-visto-americano",
   schemaName: "Renovar Visto Americano - Costa & Souza",
   schemaDescription:
-    "Renovação de visto americano com atendimento remoto em todo o Brasil. Dropbox e entrevista.",
+    "Renovação de visto americano com atendimento remoto em todo o Brasil, Europa e Estados Unidos. Dropbox e entrevista.",
   telephone: "+55-62-99285-6373",
 
   heroTitle: "Renove seu visto americano",

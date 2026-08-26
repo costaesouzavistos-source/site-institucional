@@ -12,7 +12,7 @@ export const Route = createLPRoute({
   canonical: "https://costaesouzavistos.com/quanto-custa-visto-americano",
   schemaName: "Quanto Custa o Visto Americano - Costa & Souza",
   schemaDescription:
-    "Guia de custos do visto americano com atendimento remoto em todo o Brasil.",
+    "Guia de custos do visto americano com atendimento remoto em todo o Brasil, Europa e Estados Unidos.",
   telephone: "+55-62-99285-6373",
 
   heroTitle: "Quanto custa o visto americano",

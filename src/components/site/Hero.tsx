@@ -61,7 +61,8 @@ export function Hero({
       Mais de <strong className="text-gold-soft">16.300 vistos aprovados</strong> em todo o País.
       Cuidamos de todas as etapas — preenchimento estratégico e assinatura do DS-160,
       documentação correta, agendamento da coleta de biometria, foto no CASV e entrevista
-      consular — com consultoria especializada de Anápolis para todo o Brasil, 100% remota.
+      consular — com consultoria especializada de Anápolis para todo o Brasil, Europa e Estados
+      Unidos, 100% remota.
     </>
   ),
   ctaText = "Fale com um Especialista",

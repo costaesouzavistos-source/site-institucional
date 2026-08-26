@@ -14,7 +14,7 @@ export function Footer() {
           />
           <p className="mt-3 text-sm leading-relaxed">
             Consultoria especializada em vistos americanos. Referência nacional, sede em Anápolis —
-            Goiás, atendimento remoto em todo o Brasil.
+            Goiás, atendimento remoto em todo o Brasil, Europa e Estados Unidos.
           </p>
         </div>
 

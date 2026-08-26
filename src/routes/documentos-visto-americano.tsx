@@ -11,7 +11,7 @@ export const Route = createLPRoute({
   canonical: "https://costaesouzavistos.com/documentos-visto-americano",
   schemaName: "Documentos para Visto Americano - Costa & Souza",
   schemaDescription:
-    "Lista completa e organizada de documentos para visto americano com atendimento remoto.",
+    "Lista completa e organizada de documentos para visto americano com atendimento remoto em todo o Brasil, Europa e Estados Unidos.",
   telephone: "+55-62-99285-6373",
 
   heroTitle: "Documentos para visto americano",

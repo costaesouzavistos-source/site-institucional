@@ -11,7 +11,7 @@ export const Route = createLPRoute({
   canonical: "https://costaesouzavistos.com/assessoria-visto-americano",
   schemaName: "Assessoria para Visto Americano - Costa & Souza",
   schemaDescription:
-    "Assessoria especializada para visto americano. Atendimento remoto em todo o Brasil.",
+    "Assessoria especializada para visto americano. Atendimento remoto em todo o Brasil, Europa e Estados Unidos.",
   telephone: "+55-62-99285-6373",
 
   heroTitle: "Assessoria para visto americano que transforma",
@@ -102,7 +102,7 @@ export const Route = createLPRoute({
     },
     {
       q: "Atendem em todo o Brasil?",
-      a: "Sim. O processo é 100% remoto, por WhatsApp e videochamada, para clientes de qualquer estado.",
+      a: "Sim, e também atendemos brasileiros na Europa e nos Estados Unidos. O processo é 100% remoto, por WhatsApp e videochamada, para clientes de qualquer estado ou país.",
     },
     {
       q: "Vocês são uma empresa de visto confiável?",

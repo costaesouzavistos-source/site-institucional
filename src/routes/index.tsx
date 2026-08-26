@@ -26,8 +26,8 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   name: "Costa & Souza Especialistas em Vistos Americanos",
   description:
-    "Especialistas em vistos americanos (B1/B2, F1, J1, negócios e renovação). Sede em Anápolis - GO, atendimento remoto em todo o Brasil.",
-  areaServed: "BR",
+    "Especialistas em vistos americanos (B1/B2, F1, J1, negócios e renovação). Sede em Anápolis - GO, atendimento remoto em todo o Brasil, Europa e Estados Unidos.",
+  areaServed: ["Brasil", "Europa", "Estados Unidos"],
   address: {
     "@type": "PostalAddress",
     streetAddress: "Av. Juscelino Kubitschek, 500, Sala 404 - Jundiaí",
@@ -61,7 +61,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Especialistas em visto americano (B1/B2, F1, J1). +16.300 vistos aprovados. Sede em Anápolis-GO, atendimento remoto em todo o Brasil.",
+          "Especialistas em visto americano (B1/B2, F1, J1). +16.300 vistos aprovados. Sede em Anápolis-GO, atendimento remoto em todo o Brasil, Europa e Estados Unidos.",
       },
       {
         name: "keywords",
@@ -75,7 +75,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Seu visto aprovado. A viagem dos sonhos começa aqui. +16.300 aprovações. Atendimento em todo o Brasil.",
+          "Seu visto aprovado. A viagem dos sonhos começa aqui. +16.300 aprovações. Atendimento em todo o Brasil, Europa e Estados Unidos.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: siteUrl },

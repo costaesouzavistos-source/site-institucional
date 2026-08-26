@@ -32,7 +32,7 @@ export const Route = createLPRoute({
     rows: [
       { label: "Consulado de referência", value: "Brasília (~150 km, acesso pela BR-060)" },
       { label: "Atendimento da assessoria", value: "Presencial na nossa sede em Anápolis ou 100% online" },
-      { label: "Região atendida", value: "Anápolis e demais cidades de Goiás, além de todo o Brasil remotamente" },
+      { label: "Região atendida", value: "Anápolis e demais cidades de Goiás, além de todo o Brasil, Europa e Estados Unidos remotamente" },
     ],
   },
 
@@ -101,7 +101,7 @@ export const Route = createLPRoute({
     },
     {
       q: "Atendem outras cidades de Goiás?",
-      a: "Sim. Atendemos clientes de todas as cidades de Goiás e de todo o Brasil, presencialmente ou de forma remota.",
+      a: "Sim. Atendemos clientes de todas as cidades de Goiás e de todo o Brasil, além de brasileiros na Europa e nos Estados Unidos, presencialmente ou de forma remota.",
     },
     {
       q: "O tempo de espera por entrevista em Brasília é longo?",
