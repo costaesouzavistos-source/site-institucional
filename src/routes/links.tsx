@@ -3,25 +3,11 @@ import { motion } from "motion/react";
 import { MessageCircle, MapPin, Instagram, ArrowUpRight, Globe } from "lucide-react";
 import { CountUp } from "@/components/animations/CountUp";
 import { trackWhatsAppClick, trackEvent } from "@/lib/analytics";
+import { SPECIALISTS, buildWhatsAppUrl } from "@/lib/specialists";
 // Mesma imagem e tratamento (opacidade + gradiente navy) do ContactCTA.
 import bg from "@/assets/final-cta.jpg";
 
 const siteUrl = import.meta.env.VITE_SITE_URL || "https://costaesouzavistos.com";
-
-const SPECIALISTS = [
-  {
-    name: "Lucas Philipe",
-    role: "Especialista em Visto Americano de Turismo, Negócios, Estudante e Reversão de Negativa",
-    phone: "5562992856373",
-    photo: "/images/optimized/foto-lucas.jpeg",
-  },
-  {
-    name: "Jacqueline Costa",
-    role: "Especialista em Turismo para Europa e Visto Americano de Turismo, Negócios, Estudante e Reversão de Negativa",
-    phone: "5562992927288",
-    photo: "/images/optimized/IMG_5787-avatar.jpg",
-  },
-];
 
 const MAPS_QUERY = encodeURIComponent(
   "Av. Juscelino Kubitschek, 500, Sala 404, Jundiaí, Anápolis - GO, 75110-390",
@@ -57,10 +43,6 @@ const OTHER_LINKS = [
     source: "links_instagram",
   },
 ];
-
-function buildWhatsAppUrl(phone: string) {
-  return `https://wa.me/${phone}?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20especialista%20em%20vistos%20americanos.`;
-}
 
 export const Route = createFileRoute("/links")({
   head: () => ({
