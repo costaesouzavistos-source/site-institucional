@@ -18,10 +18,16 @@ export function SpecialistLinkPage({
     <div className="relative flex min-h-screen flex-col items-center overflow-hidden bg-navy-deep px-6 py-16 text-cream">
       <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
         <img
+          src="/bandeira-topo-site-transparente.png"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full object-cover opacity-[0.08]"
+        />
+        <img
           src={backgroundImage}
           alt=""
           aria-hidden="true"
-          className="h-full w-auto max-w-none scale-125 opacity-70"
+          className="relative h-full w-auto max-w-none scale-125"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/85 via-navy-deep/35 to-navy-deep/90" />
       </div>
