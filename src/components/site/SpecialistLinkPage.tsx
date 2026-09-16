@@ -21,7 +21,7 @@ export function SpecialistLinkPage({
           src={backgroundImage}
           alt=""
           aria-hidden="true"
-          className="h-full w-auto max-w-none opacity-70"
+          className="h-full w-auto max-w-none scale-125 opacity-70"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/85 via-navy-deep/35 to-navy-deep/90" />
       </div>
