@@ -8,22 +8,20 @@ import defaultBg from "@/assets/final-cta.jpg";
 export function SpecialistLinkPage({
   specialist,
   backgroundImage = defaultBg,
-  backgroundPosition = "object-center",
 }: {
   specialist: Specialist;
   backgroundImage?: string;
-  backgroundPosition?: string;
 }) {
   const firstName = specialist.name.split(" ")[0].toLowerCase();
 
   return (
     <div className="relative flex min-h-screen flex-col items-center overflow-hidden bg-navy-deep px-6 py-16 text-cream">
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
         <img
           src={backgroundImage}
           alt=""
           aria-hidden="true"
-          className={`h-full w-full object-cover opacity-70 ${backgroundPosition}`}
+          className="h-full w-auto max-w-none opacity-70"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/85 via-navy-deep/35 to-navy-deep/90" />
       </div>

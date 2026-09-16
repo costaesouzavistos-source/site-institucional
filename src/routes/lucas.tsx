@@ -17,8 +17,7 @@ export const Route = createFileRoute("/lucas")({
   component: () => (
     <SpecialistLinkPage
       specialist={specialist}
-      backgroundImage="/images/optimized/lucas-link-bg.jpg"
-      backgroundPosition="object-[center_30%]"
+      backgroundImage="/images/optimized/lucas-link-bg-v2.jpg"
     />
   ),
 });
