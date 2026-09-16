@@ -80,18 +80,6 @@ export function SpecialistLinkPage({
             <span className="flex-1">Site completo</span>
             <ArrowUpRight className="h-4 w-4 shrink-0 text-cream/40 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </motion.a>
-
-          <motion.a
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.38 }}
-            href="/links"
-            onClick={() => trackEvent("cta_click", { source: `personal_${firstName}_links` })}
-            className="group flex items-center gap-3 rounded-full border border-cream/25 bg-navy-deep/70 px-6 py-4 text-sm font-semibold text-cream backdrop-blur-md transition-all hover:scale-[1.02] hover:border-gold/50 hover:bg-navy-deep/80 active:scale-[0.98]"
-          >
-            <ArrowUpRight className="h-4 w-4 shrink-0 text-gold" />
-            <span className="flex-1">Ver toda a equipe</span>
-          </motion.a>
         </div>
 
         <p className="mt-10 text-center text-xs leading-relaxed text-cream/40">
