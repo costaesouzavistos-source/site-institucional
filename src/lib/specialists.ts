@@ -18,7 +18,11 @@ export const SPECIALISTS: Specialist[] = [
     slug: "jacqueline",
     name: "Jacqueline Costa",
     role: "Especialista em Turismo para Europa e Visto Americano de Turismo, Negócios, Estudante e Reversão de Negativa",
-    phone: "5562992927288",
+    // Redirecionamento temporário: Jacqueline está sobrecarregada de mensagens
+    // enquanto foca em passagens dos clientes, então todo o site (modal de
+    // WhatsApp, /links e o link pessoal /jacqueline) encaminha para o número
+    // do Lucas por enquanto. Reverter para "5562992927288" quando ela voltar.
+    phone: "5562992856373",
     photo: "/images/optimized/IMG_5787-avatar.jpg",
   },
 ];
