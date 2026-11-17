@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, type FileRoutesByPath } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -145,7 +145,7 @@ export function createLPRoute(config: LPConfig) {
     buildHowToSchema(config),
   ].filter(Boolean);
 
-  return createFileRoute(`/${config.slug}`)({
+  return createFileRoute(`/${config.slug}` as keyof FileRoutesByPath)({
     head: () => ({
       meta: [
         { title: config.title },
