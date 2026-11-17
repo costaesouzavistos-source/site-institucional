@@ -45,7 +45,7 @@ export function WhatsAppModal() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.35, delay: 0.15 + i * 0.08, ease: [0.16, 1, 0.3, 1] }}
-              href={buildWhatsAppUrl(contact.phone)}
+              href={buildWhatsAppUrl(contact.slug === "jacqueline" ? "5562992927288" : contact.phone)}
               target="_blank"
               rel="noopener noreferrer"
               onClick={close}
